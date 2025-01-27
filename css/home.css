@@ -1,0 +1,149 @@
+/* CSS kintamieji */
+
+:root {
+    --mg: #014E56;
+    --lc: #F67E7E;
+    --w: #FFFFFF;
+    --rb: #79C8C7;
+    --pb: #2C6269;
+    --djg: #004047;
+    --ssg: #012F34;
+    --dg: #002529;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Exo 2", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.contactUs {
+    background-color: var(--lc);
+    width: 1440px;
+    height: 200px;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.bd1 {
+    position: relative;
+    top: 56px;
+    margin: 0px;
+}
+
+.contactUs h2 {
+    color: var(--ssg);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-left: 63px;
+    margin-top: 76px;
+    margin-bottom: 76px;
+    margin-right: 0px;
+}
+
+.btn {
+    width: 153px;
+    height: 48px;
+    border: 2px solid var(--ssg);
+    border-radius: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    box-sizing: border-box;
+    padding: 7px;
+}
+
+.btn1 {
+    background-color: transparent;
+    margin-left: 260px;
+    margin-top: 76px;
+    margin-bottom: 76px;
+    color: var(--ssg);
+    text-decoration: none;
+    text-align: center;
+    position: relative;  
+}    
+
+footer {
+    background-color: var(--dg);
+    width: 1440px;
+    height: 196px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--w);
+}
+
+.myTeam {
+    position: relative;
+    top: 48px;
+    left: 165px;
+    margin: 0;
+}
+
+.nav {
+    text-decoration: none;
+    color: var(--w);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.navHome {
+    margin-left: 4px;
+    margin-top: 113px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+.navAbout {
+    margin-left: 40px;
+    margin-top: 113px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+.addressMain {
+    width: 445px;
+    height: 100px;
+    opacity: 0.6;
+    margin-left: 145px;
+    margin-top: 48px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    border: solid 3px white;
+}
+
+.logo {
+    font-size: 24px;
+    margin-top: 48px;
+}
+
+.logoFacebook {
+    margin-left: -104px;
+} 
+
+.logoPintarest {
+    margin-left: 16px;
+}
+
+.logoTwitter {
+    margin-left: 16px;
+    margin-right: 0px;
+}
+
+.copyright {
+    opacity: 0.6;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-top: 123px;
+    margin-left: 125px;
+}
+
+
