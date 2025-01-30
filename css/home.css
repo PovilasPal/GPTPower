@@ -17,6 +17,8 @@
     /* Sea green */
     --dg: #002529;
     /* Deep green */
+    --ab: #C4FFFE;
+    /* Avatar border */
 }
 
 /* Page man rules */
@@ -24,10 +26,12 @@
 * {
     margin: 0px;
     padding: 0px;
-    /*  font-family: "Exo 2", serif; */
+    font-family: 'Livvic', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
+
+/* ----- ARTICLE FOUR ----- */
 
 /* Article four bakcground color */
 
@@ -86,6 +90,8 @@
     text-align: center;
     position: relative;
 }
+
+/* ----- FOOTER ----- */
 
 /* Footer background and text/symbols colors */
 
@@ -347,4 +353,104 @@ header {
     font-family: 'Livvic', sans-serif;
     bottom: 100px;
     left: 190px;
+/* ----- ARTICLE THREE ----- */
+
+/* Article three bakcground color */
+
+.articleThree {
+    background-color: var(--djg);
+    color: var(--w);
+    position: relative;
+}
+
+/* Styles for article content */
+
+.articleThreeContent {
+    width: 100%;
+    height: 745px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+}
+
+/* Background decoration positioning */
+
+.bd2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/* Background decoration positioning */
+
+.bd3 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* Employee cards settings */
+
+.employeesCards {
+    height: 313px;
+    width: 1110px;
+    display: inline-flex;
+    text-align: center;
+    gap: 30px;
+}
+
+/* Text size and color configuration */
+
+.articleThreeContent h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    width: 932px;
+    text-align: center;
+}
+
+/* Changed color for words in span */
+
+.articleThreeContent h2 span {
+    color: var(--rb);
+}
+
+/* Set font size, weight and line height for employees names */
+
+.employeesCards h3 {
+    color: var(--rb);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+/* Position and text styles configurations for moto */
+
+.moto {
+    margin-top: -20px;
+    margin-bottom: 24px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+/* Position and text styles configurations for positions */
+
+.position {
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 32px;
+}
+
+/* Set size for picture added borders and set correct borders */
+
+.avatar {
+    width: 62px;
+    height: 62px;
+    border: 2px solid var(--ab);
+    border-radius: 62px;
 }
