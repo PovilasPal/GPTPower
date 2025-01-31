@@ -276,7 +276,7 @@ header {
 }
 
 /* Positioning background decoration images */
-.picOne {
+.pic-one {
     position: absolute;
     bottom: 250px;
     /* 250px from the bottom of .article-one */
@@ -284,7 +284,7 @@ header {
     /* Extends 100px outside the left edge */
 }
 
-.picTwo {
+.pic-two {
     position: absolute;
     bottom: 0px;
     right: 165px;
