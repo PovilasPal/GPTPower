@@ -34,7 +34,8 @@
 
 .clients-article {
   background-color: var(--ssg);
-  padding: 4rem 2rem;
+  width: 100%;
+  height: 437px;
   position: relative;
   overflow: hidden;
 }
@@ -45,8 +46,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 150px;
-  height: auto;
+  width: 200px;
+  height: 200px;
 }
 
 /* Article heading */
@@ -54,10 +55,10 @@
 .clients-article-heading {
   color: var(--w);
   text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 3rem;
-  position: relative;
+  font-size: 48px;
+  font-weight: 700;
+  padding-top: 140px;
+  margin-bottom: 70px;
 }
 
 /* Article logos */
@@ -66,14 +67,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 80px;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1110px;
   margin: 0 auto;
-  position: relative;
+  max-width: 1240px;
 }
 .client-logo {
-  height: 30px;
+  height: 28px;
 }
 
 /* ----- ARTICLE FOUR ----- */
