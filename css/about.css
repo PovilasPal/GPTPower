@@ -1,32 +1,79 @@
 :root {
-    --mg: #014E56;
-    /* Main green */
-    --lc: #F67E7E;
-    /* Coral */
-    --w: #FFFFFF;
-    /* White */
-    --rb: #79C8C7;
-    /* Blue */
-    --pb: #2C6269;
-    /* Pine */
-    --djg: #004047;
-    /* Jungle */
-    --ssg: #012F34;
-    /* Sea green */
-    --dg: #002529;
-    /* Deep green */
-    --ab: #C4FFFE;
-    /* Avatar border */
+  --mg: #014e56;
+  /* Main green */
+  --lc: #f67e7e;
+  /* Coral */
+  --w: #ffffff;
+  /* White */
+  --rb: #79c8c7;
+  /* Blue */
+  --pb: #2c6269;
+  /* Pine */
+  --djg: #004047;
+  /* Jungle */
+  --ssg: #012f34;
+  /* Sea green */
+  --dg: #002529;
+  /* Deep green */
+  --ab: #c4fffe;
+  /* Avatar border */
 }
 
-/* Page man rules */
+/* Page main rules */
 
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Livvic', sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Livvic", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* ----- ARTICLE THREE ----- */
+
+/* Background */
+
+.clients-article {
+  background-color: var(--ssg);
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Corner decoration */
+
+.corner-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: auto;
+}
+
+/* Article heading */
+
+.clients-article-heading {
+  color: var(--w);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+ /* Article logos */
+
+.client-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.client-logo {
+    height: 30px;
 }
 
 /* ----- ARTICLE FOUR ----- */
@@ -34,142 +81,142 @@
 /* Article four bakcground color */
 
 .articleFour {
-    background-color: var(--lc);
-    position: relative;
+  background-color: var(--lc);
+  position: relative;
 }
 
 /* Styles for article content */
 
 .contactUs {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 260px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 260px;
 }
 
 /* Background decoration positioning */
 
 .bd1 {
-    position: absolute;
-    top: 56px;
+  position: absolute;
+  top: 56px;
 }
 
 /* Text size and color configuration */
 
 .contactUs h2 {
-    color: var(--ssg);
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 48px;
+  color: var(--ssg);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
 }
 
 /* Button styles */
 
 .button {
-    width: 153px;
-    height: 48px;
-    border: 2px solid var(--ssg);
-    border-radius: 24px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 28px;
-    box-sizing: border-box;
-    padding: 7px;
-    text-decoration: none;
+  width: 153px;
+  height: 48px;
+  border: 2px solid var(--ssg);
+  border-radius: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  box-sizing: border-box;
+  padding: 7px;
+  text-decoration: none;
 }
 
 /* Setting correct collors for button */
 
 .buttonTwo {
-    background-color: transparent;
-    color: var(--ssg);
-    text-align: center;
-    position: relative;  
-}    
+  background-color: transparent;
+  color: var(--ssg);
+  text-align: center;
+  position: relative;
+}
 
 /* ----- FOOTER ----- */
 
 /* Footer background and text/symbols colors */
 
 footer {
-    background-color: var(--dg);
-    color: var(--w);
+  background-color: var(--dg);
+  color: var(--w);
 }
 
 /* Styles for footer content */
 
 .footerContent {
-    width: 100%;
-    height: 196px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 125px;
+  width: 100%;
+  height: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 125px;
 }
 
 /* Image and navigation buttuns configuration */
 
 .myTeam {
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 /* Navigation buttons styles and positioning */
 
 .navButtons {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 28px;
-    display: inline-flex;
-    gap: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  display: inline-flex;
+  gap: 40px;
 }
 
 /* Navigation buttuns color and decoration */
 
 .navButtons a {
-    text-decoration: none;
-    color: var(--w);
+  text-decoration: none;
+  color: var(--w);
 }
 
 /* Styles for address text */
 
 .addressMain {
-    width: 445px;
-    height: 100px;
-    opacity: 0.6;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 25px;
+  width: 445px;
+  height: 100px;
+  opacity: 0.6;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
 }
 
 /* Logos configuration */
 
 .logosCopy {
-    display: flex;
-    flex-direction: column;
-    gap: 51px;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 51px;
+  justify-content: flex-end;
 }
 
 /* Logos configuration */
 
 .logos {
-    font-size: 24px;
-    display: inline-flex;
-    justify-content: flex-end;
-    gap: 16px;
+  font-size: 24px;
+  display: inline-flex;
+  justify-content: flex-end;
+  gap: 16px;
 }
 
 /* Copyright text styles */
 
 .copyright {
-    opacity: 0.6;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 25px;
+  opacity: 0.6;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
 }
