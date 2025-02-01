@@ -30,6 +30,20 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+/* Button styles */
+
+.button {
+    width: 153px;
+    height: 48px;
+    border: 2px solid var(--ssg);
+    border-radius: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    box-sizing: border-box;
+    padding: 7px;
+    text-decoration: none;
+}
 
 /* ----- FOOTER ----- */
 
@@ -126,7 +140,15 @@ header {
     align-items: center;
     background-color: var(--mg);
 }
-
+/*contact button*/
+.button-one {
+    color: var(--w);
+    border: 2px solid var(--w);
+    border-radius: 24px;
+    background-color: transparent;
+    text-align: center;
+    position: relative;
+}
 /* Navigation bar */
 .navbar {
     width: 100%;
@@ -186,9 +208,11 @@ header {
     text-align: center;
     position: relative;
 }
-
+/*
 /* Hover effect for the contact button */
+/*
 .button-one:hover {
     background-color: var(--w);
     color: var(--mg);
 }
+*/
