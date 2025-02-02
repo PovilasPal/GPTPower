@@ -90,12 +90,71 @@
 
     .close-menu {
         position: absolute;
+     
+        cursor: pointer;
+
         top: 56px;
         right: 25px;
-        font-size: 24px;
-        color: #fff;
-        cursor: pointer;
+       
+     
+        overflow: hidden;
+        height: 17px;
+        object-fit: cover;
+        }
+
+
     }
+    .home-mobile {
+        width: 49px;
+        position: relative;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 600;
+        font-family: Livvic;
+        color: #fff;
+        text-align: left;
+        display: inline-block;
+        }
+        .about-mobile{
+            width: 51px;
+            position: relative;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 600;
+            font-family: Livvic;
+            color: #fff;
+            text-align: right;
+            display: inline-block;
+            }
+            .button-mobile {
+                width: 153px;
+                height: 48px;
+                border: 2px solid var(--ssg);
+                border-radius: 24px;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 28px;
+                box-sizing: border-box;
+                padding: 7px;
+                text-decoration: none;
+
+            }
+            .button-one-mobile {
+
+                position: relative;
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 600;
+                font-family: Livvic;
+                color: var(--w);
+                border: 2px solid var(--w);
+                border-radius: 24px;
+                background-color: transparent;
+                text-align: center;
+                display: inline-block;
+                }
+   
+            
 }
 
 
