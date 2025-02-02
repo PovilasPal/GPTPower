@@ -22,7 +22,7 @@
 }
 
 /* ✅ Hide mobile menu and burger icon on large screens */
-.header-mobile{
+.header-mobile {
     display: none;
 }
 
@@ -30,10 +30,12 @@
 
 /* 📱 Mobile and tablet styles (max-width: 768px) */
 @media (max-width: 768px) {
+
     /* Hide default navigation links and Contact Us button on mobile */
     .header-main {
         display: none !important;
     }
+
     /* ✅ Display burger menu on mobile screens */
     .burger-menu {
         display: flex;
@@ -51,7 +53,8 @@
     .burger-menu div {
         width: 30px;
         height: 3px;
-        background-color: #fff; /* Adjust color if needed */
+        background-color: #fff;
+        /* Adjust color if needed */
         transition: 0.3s;
     }
 
@@ -60,7 +63,8 @@
         display: flex;
         position: fixed;
         top: 0;
-        right: -255px; /* Initially hidden */
+        right: -255px;
+        /* Initially hidden */
         width: 255px;
         height: 100vh;
         background-color: var(--mg);
@@ -86,20 +90,20 @@
 
     .close-menu {
         position: absolute;
-     
+
         cursor: pointer;
 
         top: 56px;
         right: 25px;
-       
-     
+
+
         overflow: hidden;
         height: 17px;
         object-fit: cover;
-        }
+    }
 
 
-    
+
     .home-mobile {
         left: 48px;
         top: 112px;
@@ -109,75 +113,80 @@
         font-weight: 600;
         font-family: Livvic;
         color: #fff;
-      
-        }
-        .about-mobile{
-            left: 48px;
-            top: 164px;
-            position: absolute;
-            font-size: 18px;
-            line-height: 28px;
-            font-weight: 600;
-            font-family: Livvic;
-            color: #fff;
-           
-            }
-            .button-mobile {
-                left: 48px;
-                top: 228px;
-            
-                position: absolute;
-                width: 153px;
-                height: 48px;
-                border: 2px solid var(--ssg);
-                border-radius: 24px;
-                font-size: 18px;
-                font-weight: 600;
-                line-height: 28px;
-                box-sizing: border-box;
-                padding: 7px;
-                text-decoration: none;
 
-            }
-            .button-one-mobile {
+    }
 
-               
-                font-size: 18px;
-                line-height: 28px;
-                font-weight: 600;
-                font-family: Livvic;
-                color: var(--w);
-                border: 2px solid var(--w);
-                border-radius: 24px;
-                background-color: transparent;
-                text-align: center;
-                display: inline-block;
-                }
-   
-                .header-mobile {
-                    
-                    font-family: 'Livvic', sans-serif;
-                    height: 128px;
-                   
-                    margin: 0 auto;
-                    display: flex;
-                    justify-content: left;
-                    align-items: center;
-                    background-color: var(--mg);
-                }
-                .navbar-mobile {
-                 width: 300px;
-                    height: 48px;
-                    display: flex;
-                    padding-left: 24px;
+    .about-mobile {
+        left: 48px;
+        top: 164px;
+        position: absolute;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 600;
+        font-family: Livvic;
+        color: #fff;
 
-                }
-                /* MyTeam logo */
-.myteam-logo-mobile {
-    width: 128px;
-    height: 32px;
-    margin-right: 20px;
-}
+    }
+
+    .button-mobile {
+        left: 48px;
+        top: 228px;
+
+        position: absolute;
+        width: 153px;
+        height: 48px;
+        border: 2px solid var(--ssg);
+        border-radius: 24px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        box-sizing: border-box;
+        padding: 7px;
+        text-decoration: none;
+
+    }
+
+    .button-one-mobile {
+
+
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 600;
+        font-family: Livvic;
+        color: var(--w);
+        border: 2px solid var(--w);
+        border-radius: 24px;
+        background-color: transparent;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .header-mobile {
+
+        font-family: 'Livvic', sans-serif;
+        height: 128px;
+
+        margin: 0 auto;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        background-color: var(--mg);
+    }
+
+    .navbar-mobile {
+        width: 300px;
+        height: 48px;
+        display: flex;
+        padding-left: 24px;
+
+    }
+
+    /* MyTeam logo */
+    .myteam-logo-mobile {
+        width: 128px;
+        height: 32px;
+        margin-right: 20px;
+    }
 }
 
 
@@ -360,12 +369,15 @@ body {
 
 /* Navigation bar */
 .navbar {
+    padding-left: 165px;
+    padding-right: 165px;
     width: 100%;
-    max-width: 1110px;
+   
     height: 48px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 /* Navigation links container */
@@ -516,6 +528,7 @@ body {
     bottom: 100px;
     left: 190px;
 }
+
 /* ----- ARTICLE THREE ----- */
 
 /* Article three bakcground color */
