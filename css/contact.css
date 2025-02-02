@@ -42,7 +42,7 @@ footer {
 
 /* Styles for footer content */
 
-.footerContent {
+.footer-content {
     width: 100%;
     height: 196px;
     display: flex;
@@ -53,7 +53,7 @@ footer {
 
 /* Image and navigation buttuns configuration */
 
-.myTeam {
+.my-team {
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -63,7 +63,7 @@ footer {
 
 /* Navigation buttons styles and positioning */
 
-.navButtons {
+.nav-buttons {
     font-size: 18px;
     font-weight: 600;
     line-height: 28px;
@@ -73,14 +73,14 @@ footer {
 
 /* Navigation buttuns color and decoration */
 
-.navButtons a {
+.nav-buttons a {
     text-decoration: none;
     color: var(--w);
 }
 
 /* Styles for address text */
 
-.addressMain {
+.address-main {
     width: 445px;
     height: 100px;
     opacity: 0.6;
@@ -91,7 +91,7 @@ footer {
 
 /* Logos configuration */
 
-.logosCopy {
+.logos-copy {
     display: flex;
     flex-direction: column;
     gap: 51px;
