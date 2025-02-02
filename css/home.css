@@ -21,23 +21,28 @@
     /* Avatar border */
 }
 
-/* ✅ Hide mobile menu and burger icon on large screens */
+/* Hide mobile menu and burger icon on large screens */
 .mobile-menu {
     display: none;
 }
 
 .burger-menu {
-    display: none; /* Hide by default on large screens */
+    display: none;
+    /* Hide by default on large screens */
 }
 
 /* 📱 Mobile and tablet styles (max-width: 768px) */
-@media (max-width: 768px) {
+@media (max-width: 375px) {
+
     /* Hide default navigation links and Contact Us button on mobile */
-    .nav-links, .buttonOne, .nav-item.home, .nav-item.about {
+    .nav-links,
+    .buttonOne,
+    .nav-item.home,
+    .nav-item.about {
         display: none;
     }
 
-    /* ✅ Display burger menu on mobile screens */
+    /* Display burger menu on mobile screens */
     .burger-menu {
         display: flex;
         position: absolute;
@@ -51,11 +56,12 @@
         z-index: 1001;
     }
 
-    /* ✅ Three lines (bars) for the burger menu */
+    /* Three lines (bars) for the burger menu */
     .burger-menu div {
         width: 30px;
         height: 3px;
-        background-color: #fff; /* Adjust color if needed */
+        background-color: #fff;
+        /* Adjust color if needed */
         transition: 0.3s;
     }
 
@@ -64,7 +70,8 @@
         display: flex;
         position: fixed;
         top: 0;
-        right: -255px; /* Initially hidden */
+        right: -255px;
+        /* Initially hidden */
         width: 255px;
         height: 100vh;
         background-color: var(--mg);
@@ -90,75 +97,79 @@
 
     .close-menu {
         position: absolute;
-     
+
         cursor: pointer;
 
         top: 56px;
         right: 25px;
-       
-     
+
+
         overflow: hidden;
         height: 17px;
         object-fit: cover;
-        }
-
-
     }
-    .home-mobile {
-        left: 48px;
-        top: 112px;
-        position: absolute;
-        font-size: 18px;
-        line-height: 28px;
-        font-weight: 600;
-        font-family: Livvic;
-        color: #fff;
-      
-        }
-        .about-mobile{
-            left: 48px;
-            top: 164px;
-            position: absolute;
-            font-size: 18px;
-            line-height: 28px;
-            font-weight: 600;
-            font-family: Livvic;
-            color: #fff;
-           
-            }
-            .button-mobile {
-                left: 48px;
-                top: 228px;
-            
-                position: absolute;
-                width: 153px;
-                height: 48px;
-                border: 2px solid var(--ssg);
-                border-radius: 24px;
-                font-size: 18px;
-                font-weight: 600;
-                line-height: 28px;
-                box-sizing: border-box;
-                padding: 7px;
-                text-decoration: none;
 
-            }
-            .button-one-mobile {
 
-               
-                font-size: 18px;
-                line-height: 28px;
-                font-weight: 600;
-                font-family: Livvic;
-                color: var(--w);
-                border: 2px solid var(--w);
-                border-radius: 24px;
-                background-color: transparent;
-                text-align: center;
-                display: inline-block;
-                }
-   
-            
+
+
+.home-mobile {
+    left: 48px;
+    top: 112px;
+    position: absolute;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    font-family: Livvic;
+    color: #fff;
+
+}
+
+.about-mobile {
+    left: 48px;
+    top: 164px;
+    position: absolute;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    font-family: Livvic;
+    color: #fff;
+
+}
+
+.button-mobile {
+    left: 48px;
+    top: 228px;
+
+    position: absolute;
+    width: 153px;
+    height: 48px;
+    border: 2px solid var(--ssg);
+    border-radius: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    box-sizing: border-box;
+    padding: 7px;
+    text-decoration: none;
+
+}
+
+.button-one-mobile {
+
+
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    font-family: Livvic;
+    color: var(--w);
+    border: 2px solid var(--w);
+    border-radius: 24px;
+    background-color: transparent;
+    text-align: center;
+    display: inline-block;
+}
+
+
 }
 
 
@@ -497,6 +508,7 @@ header {
     bottom: 100px;
     left: 190px;
 }
+
 /* ----- ARTICLE THREE ----- */
 
 /* Article three bakcground color */
