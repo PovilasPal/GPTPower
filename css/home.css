@@ -105,28 +105,32 @@
 
     }
     .home-mobile {
-        width: 49px;
-        position: relative;
+        left: 48px;
+        top: 112px;
+        position: absolute;
         font-size: 18px;
         line-height: 28px;
         font-weight: 600;
         font-family: Livvic;
         color: #fff;
-        text-align: left;
-        display: inline-block;
+      
         }
         .about-mobile{
-            width: 51px;
-            position: relative;
+            left: 48px;
+            top: 164px;
+            position: absolute;
             font-size: 18px;
             line-height: 28px;
             font-weight: 600;
             font-family: Livvic;
             color: #fff;
-            text-align: right;
-            display: inline-block;
+           
             }
             .button-mobile {
+                left: 48px;
+                top: 228px;
+            
+                position: absolute;
                 width: 153px;
                 height: 48px;
                 border: 2px solid var(--ssg);
@@ -141,7 +145,7 @@
             }
             .button-one-mobile {
 
-                position: relative;
+               
                 font-size: 18px;
                 line-height: 28px;
                 font-weight: 600;
