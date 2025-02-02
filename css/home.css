@@ -21,6 +21,24 @@
     /* Avatar border */
 }
 
+/* tablets 768px and less */
+@media (max-width: 768px) {
+    body {
+       
+    }
+}
+
+/* mobile devices 375px and less*/
+@media (max-width: 375px) {
+    body {
+  
+    }
+}
+
+
+
+
+
 /* Page man rules */
 
 * {
