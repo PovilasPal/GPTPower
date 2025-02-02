@@ -22,26 +22,22 @@
 }
 
 /* ✅ Hide mobile menu and burger icon on large screens */
-.mobile-menu {
+.header-mobile{
     display: none;
 }
 
-.burger-menu {
-    display: none; /* Hide by default on large screens */
-}
+
 
 /* 📱 Mobile and tablet styles (max-width: 768px) */
 @media (max-width: 768px) {
     /* Hide default navigation links and Contact Us button on mobile */
-    .nav-links, .buttonOne, .nav-item.home, .nav-item.about {
-        display: none;
+    .header-main {
+        display: none !important;
     }
-
     /* ✅ Display burger menu on mobile screens */
     .burger-menu {
         display: flex;
         position: absolute;
-        top: 20px;
         right: 20px;
         width: 30px;
         height: 24px;
@@ -103,7 +99,7 @@
         }
 
 
-    }
+    
     .home-mobile {
         left: 48px;
         top: 112px;
@@ -158,7 +154,30 @@
                 display: inline-block;
                 }
    
-            
+                .header-mobile {
+                    
+                    font-family: 'Livvic', sans-serif;
+                    height: 128px;
+                   
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    background-color: var(--mg);
+                }
+                .navbar-mobile {
+                 width: 300px;
+                    height: 48px;
+                    display: flex;
+                    padding-left: 24px;
+
+                }
+                /* MyTeam logo */
+.myteam-logo-mobile {
+    width: 128px;
+    height: 32px;
+    margin-right: 20px;
+}
 }
 
 
@@ -328,7 +347,7 @@ body {
 }
 
 /* Header container */
-header {
+.header-main {
     font-family: 'Livvic', sans-serif;
     width: 100%;
     height: 194px;
