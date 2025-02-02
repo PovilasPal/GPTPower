@@ -247,7 +247,7 @@ header {
 }
 
 /* Contact button styling */
-.buttonOne {
+.button-one {
     color: var(--w);
     border: 2px solid var(--w);
     border-radius: 24px;
@@ -257,11 +257,12 @@ header {
 }
 
 /* Hover effect for the contact button */
-.buttonOne:hover {
+/*
+.button-one:hover {
     background-color: var(--w);
     color: var(--mg);
 }
-
+*/
 /* Article 1 container */
 .article-one {
     font-family: 'Livvic', sans-serif;
