@@ -27,6 +27,7 @@
 }
 /*pagrindinis konteineris*/
 .container {
+ position: relative;
   display: flex;
   justify-content: space-between;
   padding: 140px 165px;
