@@ -77,18 +77,107 @@
   height: 28px;
 }
 
+/* ----- ABOUT ARTICLE TWO ----- */
+
+/* About rticle two bakcground color */
+
+.article-two {
+    background-color: var(--djg);
+    color: var(--w);
+    position: relative;
+    width: 100%;
+    height: 1002px;
+}
+
+/* Background decoration positioning */
+
+.bd2 {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+}
+
+/* Background decoration positioning */
+
+.bd3 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* Employee cards settings */
+
+.employee-cards-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 76px 30px;
+}
+
+/* H2 size, position and color configuration */
+
+.article-two h2 {
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 64px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+/* Cards size , position and background color */
+
+.card-about {
+    width: 350px;
+    height: 253px;
+    background-color: var(--ssg);
+    text-align: center;
+    position: relative;
+}
+
+/* Set size for picture added borders and set correct borders */
+
+.picture {
+    width: 96px;
+    height: 96px;
+    border: 2px solid var(--ab);
+    border-radius: 96px;
+    margin-top: 30px;
+    margin-bottom: 14px;
+}
+
+/* H3 text and color configuration */
+
+.employee-cards-about h3 {
+    color: var(--rb);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+/* Text and position configuration */
+
+.employee-cards-about p {
+    margin-bottom: 24px;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 25px;
+}
+
 /* ----- ARTICLE FOUR ----- */
 
 /* Article four bakcground color */
 
-.articleFour {
+.article-four {
   background-color: var(--lc);
   position: relative;
 }
 
 /* Styles for article content */
 
-.contactUs {
+.contact-us {
   width: 100%;
   height: 200px;
   display: flex;
@@ -106,7 +195,7 @@
 
 /* Text size and color configuration */
 
-.contactUs h2 {
+.contact-us h2 {
   color: var(--ssg);
   font-size: 48px;
   font-weight: 700;
@@ -130,7 +219,7 @@
 
 /* Setting correct collors for button */
 
-.buttonTwo {
+.button-two {
   background-color: transparent;
   color: var(--ssg);
   text-align: center;
@@ -148,60 +237,60 @@ footer {
 
 /* Styles for footer content */
 
-.footerContent {
-  width: 100%;
-  height: 196px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 125px;
+.footer-content {
+    width: 100%;
+    height: 196px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 125px;
 }
 
 /* Image and navigation buttuns configuration */
 
-.myTeam {
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 20px;
+.my-team {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
 /* Navigation buttons styles and positioning */
 
-.navButtons {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 28px;
-  display: inline-flex;
-  gap: 40px;
+.nav-buttons {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    display: inline-flex;
+    gap: 40px;
 }
 
 /* Navigation buttuns color and decoration */
 
-.navButtons a {
-  text-decoration: none;
-  color: var(--w);
+.nav-buttons a {
+    text-decoration: none;
+    color: var(--w);
 }
 
 /* Styles for address text */
 
-.addressMain {
-  width: 445px;
-  height: 100px;
-  opacity: 0.6;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 25px;
+.address-main {
+    width: 445px;
+    height: 100px;
+    opacity: 0.6;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
 }
 
 /* Logos configuration */
 
-.logosCopy {
-  display: flex;
-  flex-direction: column;
-  gap: 51px;
-  justify-content: flex-end;
+.logos-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+    justify-content: flex-end;
 }
 
 /* Logos configuration */
@@ -295,9 +384,8 @@ header {
 }
 
 /* Hover effect for the contact button */
-/*
+
 .button-one:hover {
     background-color: var(--w);
     color: var(--mg);
 }
-*/

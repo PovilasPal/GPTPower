@@ -35,14 +35,14 @@
 
 /* Article four bakcground color */
 
-.articleFour {
+.article-four {
     background-color: var(--lc);
     position: relative;
 }
 
 /* Styles for article content */
 
-.contactUs {
+.contact-us {
     width: 100%;
     height: 200px;
     display: flex;
@@ -60,7 +60,7 @@
 
 /* Text size and color configuration */
 
-.contactUs h2 {
+.contact-us h2 {
     color: var(--ssg);
     font-size: 48px;
     font-weight: 700;
@@ -84,7 +84,7 @@
 
 /* Setting correct collors for button */
 
-.buttonTwo {
+.button-two {
     background-color: transparent;
     color: var(--ssg);
     text-align: center;
@@ -102,7 +102,7 @@ footer {
 
 /* Styles for footer content */
 
-.footerContent {
+.footer-content {
     width: 100%;
     height: 196px;
     display: flex;
@@ -113,7 +113,7 @@ footer {
 
 /* Image and navigation buttuns configuration */
 
-.myTeam {
+.my-team {
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -123,7 +123,7 @@ footer {
 
 /* Navigation buttons styles and positioning */
 
-.navButtons {
+.nav-buttons {
     font-size: 18px;
     font-weight: 600;
     line-height: 28px;
@@ -133,14 +133,14 @@ footer {
 
 /* Navigation buttuns color and decoration */
 
-.navButtons a {
+.nav-buttons a {
     text-decoration: none;
     color: var(--w);
 }
 
 /* Styles for address text */
 
-.addressMain {
+.address-main {
     width: 445px;
     height: 100px;
     opacity: 0.6;
@@ -151,7 +151,7 @@ footer {
 
 /* Logos configuration */
 
-.logosCopy {
+.logos-copy {
     display: flex;
     flex-direction: column;
     gap: 51px;
@@ -257,12 +257,12 @@ header {
 }
 
 /* Hover effect for the contact button */
-/*
+
 .button-one:hover {
     background-color: var(--w);
-    color: var(--mg);
+    color: var(--mg); 
 }
-*/
+
 /* Article 1 container */
 .article-one {
     font-family: 'Livvic', sans-serif;
@@ -359,7 +359,7 @@ header {
 
 /* Article three bakcground color */
 
-.articleThree {
+.article-three {
     background-color: var(--djg);
     color: var(--w);
     position: relative;
@@ -367,7 +367,7 @@ header {
 
 /* Styles for article content */
 
-.articleThreeContent {
+.article-three-content {
     width: 100%;
     height: 745px;
     display: flex;
@@ -395,7 +395,7 @@ header {
 
 /* Employee cards settings */
 
-.employeesCards {
+.employees-cards {
     height: 313px;
     width: 1110px;
     display: inline-flex;
@@ -405,7 +405,7 @@ header {
 
 /* Text size and color configuration */
 
-.articleThreeContent h2 {
+.article-three-content h2 {
     font-size: 48px;
     font-weight: 700;
     line-height: 48px;
@@ -415,13 +415,13 @@ header {
 
 /* Changed color for words in span */
 
-.articleThreeContent h2 span {
+.article-three-content h2 span {
     color: var(--rb);
 }
 
 /* Set font size, weight and line height for employees names */
 
-.employeesCards h3 {
+.employees-cards h3 {
     color: var(--rb);
     font-size: 18px;
     font-weight: 700;
