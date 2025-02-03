@@ -1,35 +1,86 @@
-/* Variables */
 
 :root {
-    --mg: #014E56;
-    /* Main green */
-    --lc: #F67E7E;
-    /* Coral */
-    --w: #FFFFFF;
-    /* White */
-    --rb: #79C8C7;
-    /* Blue */
-    --pb: #2C6269;
-    /* Pine */
-    --djg: #004047;
-    /* Jungle */
-    --ssg: #012F34;
-    /* Sea green */
-    --dg: #002529;
-    /* Deep green */
-    --ab: #C4FFFE;
-    /* Avatar border */
+  --mg: #014e56;
+  /* Main green */
+  --lc: #f67e7e;
+  /* Coral */
+  --w: #ffffff;
+  /* White */
+  --rb: #79c8c7;
+  /* Blue */
+  --pb: #2c6269;
+  /* Pine */
+  --djg: #004047;
+  /* Jungle */
+  --ssg: #012f34;
+  /* Sea green */
+  --dg: #002529;
+  /* Deep green */
 }
-
-/* Page man rules */
-
+/*bendras*/
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Livvic', sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Livvic", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
+/*pagrindinis konteineris*/
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 140px 165px;
+}
+/*listo dydis*/
+.containerArticleTwoSecond {
+  width: 540px;
+}
+/*listo itemai*/
+.containerList {
+  display: flex;
+  list-style: none;
+}
+.containerBlock {
+  display: block;
+}
+/*background spalba*/
+.backgroundArticleTwo {
+  background-color: var(--ssg);
+}
+/*teskto spalva*/
+div > h4 {
+  color: var(--lc);
+  padding: 0px 0px 16px 0px;
+  font-size: 18px;
+}
+div > p {
+  color: var(--w);
+}
+/*papildomas tarpas*/
+article > div {
+  padding: 54px 0px 0px 0px;
+}
+/*kairiojo teksto font*/
+.articleTwoFont {
+  font-size: 48px;
+  width: 445px;
+  font-weight: 700;
+}
+/*tarpas nuo iconu*/
+li > img {
+  padding: 0px 23px 0px 0px;
+}
+/*tarpai tarp iconu ir aprasymu*/
+li:nth-child(2) {
+  padding: 32px 0px;
+}
+/*background pozicija*/
+.ArtTwoBg {
+  position: absolute;
+  top: 390px;
+  right: -100px;
+}
+
 
 /* ----- ARTICLE FOUR ----- */
 
