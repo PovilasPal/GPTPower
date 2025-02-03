@@ -88,8 +88,8 @@
     background-color: transparent;
     color: var(--ssg);
     text-align: center;
-    position: relative;  
-}    
+    position: relative;
+}
 
 /* ----- FOOTER ----- */
 
@@ -186,6 +186,7 @@ body {
 
 /* Header container */
 header {
+    font-family: 'Livvic', sans-serif;
     width: 100%;
     height: 194px;
     margin: 0 auto;
@@ -246,21 +247,114 @@ header {
 }
 
 /* Contact button styling */
-.buttonOne {
+.button-one {
     color: var(--w);
     border: 2px solid var(--w);
     border-radius: 24px;
     background-color: transparent;
     text-align: center;
-    position: relative; 
+    position: relative;
 }
 
 /* Hover effect for the contact button */
-.contact-button:hover {
+/*
+.button-one:hover {
     background-color: var(--w);
     color: var(--mg);
 }
+*/
+/* Article 1 container */
+.article-one {
+    font-family: 'Livvic', sans-serif;
+    width: 100%;
+    height: calc(700px - 194px);
+    background-color: var(--mg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
 
+/* Positioning background decoration images */
+.pic-one {
+    position: absolute;
+    bottom: 250px;
+    /* 250px from the bottom of .article-one */
+    left: -100px;
+    /* Extends 100px outside the left edge */
+}
+
+.pic-two {
+    position: absolute;
+    bottom: 0px;
+    right: 165px;
+}
+
+/* Styling for 'Find the' text */
+.find-the {
+    margin: 0;
+}
+
+/* Highlighting 'talent' in coral color */
+.talent {
+    color: var(--lc);
+}
+
+/* Container for the main heading */
+.find-the-best-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    line-height: 100px;
+    display: inline-block;
+    width: 635px;
+}
+
+/* Styling for the descriptive text */
+.finding-the-right {
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 14.5px);
+    left: 0%;
+    line-height: 28px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Small rectangle decoration */
+.rectangle {
+    position: absolute;
+    height: 2.05%;
+    width: 11.24%;
+    top: 0%;
+    left: 0%;
+    background-color: var(--rb);
+}
+
+/* Grouping for descriptive text and rectangle */
+.group {
+    position: absolute;
+    top: 0px;
+    left: 665px;
+    width: 445px;
+    height: 195px;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+/* Parent container for the main heading */
+.find-the-best-talent-parent {
+    width: 100%;
+    position: relative;
+    height: 200px;
+    text-align: left;
+    font-size: 100px;
+    color: var(--w);
+    font-family: 'Livvic', sans-serif;
+    bottom: 100px;
+    left: 190px;
+}
 /* ----- ARTICLE THREE ----- */
 
 /* Article three bakcground color */
