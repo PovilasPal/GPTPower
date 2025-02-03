@@ -257,9 +257,10 @@ header {
 }
 
 /* Hover effect for the contact button */
+
 .button-one:hover {
     background-color: var(--w);
-    color: var(--mg);
+    color: var(--mg); 
 }
 
 /* Article 1 container */
