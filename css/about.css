@@ -1,106 +1,243 @@
 :root {
-    --mg: #014E56;
-    /* Main green */
-    --lc: #F67E7E;
-    /* Coral */
-    --w: #FFFFFF;
-    /* White */
-    --rb: #79C8C7;
-    /* Blue */
-    --pb: #2C6269;
-    /* Pine */
-    --djg: #004047;
-    /* Jungle */
-    --ssg: #012F34;
-    /* Sea green */
-    --dg: #002529;
-    /* Deep green */
-    --ab: #C4FFFE;
-    /* Avatar border */
+  --mg: #014e56;
+  /* Main green */
+  --lc: #f67e7e;
+  /* Coral */
+  --w: #ffffff;
+  /* White */
+  --rb: #79c8c7;
+  /* Blue */
+  --pb: #2c6269;
+  /* Pine */
+  --djg: #004047;
+  /* Jungle */
+  --ssg: #012f34;
+  /* Sea green */
+  --dg: #002529;
+  /* Deep green */
+  --ab: #c4fffe;
+  /* Avatar border */
 }
 
-/* Page man rules */
+/* Page main rules */
 
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Livvic', sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Livvic", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* ----- ARTICLE THREE ----- */
+
+/* Background */
+
+.clients-article {
+  background-color: var(--ssg);
+  width: 100%;
+  height: 437px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Corner decoration */
+
+.corner-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+}
+
+/* Article heading */
+
+.clients-article-heading {
+  color: var(--w);
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  padding-top: 140px;
+  margin-bottom: 70px;
+}
+
+/* Article logos */
+
+.client-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  max-width: 1110px;
+  margin: 0 auto;
+  max-width: 1240px;
+}
+.client-logo {
+  height: 28px;
+}
+
+/* ----- ABOUT ARTICLE TWO ----- */
+
+/* About rticle two bakcground color */
+
+.article-two {
+    background-color: var(--djg);
+    color: var(--w);
+    position: relative;
+    width: 100%;
+    height: 1002px;
+}
+
+/* Background decoration positioning */
+
+.bd2 {
+    position: absolute;
+    top: 0px;
+    left: -100px;
+}
+
+/* Background decoration positioning */
+
+.bd3 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* Employee cards settings */
+
+.employee-cards-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 76px 30px;
+}
+
+/* H2 size, position and color configuration */
+
+.article-two h2 {
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 64px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+/* Cards size , position and background color */
+
+.card-about {
+    width: 350px;
+    height: 253px;
+    background-color: var(--ssg);
+    text-align: center;
+    position: relative;
+}
+
+/* Set size for picture added borders and set correct borders */
+
+.picture {
+    width: 96px;
+    height: 96px;
+    border: 2px solid var(--ab);
+    border-radius: 96px;
+    margin-top: 30px;
+    margin-bottom: 14px;
+}
+
+/* H3 text and color configuration */
+
+.employee-cards-about h3 {
+    color: var(--rb);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+/* Text and position configuration */
+
+.employee-cards-about p {
+    margin-bottom: 24px;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 25px;
 }
 
 /* ----- ARTICLE FOUR ----- */
 
 /* Article four bakcground color */
 
-.articleFour {
-    background-color: var(--lc);
-    position: relative;
+.article-four {
+  background-color: var(--lc);
+  position: relative;
 }
 
 /* Styles for article content */
 
-.contactUs {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 260px;
+.contact-us {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 260px;
 }
 
 /* Background decoration positioning */
 
 .bd1 {
-    position: absolute;
-    top: 56px;
+  position: absolute;
+  top: 56px;
 }
 
 /* Text size and color configuration */
 
-.contactUs h2 {
-    color: var(--ssg);
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 48px;
+.contact-us h2 {
+  color: var(--ssg);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
 }
 
 /* Button styles */
 
 .button {
-    width: 153px;
-    height: 48px;
-    border: 2px solid var(--ssg);
-    border-radius: 24px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 28px;
-    box-sizing: border-box;
-    padding: 7px;
-    text-decoration: none;
+  width: 153px;
+  height: 48px;
+  border: 2px solid var(--ssg);
+  border-radius: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  box-sizing: border-box;
+  padding: 7px;
+  text-decoration: none;
 }
 
 /* Setting correct collors for button */
 
-.buttonTwo {
-    background-color: transparent;
-    color: var(--ssg);
-    text-align: center;
-    position: relative;  
-}    
+.button-two {
+  background-color: transparent;
+  color: var(--ssg);
+  text-align: center;
+  position: relative;
+}
 
 /* ----- FOOTER ----- */
 
 /* Footer background and text/symbols colors */
 
 footer {
-    background-color: var(--dg);
-    color: var(--w);
+  background-color: var(--dg);
+  color: var(--w);
 }
 
 /* Styles for footer content */
 
-.footerContent {
+.footer-content {
     width: 100%;
     height: 196px;
     display: flex;
@@ -111,7 +248,7 @@ footer {
 
 /* Image and navigation buttuns configuration */
 
-.myTeam {
+.my-team {
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -121,7 +258,7 @@ footer {
 
 /* Navigation buttons styles and positioning */
 
-.navButtons {
+.nav-buttons {
     font-size: 18px;
     font-weight: 600;
     line-height: 28px;
@@ -131,14 +268,14 @@ footer {
 
 /* Navigation buttuns color and decoration */
 
-.navButtons a {
+.nav-buttons a {
     text-decoration: none;
     color: var(--w);
 }
 
 /* Styles for address text */
 
-.addressMain {
+.address-main {
     width: 445px;
     height: 100px;
     opacity: 0.6;
@@ -149,7 +286,7 @@ footer {
 
 /* Logos configuration */
 
-.logosCopy {
+.logos-copy {
     display: flex;
     flex-direction: column;
     gap: 51px;
@@ -159,10 +296,10 @@ footer {
 /* Logos configuration */
 
 .logos {
-    font-size: 24px;
-    display: inline-flex;
-    justify-content: flex-end;
-    gap: 16px;
+  font-size: 24px;
+  display: inline-flex;
+  justify-content: flex-end;
+  gap: 16px;
 }
 
 /* Copyright text styles */
@@ -172,4 +309,83 @@ footer {
     font-size: 15px;
     font-weight: 600;
     line-height: 25px;
+}
+
+/* Header container */
+header {
+    font-family: 'Livvic', sans-serif;
+    width: 100%;
+    height: 194px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mg);
+}
+
+/* Navigation bar */
+.navbar {
+    width: 100%;
+    max-width: 1110px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation links container */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+/* General navigation item */
+.nav-item {
+    color: var(--w);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+
+/* Home link */
+.nav-item.home {
+    margin-left: 60px;
+    margin-right: 20px;
+}
+
+/* About link */
+.nav-item.about {
+    margin-left: 20px;
+}
+
+/* Hover effect for links */
+.nav-item:hover {
+    color: var(--lc);
+}
+
+/* MyTeam logo */
+.myteam-logo {
+    width: 160px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+/* Contact button styling */
+.button-one {
+    color: var(--w);
+    border: 2px solid var(--w);
+    border-radius: 24px;
+    background-color: transparent;
+    text-align: center;
+    position: relative;
+}
+
+/* Hover effect for the contact button */
+
+.button-one:hover {
+    background-color: var(--w);
+    color: var(--mg);
 }

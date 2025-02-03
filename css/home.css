@@ -86,14 +86,14 @@ li:nth-child(2) {
 
 /* Article four bakcground color */
 
-.articleFour {
+.article-four {
     background-color: var(--lc);
     position: relative;
 }
 
 /* Styles for article content */
 
-.contactUs {
+.contact-us {
     width: 100%;
     height: 200px;
     display: flex;
@@ -111,7 +111,7 @@ li:nth-child(2) {
 
 /* Text size and color configuration */
 
-.contactUs h2 {
+.contact-us h2 {
     color: var(--ssg);
     font-size: 48px;
     font-weight: 700;
@@ -135,12 +135,12 @@ li:nth-child(2) {
 
 /* Setting correct collors for button */
 
-.buttonTwo {
+.button-two {
     background-color: transparent;
     color: var(--ssg);
     text-align: center;
-    position: relative;  
-}    
+    position: relative;
+}
 
 /* ----- FOOTER ----- */
 
@@ -153,7 +153,7 @@ footer {
 
 /* Styles for footer content */
 
-.footerContent {
+.footer-content {
     width: 100%;
     height: 196px;
     display: flex;
@@ -164,7 +164,7 @@ footer {
 
 /* Image and navigation buttuns configuration */
 
-.myTeam {
+.my-team {
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -174,7 +174,7 @@ footer {
 
 /* Navigation buttons styles and positioning */
 
-.navButtons {
+.nav-buttons {
     font-size: 18px;
     font-weight: 600;
     line-height: 28px;
@@ -184,14 +184,14 @@ footer {
 
 /* Navigation buttuns color and decoration */
 
-.navButtons a {
+.nav-buttons a {
     text-decoration: none;
     color: var(--w);
 }
 
 /* Styles for address text */
 
-.addressMain {
+.address-main {
     width: 445px;
     height: 100px;
     opacity: 0.6;
@@ -202,7 +202,7 @@ footer {
 
 /* Logos configuration */
 
-.logosCopy {
+.logos-copy {
     display: flex;
     flex-direction: column;
     gap: 51px;
@@ -237,6 +237,7 @@ body {
 
 /* Header container */
 header {
+    font-family: 'Livvic', sans-serif;
     width: 100%;
     height: 194px;
     margin: 0 auto;
@@ -297,26 +298,119 @@ header {
 }
 
 /* Contact button styling */
-.buttonOne {
+.button-one {
     color: var(--w);
     border: 2px solid var(--w);
     border-radius: 24px;
     background-color: transparent;
     text-align: center;
-    position: relative; 
+    position: relative;
 }
 
 /* Hover effect for the contact button */
-.contact-button:hover {
+
+.button-one:hover {
     background-color: var(--w);
-    color: var(--mg);
+    color: var(--mg); 
 }
 
+/* Article 1 container */
+.article-one {
+    font-family: 'Livvic', sans-serif;
+    width: 100%;
+    height: calc(700px - 194px);
+    background-color: var(--mg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Positioning background decoration images */
+.pic-one {
+    position: absolute;
+    bottom: 250px;
+    /* 250px from the bottom of .article-one */
+    left: -100px;
+    /* Extends 100px outside the left edge */
+}
+
+.pic-two {
+    position: absolute;
+    bottom: 0px;
+    right: 165px;
+}
+
+/* Styling for 'Find the' text */
+.find-the {
+    margin: 0;
+}
+
+/* Highlighting 'talent' in coral color */
+.talent {
+    color: var(--lc);
+}
+
+/* Container for the main heading */
+.find-the-best-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    line-height: 100px;
+    display: inline-block;
+    width: 635px;
+}
+
+/* Styling for the descriptive text */
+.finding-the-right {
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 14.5px);
+    left: 0%;
+    line-height: 28px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Small rectangle decoration */
+.rectangle {
+    position: absolute;
+    height: 2.05%;
+    width: 11.24%;
+    top: 0%;
+    left: 0%;
+    background-color: var(--rb);
+}
+
+/* Grouping for descriptive text and rectangle */
+.group {
+    position: absolute;
+    top: 0px;
+    left: 665px;
+    width: 445px;
+    height: 195px;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+/* Parent container for the main heading */
+.find-the-best-talent-parent {
+    width: 100%;
+    position: relative;
+    height: 200px;
+    text-align: left;
+    font-size: 100px;
+    color: var(--w);
+    font-family: 'Livvic', sans-serif;
+    bottom: 100px;
+    left: 190px;
+}
 /* ----- ARTICLE THREE ----- */
 
 /* Article three bakcground color */
 
-.articleThree {
+.article-three {
     background-color: var(--djg);
     color: var(--w);
     position: relative;
@@ -324,7 +418,7 @@ header {
 
 /* Styles for article content */
 
-.articleThreeContent {
+.article-three-content {
     width: 100%;
     height: 745px;
     display: flex;
@@ -352,7 +446,7 @@ header {
 
 /* Employee cards settings */
 
-.employeesCards {
+.employees-cards {
     height: 313px;
     width: 1110px;
     display: inline-flex;
@@ -362,7 +456,7 @@ header {
 
 /* Text size and color configuration */
 
-.articleThreeContent h2 {
+.article-three-content h2 {
     font-size: 48px;
     font-weight: 700;
     line-height: 48px;
@@ -372,13 +466,13 @@ header {
 
 /* Changed color for words in span */
 
-.articleThreeContent h2 span {
+.article-three-content h2 span {
     color: var(--rb);
 }
 
 /* Set font size, weight and line height for employees names */
 
-.employeesCards h3 {
+.employees-cards h3 {
     color: var(--rb);
     font-size: 18px;
     font-weight: 700;
