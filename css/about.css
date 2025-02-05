@@ -150,10 +150,14 @@
     position: absolute;
 }
 
+/* Front card background color and flipping time */
+
 .card__face--front {
   background-color: var(--ssg);
   transition: all 0.3s ease;
 }
+
+/* Back card configurations */
 
 .card__face--back {
   background-color: var(--dg);
@@ -194,6 +198,8 @@
     line-height: 25px;
 }
 
+/* Text, box size and position configuration */
+
 .card__face--back p {
   font-size: 15px;
   font-weight: 600;
@@ -202,12 +208,16 @@
   margin: 0px auto;
 }
 
+/* Text and position configuration */
+
 .card__face--back p {
   margin-bottom: 24px;
   font-size: 15px;
   font-weight: 600;
   line-height: 25px;
 }
+
+/* Text and position configuration */
 
 .card__face--back h3 {
   margin-bottom: 8px;
@@ -217,9 +227,7 @@
   line-height: 28px;
 }
 
-.xsign {
-  cursor: pointer;
-}
+/* Plus button configuration */
 
 .bubble {
   height: 56px;
@@ -235,10 +243,14 @@
   left: 145px;
 }
 
+/* Plus button hover configuration */
+
 .bubble:hover {
   background-color: var(--rb);
   cursor: pointer;
 }
+
+/* X button configuration */
 
 .bubble-blue {
   height: 56px;
@@ -254,14 +266,20 @@
   left: 145px;
 }
 
+/* X button hover configuration */
+
 .bubble-blue:hover {
   background-color: var(--lc);
   cursor: pointer;
 }
 
+/* Transforming plus to X */
+
 .xsign {
   transform: rotate(45deg);
 }
+
+/* Social medias logos configuration */
 
 .about-logos {
   display: inline-flex;
@@ -269,7 +287,15 @@
   gap: 20px;
 }
 
+/* Twitter logo hover */
+
 .logo-twitter:hover {
+  fill: var(--lc);
+}
+
+/* LinkedIn logo hover */
+
+.logo-linkedin:hover {
   fill: var(--lc);
 }
 

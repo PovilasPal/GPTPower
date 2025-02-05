@@ -1,3 +1,5 @@
+// JS for flipping cards
+
 let btns = document.querySelectorAll('.bubble');
 let btnsTwo = document.querySelectorAll('.bubble-blue');
 
