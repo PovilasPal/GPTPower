@@ -27,9 +27,11 @@
 }
 /*pagrindinis konteineris*/
 .container {
+ position: relative;
   display: flex;
   justify-content: space-between;
   padding: 140px 165px;
+  overflow: hidden; 
 }
 /*listo dydis*/
 .containerArticleTwoSecond {
