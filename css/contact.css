@@ -1,48 +1,137 @@
 /* Variables */
 
 :root {
-    --mg: #014E56;
-    /* Main green */
-    --lc: #F67E7E;
-    /* Coral */
-    --w: #FFFFFF;
-    /* White */
-    --rb: #79C8C7;
-    /* Blue */
-    --pb: #2C6269;
-    /* Pine */
-    --djg: #004047;
-    /* Jungle */
-    --ssg: #012F34;
-    /* Sea green */
-    --dg: #002529;
-    /* Deep green */
-    --ab: #C4FFFE;
-    /* Avatar border */
+  --mg: #014e56;
+  /* Main green */
+  --lc: #f67e7e;
+  /* Coral */
+  --w: #ffffff;
+  /* White */
+  --rb: #79c8c7;
+  /* Blue */
+  --pb: #2c6269;
+  /* Pine */
+  --djg: #004047;
+  /* Jungle */
+  --ssg: #012f34;
+  /* Sea green */
+  --dg: #002529;
+  /* Deep green */
+  --ab: #c4fffe;
+  /* Avatar border */
 }
 
-/* Page man rules */
+/* Page main rules */
 
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Livvic', sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Livvic", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+.container-left {
+  padding-left: 165px;
+}
+.container-right {
+  padding-right: 165px;
+}
+.container-form {
+  padding: 0px 120px 0px 0px;
+}
+/*listo itemai*/
+.container-list {
+  display: flex;
+  list-style: none;
+}
+/*list dydis*/
+.container-contacts {
+  width: 540px;
+}
+/*background color*/
+.background-color-contacts {
+  background-color: var(--mg);
+}
+div > h2 {
+  color: var(--w);
+  padding: 0px 0px 16px 0px;
+  font-size: 64px;
+}
+div > h4 {
+  color: var(--lc);
+  font-size: 32px;
+  padding: 0px 0px 32px 0px;
+}
+li:nth-child(2) {
+  padding: 8px 0px;
+}
+li > img {
+  padding: 0px 23px 0px 0px;
+}
+.list-text {
+  display: flex;
+  align-items: center;
+  color: var(--w);
+  font-size: 18px;
+}
+.bold-font {
+  font-weight: 700;
+}
+/*forma*/
+form {
+  display: flex;
+  flex-direction: column;
+  color: var(--FFF);
+  padding: 0px 0px 0px 14px;
+}
+/*formos taiskyles*/
+input,
+textarea {
+  background-color: var(--mg);
+  border: none;
+  border-bottom: 1px solid #ffff;
+  padding: 24px 0px 16px 14px;
+  width: 540px;
+  font-size: 15px;
+  opacity: 0.6;
+}
+textarea {
+  padding-bottom: 24px;
+}
+/*background position*/
+.background-one {
+  position: absolute;
+  left: -100px;
+}
+.background-two {
+  position: absolute;
+  right: -100px;
+  bottom: 145px;
 }
 /* Button styles */
 
 .button {
-    width: 153px;
-    height: 48px;
-    border: 2px solid var(--ssg);
-    border-radius: 24px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 28px;
-    box-sizing: border-box;
-    padding: 7px;
-    text-decoration: none;
+  width: 153px;
+  height: 48px;
+  border: 2px solid var(--ssg);
+  border-radius: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  box-sizing: border-box;
+  padding: 7px;
+  text-decoration: none;
+}
+.button-submit {
+  margin-top: 24px;
+  border: none;
+  color: var(--djg);
+  width: 123px;
 }
 
 /* ----- FOOTER ----- */
@@ -50,163 +139,163 @@
 /* Footer background and text/symbols colors */
 
 footer {
-    background-color: var(--dg);
-    color: var(--w);
+  background-color: var(--dg);
+  color: var(--w);
 }
 
 /* Styles for footer content */
 
 .footer-content {
-    width: 100%;
-    height: 196px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 125px;
+  width: 100%;
+  height: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 125px;
 }
 
 /* Image and navigation buttuns configuration */
 
 .my-team {
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 /* Navigation buttons styles and positioning */
 
 .nav-buttons {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 28px;
-    display: inline-flex;
-    gap: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  display: inline-flex;
+  gap: 40px;
 }
 
 /* Navigation buttuns color and decoration */
 
 .nav-buttons a {
-    text-decoration: none;
-    color: var(--w);
+  text-decoration: none;
+  color: var(--w);
 }
 
 /* Styles for address text */
 
 .address-main {
-    width: 445px;
-    height: 100px;
-    opacity: 0.6;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 25px;
+  width: 445px;
+  height: 100px;
+  opacity: 0.6;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
 }
 
 /* Logos configuration */
 
 .logos-copy {
-    display: flex;
-    flex-direction: column;
-    gap: 51px;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 51px;
+  justify-content: flex-end;
 }
 
 /* Logos configuration */
 
 .logos {
-    font-size: 24px;
-    display: inline-flex;
-    justify-content: flex-end;
-    gap: 16px;
+  font-size: 24px;
+  display: inline-flex;
+  justify-content: flex-end;
+  gap: 16px;
 }
 
 /* Copyright text styles */
 
 .copyright {
-    opacity: 0.6;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 25px;
+  opacity: 0.6;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
 }
 /* Header container */
 header {
-    font-family: 'Livvic', sans-serif;
-    width: 100%;
-    height: 194px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--mg);
+  font-family: "Livvic", sans-serif;
+  width: 100%;
+  height: 194px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--mg);
 }
 /*contact button*/
 .button-one {
-    color: var(--w);
-    border: 2px solid var(--w);
-    border-radius: 24px;
-    background-color: transparent;
-    text-align: center;
-    position: relative;
+  color: var(--w);
+  border: 2px solid var(--w);
+  border-radius: 24px;
+  background-color: transparent;
+  text-align: center;
+  position: relative;
 }
 /* Navigation bar */
 .navbar {
-    width: 100%;
-    max-width: 1110px;
-    height: 48px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  max-width: 1110px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Navigation links container */
 .nav-links {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /* General navigation item */
 .nav-item {
-    color: var(--w);
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    line-height: 1;
+  color: var(--w);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  line-height: 1;
 }
 
 /* Home link */
 .nav-item.home {
-    margin-left: 60px;
-    margin-right: 20px;
+  margin-left: 60px;
+  margin-right: 20px;
 }
 
 /* About link */
 .nav-item.about {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 /* Hover effect for links */
 .nav-item:hover {
-    color: var(--lc);
+  color: var(--lc);
 }
 
 /* MyTeam logo */
 .myteam-logo {
-    width: 160px;
-    height: 40px;
-    margin-right: 20px;
+  width: 160px;
+  height: 40px;
+  margin-right: 20px;
 }
 
 /* Contact button styling */
 .button-one {
-    color: var(--w);
-    border: 2px solid var(--w);
-    border-radius: 24px;
-    background-color: transparent;
-    text-align: center;
-    position: relative;
+  color: var(--w);
+  border: 2px solid var(--w);
+  border-radius: 24px;
+  background-color: transparent;
+  text-align: center;
+  position: relative;
 }
 /*
 /* Hover effect for the contact button */
