@@ -107,7 +107,7 @@
 
 /* Employee cards settings */
 
-.employee-cards-about {
+.employees {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,14 +126,42 @@
     line-height: 48px;
 }
 
+/* Adding effects */
+
+.card__inner {
+  width: 350px;
+  height: 253px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card__inner.flipped {
+  transform: rotateY(180deg);
+}
+
 /* Cards size , position and background color */
 
-.card-about {
-    width: 350px;
-    height: 253px;
-    background-color: var(--ssg);
+.card__face {
+    width: 100%;
+    height: 100%;
     text-align: center;
-    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.card__face--front {
+  background-color: var(--ssg);
+  transition: all 0.3s ease;
+}
+
+.card__face--back {
+  background-color: var(--dg);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  position: relative;
 }
 
 /* Set size for picture added borders and set correct borders */
@@ -143,13 +171,13 @@
     height: 96px;
     border: 2px solid var(--ab);
     border-radius: 96px;
-    margin-top: 30px;
-    margin-bottom: 14px;
+    margin-top: 32px;
+    margin-bottom: 16px;
 }
 
 /* H3 text and color configuration */
 
-.employee-cards-about h3 {
+.employees h3 {
     color: var(--rb);
     font-size: 18px;
     font-weight: 700;
@@ -158,12 +186,91 @@
 
 /* Text and position configuration */
 
-.employee-cards-about p {
-    margin-bottom: 24px;
+.card__face--front p {
+    margin-bottom: 28px;
     font-size: 15px;
     font-style: italic;
     font-weight: 500;
     line-height: 25px;
+}
+
+.card__face--back p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  width: 254px;
+  margin: 0px auto;
+}
+
+.card__face--back p {
+  margin-bottom: 24px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.card__face--back h3 {
+  margin-bottom: 8px;
+  margin-top: 35px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.xsign {
+  cursor: pointer;
+}
+
+.bubble {
+  height: 56px;
+  width: 56px;
+  border-radius: 56px;
+  background-color: var(--lc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  position: absolute;
+  bottom: -28px;
+  left: 145px;
+}
+
+.bubble:hover {
+  background-color: var(--rb);
+  cursor: pointer;
+}
+
+.bubble-blue {
+  height: 56px;
+  width: 56px;
+  border-radius: 56px;
+  background-color: var(--rb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  position: absolute;
+  bottom: -28px;
+  left: 145px;
+}
+
+.bubble-blue:hover {
+  background-color: var(--lc);
+  cursor: pointer;
+}
+
+.xsign {
+  transform: rotate(45deg);
+}
+
+.about-logos {
+  display: inline-flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logo-twitter:hover {
+  fill: var(--lc);
 }
 
 /* ----- ARTICLE FOUR ----- */
