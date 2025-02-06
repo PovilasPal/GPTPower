@@ -389,3 +389,58 @@ header {
     background-color: var(--w);
     color: var(--mg);
 }
+
+/* ----- ABOUT SECTION ONE  ----- */
+.about-section {
+  background-color: #014E56;
+  padding: 60px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.about-content {
+ max-width: 50%;
+ color: white;
+}
+
+.about-content h2 {
+ width: 350px;
+ position: relative;
+ height: 20px;
+ text-align: left;
+ font-size: 64px;
+ color: white;
+ font-family: 'Livvic', sans-serif;
+ bottom: 30px;
+ left: 180px;
+}
+
+.underline {
+  width: 50px;
+  height: 4px;
+  background-color: #F67E7E;
+  position: relative;
+  top: -28px;
+  left: 520px;
+}
+
+.about-content p {
+  position: relative;
+  font-family: "Livvic", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 20px;
+  left: 520px;
+  bottom: 25px;
+}
+
+.about-decor {
+  position: relative;
+  text-align: left;
+  left: 205px;
+  bottom: -60px;
+}
