@@ -1,73 +1,493 @@
 :root {
-    --mg: #014E56;
+    --mg: #014e56;
     /* Main green */
-    --lc: #F67E7E;
+    --lc: #f67e7e;
     /* Coral */
-    --w: #FFFFFF;
+    --w: #ffffff;
     /* White */
-    --rb: #79C8C7;
+    --rb: #79c8c7;
     /* Blue */
-    --pb: #2C6269;
+    --pb: #2c6269;
     /* Pine */
     --djg: #004047;
     /* Jungle */
-    --ssg: #012F34;
+    --ssg: #012f34;
     /* Sea green */
     --dg: #002529;
     /* Deep green */
-    --ab: #C4FFFE;
+    --ab: #c4fffe;
     /* Avatar border */
-}
-
-/* Page man rules */
-
-* {
+  }
+  /* Hide mobile menu and burger icon on large screens */
+.header-mobile {
+    display: none;
+  }
+  
+  /* 📱 Mobile and tablet styles (max-width: 768px) */
+  @media (max-width: 768px) {
+  
+    /* Hide default navigation links and Contact Us button on mobile */
+    .header-main {
+        display: none !important;
+    }
+  
+    /* Display burger menu on mobile screens */
+    .burger-menu {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        width: 30px;
+        height: 24px;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        z-index: 1001;
+    }
+  
+    /* Three lines (bars) for the burger menu */
+    .burger-menu div {
+        width: 30px;
+        height: 3px;
+        background-color: var(--w);
+        transition: 0.3s;
+    }
+  
+    /* Mobile menu styling (hidden by default) */
+    .mobile-menu {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: -255px;
+        width: 255px;
+        height: 100vh;
+        background-color: var(--mg);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+    }
+  
+    /* Show mobile menu when active */
+    .mobile-menu.active {
+        right: 0;
+    }
+  
+    .mobile-menu a {
+        color: var(--w);
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+    }
+  
+    .close-menu {
+        position: absolute;
+        cursor: pointer;
+        top: 56px;
+        right: 25px;
+        overflow: hidden;
+        height: 17px;
+        object-fit: cover;
+    }
+  
+    .home-mobile {
+        left: 48px;
+        top: 112px;
+        position: absolute;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 600;
+        font-family: Livvic;
+        color: var(--w);
+    }
+  
+    .about-mobile {
+        left: 48px;
+        top: 164px;
+        position: absolute;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 600;
+        font-family: Livvic;
+        color: var(--w);
+    }
+  
+    .button-mobile {
+        left: 48px;
+        top: 228px;
+        position: absolute;
+        width: 153px;
+        height: 48px;
+        border: 2px solid var(--ssg);
+        border-radius: 24px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        box-sizing: border-box;
+        padding: 7px;
+        text-decoration: none;
+        color: var(--w);
+        background-color: var(--mg);
+    }
+  
+    .button-one-mobile {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 600;
+        font-family: Livvic;
+        color: var(--w);
+        border: 2px solid var(--w);
+        border-radius: 24px;
+        background-color: transparent;
+        text-align: center;
+        display: inline-block;
+    }
+  
+    .header-mobile {
+        font-family: 'Livvic', sans-serif;
+        height: 128px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        background-color: var(--mg);
+    }
+  
+    .navbar-mobile {
+        width: 300px;
+        height: 48px;
+        display: flex;
+        padding-left: 24px;
+    }
+  
+    /* MyTeam logo */
+    .myteam-logo-mobile {
+        width: 128px;
+        height: 32px;
+        margin-right: 20px;
+    }
+  }
+  
+  /* Page main rules */
+  
+  * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Livvic', sans-serif;
+    font-family: "Livvic", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-}
-
-/* ----- ARTICLE FOUR ----- */
-
-/* Article four bakcground color */
-
-.articleFour {
+  }
+  /* ----- ARTICLE THREE ----- */
+  
+  /* Background */
+  
+  .clients-article {
+    background-color: var(--ssg);
+    width: 100%;
+    height: 437px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Corner decoration */
+  
+  .corner-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+  }
+  
+  /* Article heading */
+  
+  .clients-article-heading {
+    color: var(--w);
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    padding-top: 140px;
+    margin-bottom: 70px;
+  }
+  
+  /* Article logos */
+  
+  .client-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    max-width: 1110px;
+    margin: 0 auto;
+    max-width: 1240px;
+  }
+  .client-logo {
+    height: 28px;
+  }
+  
+  /* ----- ABOUT ARTICLE TWO ----- */
+  
+  /* About rticle two bakcground color */
+  
+  .article-two {
+      background-color: var(--djg);
+      color: var(--w);
+      position: relative;
+      width: 100%;
+      height: 1002px;
+  }
+  
+  /* Background decoration positioning */
+  
+  .bd2 {
+      position: absolute;
+      top: 0px;
+      left: -100px;
+  }
+  
+  /* Background decoration positioning */
+  
+  .bd3 {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+  }
+  
+  /* Employee cards settings */
+  
+  .employees {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 76px 30px;
+  }
+  
+  /* H2 size, position and color configuration */
+  
+  .article-two h2 {
+      text-align: center;
+      padding-top: 140px;
+      padding-bottom: 64px;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 48px;
+  }
+  
+  /* Adding effects */
+  
+  .card__inner {
+    width: 350px;
+    height: 253px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .card__inner.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  /* Cards size , position and background color */
+  
+  .card__face {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      position: absolute;
+  }
+  
+  /* Front card background color and flipping time */
+  
+  .card__face--front {
+    background-color: var(--ssg);
+    transition: all 0.3s ease;
+  }
+  
+  /* Back card configurations */
+  
+  .card__face--back {
+    background-color: var(--dg);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    position: relative;
+  }
+  
+  /* Set size for picture added borders and set correct borders */
+  
+  .picture {
+      width: 96px;
+      height: 96px;
+      border: 2px solid var(--ab);
+      border-radius: 96px;
+      margin-top: 32px;
+      margin-bottom: 16px;
+  }
+  
+  /* H3 text and color configuration */
+  
+  .employees h3 {
+      color: var(--rb);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 28px;
+  }
+  
+  /* Text and position configuration */
+  
+  .card__face--front p {
+      margin-bottom: 28px;
+      font-size: 15px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 25px;
+  }
+  
+  /* Text, box size and position configuration */
+  
+  .card__face--back p {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    width: 254px;
+    margin: 0px auto;
+  }
+  
+  /* Text and position configuration */
+  
+  .card__face--back p {
+    margin-bottom: 24px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+  }
+  
+  /* Text and position configuration */
+  
+  .card__face--back h3 {
+    margin-bottom: 8px;
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  
+  /* Plus button configuration */
+  
+  .bubble {
+    height: 56px;
+    width: 56px;
+    border-radius: 56px;
+    background-color: var(--lc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    position: absolute;
+    bottom: -28px;
+    left: 145px;
+  }
+  
+  /* Plus button hover configuration */
+  
+  .bubble:hover {
+    background-color: var(--rb);
+    cursor: pointer;
+  }
+  
+  /* X button configuration */
+  
+  .bubble-blue {
+    height: 56px;
+    width: 56px;
+    border-radius: 56px;
+    background-color: var(--rb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    position: absolute;
+    bottom: -28px;
+    left: 145px;
+  }
+  
+  /* X button hover configuration */
+  
+  .bubble-blue:hover {
+    background-color: var(--lc);
+    cursor: pointer;
+  }
+  
+  /* Transforming plus to X */
+  
+  .xsign {
+    transform: rotate(45deg);
+  }
+  
+  /* Social medias logos configuration */
+  
+  .about-logos {
+    display: inline-flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Twitter logo hover */
+  
+  .logo-twitter:hover {
+    fill: var(--lc);
+  }
+  
+  /* LinkedIn logo hover */
+  
+  .logo-linkedin:hover {
+    fill: var(--lc);
+  }
+  
+  /* ----- ARTICLE FOUR ----- */
+  
+  /* Article four bakcground color */
+  
+  .article-four {
     background-color: var(--lc);
     position: relative;
-}
-
-/* Styles for article content */
-
-.contactUs {
+  }
+  
+  /* Styles for article content */
+  
+  .contact-us {
     width: 100%;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 260px;
-}
-
-/* Background decoration positioning */
-
-.bd1 {
+  }
+  
+  /* Background decoration positioning */
+  
+  .bd1 {
     position: absolute;
     top: 56px;
-}
-
-/* Text size and color configuration */
-
-.contactUs h2 {
+  }
+  
+  /* Text size and color configuration */
+  
+  .contact-us h2 {
     color: var(--ssg);
     font-size: 48px;
     font-weight: 700;
     line-height: 48px;
-}
-
-/* Button styles */
-
-.button {
+  }
+  
+  /* Button styles */
+  
+  .button {
     width: 153px;
     height: 48px;
     border: 2px solid var(--ssg);
@@ -78,98 +498,233 @@
     box-sizing: border-box;
     padding: 7px;
     text-decoration: none;
-}
-
-/* Setting correct collors for button */
-
-.buttonTwo {
+  }
+  
+  /* Setting correct collors for button */
+  
+  .button-two {
     background-color: transparent;
     color: var(--ssg);
     text-align: center;
-    position: relative;  
-}    
-
-/* ----- FOOTER ----- */
-
-/* Footer background and text/symbols colors */
-
-footer {
+    position: relative;
+  }
+  
+  /* ----- FOOTER ----- */
+  
+  /* Footer background and text/symbols colors */
+  
+  footer {
     background-color: var(--dg);
     color: var(--w);
-}
-
-/* Styles for footer content */
-
-.footerContent {
-    width: 100%;
-    height: 196px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 125px;
-}
-
-/* Image and navigation buttuns configuration */
-
-.myTeam {
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
-}
-
-/* Navigation buttons styles and positioning */
-
-.navButtons {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 28px;
-    display: inline-flex;
-    gap: 40px;
-}
-
-/* Navigation buttuns color and decoration */
-
-.navButtons a {
-    text-decoration: none;
-    color: var(--w);
-}
-
-/* Styles for address text */
-
-.addressMain {
-    width: 445px;
-    height: 100px;
-    opacity: 0.6;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 25px;
-}
-
-/* Logos configuration */
-
-.logosCopy {
-    display: flex;
-    flex-direction: column;
-    gap: 51px;
-    justify-content: flex-end;
-}
-
-/* Logos configuration */
-
-.logos {
+  }
+  
+  /* Styles for footer content */
+  
+  .footer-content {
+      width: 100%;
+      height: 196px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 125px;
+  }
+  
+  /* Image and navigation buttuns configuration */
+  
+  .my-team {
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 20px;
+  }
+  
+  /* Navigation buttons styles and positioning */
+  
+  .nav-buttons {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+      display: inline-flex;
+      gap: 40px;
+  }
+  
+  /* Navigation buttuns color and decoration */
+  
+  .nav-buttons a {
+      text-decoration: none;
+      color: var(--w);
+  }
+  
+  /* Styles for address text */
+  
+  .address-main {
+      width: 445px;
+      height: 100px;
+      opacity: 0.6;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 25px;
+  }
+  
+  /* Logos configuration */
+  
+  .logos-copy {
+      display: flex;
+      flex-direction: column;
+      gap: 51px;
+      justify-content: flex-end;
+  }
+  
+  /* Logos configuration */
+  
+  .logos {
     font-size: 24px;
     display: inline-flex;
     justify-content: flex-end;
     gap: 16px;
-}
-
-/* Copyright text styles */
-
-.copyright {
-    opacity: 0.6;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 25px;
-}
+  }
+  
+  /* Copyright text styles */
+  
+  .copyright {
+      opacity: 0.6;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 25px;
+  }
+  
+  /* Header container */
+  header {
+      font-family: 'Livvic', sans-serif;
+      width: 100%;
+      height: 194px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--mg);
+  }
+  
+  /* Navigation bar */
+  .navbar {
+      width: 100%;
+      max-width: 1110px;
+      height: 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  /* Navigation links container */
+  .nav-links {
+      display: flex;
+      align-items: center;
+  }
+  
+  /* General navigation item */
+  .nav-item {
+      color: var(--w);
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      line-height: 1;
+  }
+  
+  /* Home link */
+  .nav-item.home {
+      margin-left: 60px;
+      margin-right: 20px;
+  }
+  
+  /* About link */
+  .nav-item.about {
+      margin-left: 20px;
+  }
+  
+  /* Hover effect for links */
+  .nav-item:hover {
+      color: var(--lc);
+  }
+  
+  /* MyTeam logo */
+  .myteam-logo {
+      width: 160px;
+      height: 40px;
+      margin-right: 20px;
+  }
+  
+  /* Contact button styling */
+  .button-one {
+      color: var(--w);
+      border: 2px solid var(--w);
+      border-radius: 24px;
+      background-color: transparent;
+      text-align: center;
+      position: relative;
+  }
+  
+  /* Hover effect for the contact button */
+  
+  .button-one:hover {
+      background-color: var(--w);
+      color: var(--mg);
+  }
+  
+  /* ----- ABOUT SECTION ONE  ----- */
+  .about-section {
+    background-color: #014E56;
+    padding: 60px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .about-content {
+   max-width: 50%;
+   color: white;
+  }
+  
+  .about-content h2 {
+   width: 350px;
+   position: relative;
+   height: 20px;
+   text-align: left;
+   font-size: 64px;
+   color: white;
+   font-family: 'Livvic', sans-serif;
+   bottom: 30px;
+   left: 180px;
+  }
+  
+  .underline {
+    width: 50px;
+    height: 4px;
+    background-color: #F67E7E;
+    position: relative;
+    top: -28px;
+    left: 520px;
+  }
+  
+  .about-content p {
+    position: relative;
+    font-family: "Livvic", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 20px;
+    left: 520px;
+    bottom: 25px;
+  }
+  
+  .about-decor {
+    position: relative;
+    text-align: left;
+    left: 205px;
+    bottom: -60px;
+  }
+  

@@ -1,58 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styleDefault.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/about.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styleDefault.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/about.css" />
     <title>GPTPower</title>
-</head>
-<body>
-        <!-- Article four section -->
-    <article class="articleFour">
-        <!-- Bakcground decoration image -->
-        <img class="bd1" src="pictures/group8.png" alt="background decoration">
-        <!-- Article four content -->
-        <div class="contactUs">
-            <h2>Ready to get started?</h2>
-            <a class="button buttonTwo" href="contact.html">contact us</a>
-        </div>
+  </head>
+  <body>
+        <!-- Header section -->
+        <header class="header-main">
+          <div class="navbar">
+              <!-- Navigation links -->
+              <div class="nav-links">
+                  <!-- Logo as an image -->
+                  <img src="pictures/myteam 2.svg" alt="myteam" class="myteam-logo">
+                  <!-- Home link -->
+                  <a href="index.html" class="nav-item home">home</a>
+                  <!-- About link -->
+                  <a href="about.html" class="nav-item about">about</a>
+              </div>
+              <!-- Contact button -->
+              <a href="contact.html" class="button button-one">contact us</a>
+          </div>
+      </header>
+  
+  <!-- Header section -->
+  <header class="header-mobile">
+      <div class="navbar-mobile">
+          <!-- Logo -->
+          <img src="pictures/myteam 2.svg" alt="myteam" class="myteam-logo-mobile">
+  
+     
+  
+          <!--  Burger menu icon (3 lines) -->
+          <div class="burger-menu" onclick="toggleMenu()">
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+      </div>
+  
+      <!-- Mobile menu (only visible on mobile screens) -->
+  
+  <div class="mobile-menu" id="mobileMenu">
+      <img class="close-menu" onclick="toggleMenu()"  alt="" src="pictures/Group 2.svg"></img>
+  
+  
+      <a href="index.html" class="nav-item home-mobile">Home</a>
+      <a href="about.html" class="nav-item about-mobile">About</a>
+      <a href="contact.html"class="button-mobile button-one-mobile ">contact us</a>
+  </div>
+  </header>
+
+    <!--About section one-->
+    <section class="about-section">
+      <div class="about-content">
+        <h2>About</h2>
+        <div class="underline"></div>
+        <p>
+          We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We’ll bring those teams to you.
+        </p>
+      </div>
+      <img class="about-decor" src="pictures/bg-pattern-about-1-mobile-nav-1.svg" alt="decorative shape">
+    </section>
+
+    <!-- Article two section -->
+    <article class="article-two">
+      <!-- Bakcground decoration image -->
+      <img class="bd2" src="pictures/bg-pattern-about-2-contact-1.svg" alt="background decoration">
+      <!-- Bakcground decoration image -->
+      <img class="bd3" src="pictures/bg-pattern-home-4-about-3.svg" alt="background decoration">
+      <!-- Article three content -->
+      <h2>Meet the directors</h2>
+      <!-- Employees cards -->
+      <div class="employees">
+          <!-- Card one -->
+          <div class="card__inner">
+            <!-- Card front -->
+            <div class="card__face card__face--front">
+              <!-- Employee picture -->
+              <img class="picture" src="pictures/avatar-nikita.jpg" alt="Nikita picture">
+              <!-- Employee name -->
+              <h3>Nikita Marks</h3>
+              <!-- Employee position -->
+              <p class="positions">Founder & CEO</p>
+              <!-- Plus logo -->
+              <div class="bubble">
+                <img class="plus" src="pictures/icon-cross.svg" alt="Plus sign">
+              </div>
+            </div>
+            <!-- Card back -->
+            <div class="card__face card__face--back">
+              <!-- Employee name -->
+              <h3>Nikita Marks</h3>
+              <!-- Employee position -->
+              <p class="motos">“Unleash Your Potential - Discover the Power of Work. Passion Meets Purpose: Let Your Work.”</p>
+              <!-- Social medias logos -->
+              <div class="about-logos">
+                <a href="https://x.com/"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="20" viewBox="0 0 60 20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M42 0H58C59.1 0 60 0.9 60 2V18C60 19.1 59.1 20 58 20H42C40.9 20 40 19.1 40 18V2C40 0.9 40.9 0 42 0ZM46 17V8H43V17H46ZM44.5 6.3C43.5 6.3 42.7 5.5 42.7 4.5C42.7 3.5 43.5 2.7 44.5 2.7C45.5 2.7 46.3 3.5 46.3 4.5C46.3 5.5 45.5 6.3 44.5 6.3ZM54 17H57V11.3C57 9.4 55.4 7.8 53.5 7.8C52.6 7.8 51.5 8.4 51 9.2V8H48V17H51V11.7C51 10.9 51.7 10.2 52.5 10.2C53.3 10.2 54 10.9 54 11.7V17Z" fill="white" class="logo-linkedin"/></svg></a> <a href="https://www.linkedin.com/home"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="20" viewBox="0 0 60 20" fill="none"><path d="M24 2.309C23.117 2.701 22.168 2.965 21.172 3.084C22.189 2.475 22.97 1.51 23.337 0.36C22.386 0.924 21.332 1.334 20.21 1.555C19.313 0.598 18.032 0 16.616 0C13.437 0 11.101 2.966 11.819 6.045C7.728 5.84 4.1 3.88 1.671 0.901C0.381 3.114 1.002 6.009 3.194 7.475C2.388 7.449 1.628 7.228 0.965 6.859C0.911 9.14 2.546 11.274 4.914 11.749C4.221 11.937 3.462 11.981 2.69 11.833C3.316 13.789 5.134 15.212 7.29 15.252C5.22 16.875 2.612 17.6 0 17.292C2.179 18.689 4.768 19.504 7.548 19.504C16.69 19.504 21.855 11.783 21.543 4.858C22.505 4.163 23.34 3.296 24 2.309Z" fill="white" class="logo-twitter"/>
+                </svg></a>
+              </div>
+              <!-- X logo -->
+              <div class="bubble-blue">
+                <img class="xsign" src="pictures/icon-cross.svg" alt="X sign">
+              </div>
+            </div>  
+          </div>
+          <!-- Card two -->
+          <div class="card__inner">
+            <!-- Card front -->
+            <div class="card__face card__face--front">
+              <!-- Employee picture -->
+              <img class="picture" src="pictures/avatar-christian.jpg" alt="Christian picture">
+              <!-- Employee name -->
+              <h3>Cristian Duncan</h3>
+              <!-- Employee position -->
+              <p class="positions">Co-founder & COO</p>
+              <!-- Plus logo -->
+              <div class="bubble">
+                <img class="plus" src="pictures/icon-cross.svg" alt="Plus sign">
+              </div>
+            </div>
+            <!-- Card back -->
+            <div class="card__face card__face--back">
+              <!-- Employee name -->
+              <h3>Cristian Duncan</h3>
+              <!-- Employee position -->
+              <p class="motos">“Conquer the Day, One Task at a Time - The Art of Work. Elevate Your Craft, Elevate Your Life.”</p>
+              <!-- Social medias logos -->
+              <div class="about-logos">
+                <a href="https://x.com/"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="20" viewBox="0 0 60 20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M42 0H58C59.1 0 60 0.9 60 2V18C60 19.1 59.1 20 58 20H42C40.9 20 40 19.1 40 18V2C40 0.9 40.9 0 42 0ZM46 17V8H43V17H46ZM44.5 6.3C43.5 6.3 42.7 5.5 42.7 4.5C42.7 3.5 43.5 2.7 44.5 2.7C45.5 2.7 46.3 3.5 46.3 4.5C46.3 5.5 45.5 6.3 44.5 6.3ZM54 17H57V11.3C57 9.4 55.4 7.8 53.5 7.8C52.6 7.8 51.5 8.4 51 9.2V8H48V17H51V11.7C51 10.9 51.7 10.2 52.5 10.2C53.3 10.2 54 10.9 54 11.7V17Z" fill="white" class="logo-linkedin"/></svg></a> <a href="https://www.linkedin.com/home"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="20" viewBox="0 0 60 20" fill="none"><path d="M24 2.309C23.117 2.701 22.168 2.965 21.172 3.084C22.189 2.475 22.97 1.51 23.337 0.36C22.386 0.924 21.332 1.334 20.21 1.555C19.313 0.598 18.032 0 16.616 0C13.437 0 11.101 2.966 11.819 6.045C7.728 5.84 4.1 3.88 1.671 0.901C0.381 3.114 1.002 6.009 3.194 7.475C2.388 7.449 1.628 7.228 0.965 6.859C0.911 9.14 2.546 11.274 4.914 11.749C4.221 11.937 3.462 11.981 2.69 11.833C3.316 13.789 5.134 15.212 7.29 15.252C5.22 16.875 2.612 17.6 0 17.292C2.179 18.689 4.768 19.504 7.548 19.504C16.69 19.504 21.855 11.783 21.543 4.858C22.505 4.163 23.34 3.296 24 2.309Z" fill="white" class="logo-twitter"/>
+                </svg></a>
+              </div>
+              <!-- X logo -->
+              <div class="bubble-blue">
+                <img class="xsign" src="pictures/icon-cross.svg" alt="X sign">
+              </div>
+            </div>  
+          </div>
+          <!-- Card three -->
+          <div class="card__inner">
+            <!-- Card front -->
+            <div class="card__face card__face--front">
+              <!-- Employee picture -->
+              <img class="picture" src="pictures/avatar-cruz.jpg" alt="Cruz picture">
+              <!-- Employee name -->
+              <h3>Cruz Hamer</h3>
+              <!-- Employee position -->
+              <p class="positions">Co-founder & CTO</p>
+              <!-- Plus logo -->
+              <div class="bubble">
+                <img class="plus" src="pictures/icon-cross.svg" alt="Plus sign">
+              </div>
+            </div>
+            <!-- Card back -->
+            <div class="card__face card__face--back">
+              <!-- Employee name -->
+              <h3>Cruz Hamer</h3>
+              <!-- Employee position -->
+              <p class="motos">“Embrace the Grind, Reap the Rewards - The Mantra of Work. Dare to Excel, Dare to Succeed.”</p>
+              <!-- Social medias logos -->
+              <div class="about-logos">
+                <a href="https://x.com/"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="20" viewBox="0 0 60 20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M42 0H58C59.1 0 60 0.9 60 2V18C60 19.1 59.1 20 58 20H42C40.9 20 40 19.1 40 18V2C40 0.9 40.9 0 42 0ZM46 17V8H43V17H46ZM44.5 6.3C43.5 6.3 42.7 5.5 42.7 4.5C42.7 3.5 43.5 2.7 44.5 2.7C45.5 2.7 46.3 3.5 46.3 4.5C46.3 5.5 45.5 6.3 44.5 6.3ZM54 17H57V11.3C57 9.4 55.4 7.8 53.5 7.8C52.6 7.8 51.5 8.4 51 9.2V8H48V17H51V11.7C51 10.9 51.7 10.2 52.5 10.2C53.3 10.2 54 10.9 54 11.7V17Z" fill="white" class="logo-linkedin"/></svg></a> <a href="https://www.linkedin.com/home"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="20" viewBox="0 0 60 20" fill="none"><path d="M24 2.309C23.117 2.701 22.168 2.965 21.172 3.084C22.189 2.475 22.97 1.51 23.337 0.36C22.386 0.924 21.332 1.334 20.21 1.555C19.313 0.598 18.032 0 16.616 0C13.437 0 11.101 2.966 11.819 6.045C7.728 5.84 4.1 3.88 1.671 0.901C0.381 3.114 1.002 6.009 3.194 7.475C2.388 7.449 1.628 7.228 0.965 6.859C0.911 9.14 2.546 11.274 4.914 11.749C4.221 11.937 3.462 11.981 2.69 11.833C3.316 13.789 5.134 15.212 7.29 15.252C5.22 16.875 2.612 17.6 0 17.292C2.179 18.689 4.768 19.504 7.548 19.504C16.69 19.504 21.855 11.783 21.543 4.858C22.505 4.163 23.34 3.296 24 2.309Z" fill="white" class="logo-twitter"/>
+                </svg></a>
+              </div>
+              <!-- X logo -->
+              <div class="bubble-blue">
+                <img class="xsign" src="pictures/icon-cross.svg" alt="X sign">
+              </div>
+            </div>  
+          </div>
+          <!-- Card four -->
+          <div class="card__inner">
+            <!-- Card front -->
+            <div class="card__face card__face--front">
+              <!-- Employee picture -->
+              <img class="picture" src="pictures/avatar-drake.jpg" alt="Drake picture">
+              <!-- Employee name -->
+              <h3>Drake Heaton</h3>
+              <!-- Employee position -->
+              <p class="positions">Business Development Lead</p>
+              <!-- Plus logo -->
+              <div class="bubble">
+                <img class="plus" src="pictures/icon-cross.svg" alt="Plus sign">
+              </div>
+            </div>
+            <!-- Card back -->
+            <div class="card__face card__face--back">
+              <!-- Employee name -->
+              <h3>Drake Heaton</h3>
+              <!-- Employee position -->
+              <p class="motos">“Forge Your Path, One Step at a Time - The Journey of Work. Unlock Your Brilliance.”</p>
+              <!-- Social medias logos -->
+              <div class="about-logos">
+                <a href="https://x.com/"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="20" viewBox="0 0 60 20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M42 0H58C59.1 0 60 0.9 60 2V18C60 19.1 59.1 20 58 20H42C40.9 20 40 19.1 40 18V2C40 0.9 40.9 0 42 0ZM46 17V8H43V17H46ZM44.5 6.3C43.5 6.3 42.7 5.5 42.7 4.5C42.7 3.5 43.5 2.7 44.5 2.7C45.5 2.7 46.3 3.5 46.3 4.5C46.3 5.5 45.5 6.3 44.5 6.3ZM54 17H57V11.3C57 9.4 55.4 7.8 53.5 7.8C52.6 7.8 51.5 8.4 51 9.2V8H48V17H51V11.7C51 10.9 51.7 10.2 52.5 10.2C53.3 10.2 54 10.9 54 11.7V17Z" fill="white" class="logo-linkedin"/></svg></a> <a href="https://www.linkedin.com/home"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="20" viewBox="0 0 60 20" fill="none"><path d="M24 2.309C23.117 2.701 22.168 2.965 21.172 3.084C22.189 2.475 22.97 1.51 23.337 0.36C22.386 0.924 21.332 1.334 20.21 1.555C19.313 0.598 18.032 0 16.616 0C13.437 0 11.101 2.966 11.819 6.045C7.728 5.84 4.1 3.88 1.671 0.901C0.381 3.114 1.002 6.009 3.194 7.475C2.388 7.449 1.628 7.228 0.965 6.859C0.911 9.14 2.546 11.274 4.914 11.749C4.221 11.937 3.462 11.981 2.69 11.833C3.316 13.789 5.134 15.212 7.29 15.252C5.22 16.875 2.612 17.6 0 17.292C2.179 18.689 4.768 19.504 7.548 19.504C16.69 19.504 21.855 11.783 21.543 4.858C22.505 4.163 23.34 3.296 24 2.309Z" fill="white" class="logo-twitter"/>
+                </svg></a>
+              </div>
+              <!-- X logo -->
+              <div class="bubble-blue">
+                <img class="xsign" src="pictures/icon-cross.svg" alt="X sign">
+              </div>
+            </div>  
+          </div>
+          <!-- Card five -->
+          <div class="card__inner">
+            <!-- Card front -->
+            <div class="card__face card__face--front">
+              <!-- Employee picture -->
+              <img class="picture" src="pictures/avatar-griffin.jpg" alt="Griffin picture">
+              <!-- Employee name -->
+              <h3>Griffin Wise</h3>
+              <!-- Employee position -->
+              <p class="positions">Lead Marketing</p>
+              <!-- Plus logo -->
+              <div class="bubble">
+                <img class="plus" src="pictures/icon-cross.svg" alt="Plus sign">
+              </div>
+            </div>
+            <!-- Card back -->
+            <div class="card__face card__face--back">
+              <!-- Employee name -->
+              <h3>Griffin Wise</h3>
+              <!-- Employee position -->
+              <p class="motos">“Unique perspectives shape unique products, which is what you need to survive these days.”</p>
+              <!-- Social medias logos -->
+              <div class="about-logos">
+                <a href="https://x.com/"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="20" viewBox="0 0 60 20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M42 0H58C59.1 0 60 0.9 60 2V18C60 19.1 59.1 20 58 20H42C40.9 20 40 19.1 40 18V2C40 0.9 40.9 0 42 0ZM46 17V8H43V17H46ZM44.5 6.3C43.5 6.3 42.7 5.5 42.7 4.5C42.7 3.5 43.5 2.7 44.5 2.7C45.5 2.7 46.3 3.5 46.3 4.5C46.3 5.5 45.5 6.3 44.5 6.3ZM54 17H57V11.3C57 9.4 55.4 7.8 53.5 7.8C52.6 7.8 51.5 8.4 51 9.2V8H48V17H51V11.7C51 10.9 51.7 10.2 52.5 10.2C53.3 10.2 54 10.9 54 11.7V17Z" fill="white" class="logo-linkedin"/></svg></a> <a href="https://www.linkedin.com/home"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="20" viewBox="0 0 60 20" fill="none"><path d="M24 2.309C23.117 2.701 22.168 2.965 21.172 3.084C22.189 2.475 22.97 1.51 23.337 0.36C22.386 0.924 21.332 1.334 20.21 1.555C19.313 0.598 18.032 0 16.616 0C13.437 0 11.101 2.966 11.819 6.045C7.728 5.84 4.1 3.88 1.671 0.901C0.381 3.114 1.002 6.009 3.194 7.475C2.388 7.449 1.628 7.228 0.965 6.859C0.911 9.14 2.546 11.274 4.914 11.749C4.221 11.937 3.462 11.981 2.69 11.833C3.316 13.789 5.134 15.212 7.29 15.252C5.22 16.875 2.612 17.6 0 17.292C2.179 18.689 4.768 19.504 7.548 19.504C16.69 19.504 21.855 11.783 21.543 4.858C22.505 4.163 23.34 3.296 24 2.309Z" fill="white" class="logo-twitter"/>
+                </svg></a>
+              </div>
+              <!-- X logo -->
+              <div class="bubble-blue">
+                <img class="xsign" src="pictures/icon-cross.svg" alt="X sign">
+              </div>
+            </div>  
+          </div>
+          <!-- Card six -->
+          <div class="card__inner">
+            <!-- Card front -->
+            <div class="card__face card__face--front">
+              <!-- Employee picture -->
+              <img class="picture" src="pictures/avatar-aden.jpg" alt="Aden picture">
+              <!-- Employee name -->
+              <h3>Aden Allan</h3>
+              <!-- Employee position -->
+              <p class="positions">Head of Talent</p>
+              <!-- Plus logo -->
+              <div class="bubble">
+                <img class="plus" src="pictures/icon-cross.svg" alt="Plus sign">
+              </div>
+            </div>
+            <!-- Card back -->
+            <div class="card__face card__face--back">
+              <!-- Employee name -->
+              <h3>Aden Allan</h3>
+              <!-- Employee position -->
+              <p class="motos">“Empowered teams create truly amazing products. Set the north star and let them follow it.”</p>
+              <!-- Social medias logos -->
+              <div class="about-logos">
+                <a href="https://x.com/"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="20" viewBox="0 0 60 20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M42 0H58C59.1 0 60 0.9 60 2V18C60 19.1 59.1 20 58 20H42C40.9 20 40 19.1 40 18V2C40 0.9 40.9 0 42 0ZM46 17V8H43V17H46ZM44.5 6.3C43.5 6.3 42.7 5.5 42.7 4.5C42.7 3.5 43.5 2.7 44.5 2.7C45.5 2.7 46.3 3.5 46.3 4.5C46.3 5.5 45.5 6.3 44.5 6.3ZM54 17H57V11.3C57 9.4 55.4 7.8 53.5 7.8C52.6 7.8 51.5 8.4 51 9.2V8H48V17H51V11.7C51 10.9 51.7 10.2 52.5 10.2C53.3 10.2 54 10.9 54 11.7V17Z" fill="white" class="logo-linkedin"/></svg></a> <a href="https://www.linkedin.com/home"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="20" viewBox="0 0 60 20" fill="none"><path d="M24 2.309C23.117 2.701 22.168 2.965 21.172 3.084C22.189 2.475 22.97 1.51 23.337 0.36C22.386 0.924 21.332 1.334 20.21 1.555C19.313 0.598 18.032 0 16.616 0C13.437 0 11.101 2.966 11.819 6.045C7.728 5.84 4.1 3.88 1.671 0.901C0.381 3.114 1.002 6.009 3.194 7.475C2.388 7.449 1.628 7.228 0.965 6.859C0.911 9.14 2.546 11.274 4.914 11.749C4.221 11.937 3.462 11.981 2.69 11.833C3.316 13.789 5.134 15.212 7.29 15.252C5.22 16.875 2.612 17.6 0 17.292C2.179 18.689 4.768 19.504 7.548 19.504C16.69 19.504 21.855 11.783 21.543 4.858C22.505 4.163 23.34 3.296 24 2.309Z" fill="white" class="logo-twitter"/>
+                </svg></a>
+              </div>
+              <!-- X logo -->
+              <div class="bubble-blue">
+                <img class="xsign" src="pictures/icon-cross.svg" alt="X sign">
+              </div>
+            </div>  
+          </div>
+      </div>
     </article>
+
+    <!-- Article three -->
+    <article class="clients-article">
+      <!-- Corner decoration image -->
+      <img
+        src="pictures/bg-pattern-about-4.svg"
+        alt="Corner decoration"
+        class="corner-decoration"
+      />
+      <!-- Article header -->
+      <h2 class="clients-article-heading">Some of our clients</h2>
+      <!-- Cient logos -->
+      <div class="client-logos">
+        <img
+          src="pictures/logo-the-verge.png"
+          alt="The Verge"
+          class="client-logo"
+        />
+        <img
+          src="pictures/logo-jakarta-post.png"
+          alt="The Jakarta Post"
+          class="client-logo"
+        />
+        <img
+          src="pictures/logo-the-guardian.png"
+          alt="The Guardian"
+          class="client-logo"
+        />
+        <img
+          src="pictures/logo-tech-radar.png"
+          alt="Techradar"
+          class="client-logo"
+        />
+        <img
+          src="pictures/logo-gadgets-now.png"
+          alt="Gadgets now"
+          class="client-logo"
+        />
+      </div>
+    </article>
+
+    <!-- Article four section -->
+    <article class="article-four">
+      <!-- Bakcground decoration image -->
+      <img class="bd1" src="pictures/group8.png" alt="background decoration">
+      <!-- Article four content -->
+      <div class="contact-us">
+          <h2>Ready to get started?</h2>
+          <a class="button button-two" href="contact.html">contact us</a>
+      </div>
+    </article>
+
+
 
     <!-- Footer section -->
     <footer>
-        <!-- Footer content -->
-        <div class="footerContent">
-            <!-- Left conternt in footer -->
-            <div class="myTeam">
-                <!-- MyTeam logo -->
-                <img src="pictures/myteam2.png" alt="myteam logo">
-                <!-- Navigation buttons -->
-                <div class="navButtons">
-                    <a href="index.html">home</a>
-                    <a href="about.html">about</a>
-                </div>
-            </div>
-            <!-- Middle content in footer (address) -->
-            <div class="addressMain">
-                <p>987 &nbsp Hillcrest Lane<br>Irvine, CA<br>California 92714<br>Call Us : 949-833-7432</p>
-            </div>
-            <!-- Right content in footer -->
-            <div class="logosCopy">
-                <!-- Facebook, Pintarest and Twitter logos -->
-                <div class="logos">
-                    <i class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-pinterest"></i><i class="fa-brands fa-twitter"></i>
-                </div>
-                <!-- Copyright text -->
-                <div class="copyright">
-                    <p>Copyright 2020. All Rights Reserved</p>  
-                </div>
-            </div>
-        </div>
+      <!-- Footer content -->
+      <div class="footer-content">
+          <!-- Left conternt in footer -->
+          <div class="my-team">
+              <!-- MyTeam logo -->
+              <img src="pictures/myteam2.png" alt="myteam logo">
+              <!-- Navigation buttons -->
+              <div class="nav-buttons">
+                  <a href="index.html">home</a>
+                  <a href="about.html">about</a>
+              </div>
+          </div>
+          <!-- Middle content in footer (address) -->
+          <div class="address-main">
+              <p>987 &nbsp Hillcrest Lane<br>Irvine, CA<br>California 92714<br>Call Us : 949-833-7432</p>
+          </div>
+          <!-- Right content in footer -->
+          <div class="logos-copy">
+              <!-- Facebook, Pintarest and Twitter logos -->
+              <div class="logos">
+                <i class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-pinterest"></i><i class="fa-brands fa-twitter"></i>
+              </div>
+              <!-- Copyright text -->
+              <div class="copyright">
+                <p>Copyright 2020. All Rights Reserved</p>
+              </div>
+          </div>
+      </div>
     </footer>
-</body>
+      <script src="js/about.js"></script>
+  </body>
+  <script>
+    function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        const burger = document.querySelector(".burger-menu");
+
+        menu.classList.toggle("active");
+        burger.style.display = menu.classList.contains("active") ? "none" : "flex";
+    }
+</script>
 </html>
+
