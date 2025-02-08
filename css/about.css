@@ -86,7 +86,7 @@
     color: var(--w);
     position: relative;
     width: 100%;
-    height: 1002px;
+    overflow: hidden;
 }
 
 /* Background decoration positioning */
@@ -111,7 +111,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    flex-grow: 3;
     gap: 76px 30px;
 }
 
@@ -133,6 +134,7 @@
   height: 253px;
   transition: transform 1s;
   transform-style: preserve-3d;
+  margin-bottom: auto;
 }
 
 .card__inner.flipped {
@@ -166,6 +168,12 @@
   flex-direction: column;
   justify-items: center;
   position: relative;
+}
+
+/* Setting margin for last card */
+
+.card-six {
+  margin-bottom: 168px;
 }
 
 /* Set size for picture added borders and set correct borders */
@@ -297,6 +305,84 @@
 
 .logo-linkedin:hover {
   fill: var(--lc);
+}
+
+/* Media queries configurations for tablet (768px) */
+
+@media (max-width: 768px) {
+
+  .article-two h2 {
+    padding-top: 100px;
+    padding-bottom: 48px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px
+  }
+
+  .card__inner {
+    width: 281px;
+  }
+
+  .card-six {
+    margin-bottom: 128px;
+  }
+
+  .employees {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    flex-grow: 3;
+    gap: 76px 11px;
+  }
+
+  .bubble {
+    left: 112px;
+  }
+
+  .bubble-blue {
+    left: 112px;
+  }
+
+}
+
+/* Media queries configurations for phone (375px) */
+
+@media (max-width: 375px) {
+
+  .article-two h2 {
+    padding-top: 88px;
+  }
+
+  .employees {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    flex-grow: 3;
+    gap: 52px 0px;
+  }
+
+  .card-six {
+    margin-bottom: 116px;
+  }
+
+  .card__inner {
+    width: 327px;
+  }
+
+  .bubble {
+    left: 135px;
+  }
+
+  .bubble-blue {
+    left: 135px;
+  }
+
+  .bd2 {
+    top: -100px;
+}
+
 }
 
 /* ----- ARTICLE FOUR ----- */
