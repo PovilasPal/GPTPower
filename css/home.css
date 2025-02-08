@@ -148,6 +148,14 @@ li:nth-child(2) {
   position: relative;
 }
 
+/* Hover for button */
+
+.button-two:hover {
+  background-color: var(--ssg);
+  color: var(--w);
+  cursor: pointer;
+}
+
 /* Media queries configurations for tablet (768px) */
 
 @media (max-width: 768px) {
