@@ -1,26 +1,21 @@
-/* Variables */
-
 :root {
-  --mg: #014E56;
+  --mg: #014e56;
   /* Main green */
-  --lc: #F67E7E;
+  --lc: #f67e7e;
   /* Coral */
-  --w: #FFFFFF;
+  --w: #ffffff;
   /* White */
-  --rb: #79C8C7;
+  --rb: #79c8c7;
   /* Blue */
-  --pb: #2C6269;
+  --pb: #2c6269;
   /* Pine */
   --djg: #004047;
   /* Jungle */
-  --ssg: #012F34;
+  --ssg: #012f34;
   /* Sea green */
   --dg: #002529;
   /* Deep green */
-  --ab: #C4FFFE;
-  /* Avatar border */
 }
-
 /* Hide mobile menu and burger icon on large screens */
 .header-mobile {
   display: none;
@@ -172,76 +167,130 @@
   }
 }
 
-
-
-/* Page man rules */
-
+/*bendras*/
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Livvic', sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Livvic", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/*pagrindinis konteineris*/
+.container {
+ position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 140px 165px;
+  overflow: hidden; 
+}
+/*listo dydis*/
+.container-article-two-second {
+  width: 540px;
+}
+/*listo itemai*/
+.container-list {
+  display: flex;
+  list-style: none;
+}
+.container-block {
+  display: block;
+}
+/*background spalba*/
+.background-articleTwo {
+  background-color: var(--ssg);
+}
+/*teskto spalva*/
+div > h4 {
+  color: var(--lc);
+  padding: 0px 0px 16px 0px;
+  font-size: 18px;
+}
+div > p {
+  color: var(--w);
+}
+/*papildomas tarpas*/
+.article-top-padding {
+  padding: 54px 0px 0px 0px;
+}
+/*kairiojo teksto font*/
+.article-TwoFont {
+  font-size: 48px;
+  width: 445px;
+  font-weight: 700;
+}
+/*tarpas nuo iconu*/
+li > img {
+  padding: 0px 23px 0px 0px;
+}
+/*tarpai tarp iconu ir aprasymu*/
+li:nth-child(2) {
+  padding: 32px 0px;
+}
+/*background pozicija*/
+.article-two-background {
+  position: absolute;
+  top: 1090px;
+  right: -100px;
 }
 
 /* ----- ARTICLE FOUR ----- */
 
 /* Article four bakcground color */
 
-.articleFour {
-    background-color: var(--lc);
-    position: relative;
+.article-four {
+  background-color: var(--lc);
+  position: relative;
 }
 
 /* Styles for article content */
 
-.contactUs {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 260px;
+.contact-us {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 260px;
 }
 
 /* Background decoration positioning */
 
 .bd1 {
-    position: absolute;
-    top: 56px;
+  position: absolute;
+  top: 56px;
 }
 
 /* Text size and color configuration */
 
-.contactUs h2 {
-    color: var(--ssg);
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 48px;
+.contact-us h2 {
+  color: var(--ssg);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
 }
 
 /* Button styles */
 
 .button {
-    width: 153px;
-    height: 48px;
-    border: 2px solid var(--ssg);
-    border-radius: 24px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 28px;
-    box-sizing: border-box;
-    padding: 7px;
-    text-decoration: none;
+  width: 153px;
+  height: 48px;
+  border: 2px solid var(--ssg);
+  border-radius: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  box-sizing: border-box;
+  padding: 7px;
+  text-decoration: none;
 }
 
 /* Setting correct collors for button */
 
-.buttonTwo {
-    background-color: transparent;
-    color: var(--ssg);
-    text-align: center;
-    position: relative;
+.button-two {
+  background-color: transparent;
+  color: var(--ssg);
+  text-align: center;
+  position: relative;
 }
 
 /* ----- FOOTER ----- */
@@ -249,366 +298,371 @@
 /* Footer background and text/symbols colors */
 
 footer {
-    background-color: var(--dg);
-    color: var(--w);
+  background-color: var(--dg);
+  color: var(--w);
 }
 
 /* Styles for footer content */
 
-.footerContent {
-    width: 100%;
-    height: 196px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 125px;
+.footer-content {
+  width: 100%;
+  height: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 125px;
 }
 
 /* Image and navigation buttuns configuration */
 
-.myTeam {
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
+.my-team {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 /* Navigation buttons styles and positioning */
 
-.navButtons {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 28px;
-    display: inline-flex;
-    gap: 40px;
+.nav-buttons {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  display: inline-flex;
+  gap: 40px;
 }
 
 /* Navigation buttuns color and decoration */
 
-.navButtons a {
-    text-decoration: none;
-    color: var(--w);
+.nav-buttons a {
+  text-decoration: none;
+  color: var(--w);
 }
 
 /* Styles for address text */
 
-.addressMain {
-    width: 445px;
-    height: 100px;
-    opacity: 0.6;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 25px;
+.address-main {
+  width: 445px;
+  height: 100px;
+  opacity: 0.6;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
 }
 
 /* Logos configuration */
 
-.logosCopy {
-    display: flex;
-    flex-direction: column;
-    gap: 51px;
-    justify-content: flex-end;
+.logos-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 51px;
+  justify-content: flex-end;
 }
 
 /* Logos configuration */
 
 .logos {
-    font-size: 24px;
-    display: inline-flex;
-    justify-content: flex-end;
-    gap: 16px;
+  font-size: 24px;
+  display: inline-flex;
+  justify-content: flex-end;
+  gap: 16px;
 }
 
 /* Copyright text styles */
 
 .copyright {
-    opacity: 0.6;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 25px;
+  opacity: 0.6;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
 }
 
 /* Body styling */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Livvic', sans-serif;
-    background-color: var(--w);
+  margin: 0;
+  padding: 0;
+  font-family: "Livvic", sans-serif;
+  background-color: var(--w);
 }
 
 /* Header container */
-.header-main {
-    font-family: 'Livvic', sans-serif;
-    width: 100%;
-    height: 194px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--mg);
+header {
+  font-family: "Livvic", sans-serif;
+  width: 100%;
+  height: 194px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--mg);
 }
 
 /* Navigation bar */
 .navbar {
-    padding-left: 165px;
-    padding-right: 165px;
-    width: 100%;
-   
-    height: 48px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+  width: 100%;
+  max-width: 1110px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Navigation links container */
 .nav-links {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /* General navigation item */
 .nav-item {
-    color: var(--w);
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    line-height: 1;
+  color: var(--w);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  line-height: 1;
 }
 
 /* Home link */
 .nav-item.home {
-    margin-left: 60px;
-    margin-right: 20px;
+  margin-left: 60px;
+  margin-right: 20px;
 }
 
 /* About link */
 .nav-item.about {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 /* Hover effect for links */
 .nav-item:hover {
-    color: var(--lc);
+  color: var(--lc);
 }
 
 /* MyTeam logo */
 .myteam-logo {
-    width: 160px;
-    height: 40px;
-    margin-right: 20px;
+  width: 160px;
+  height: 40px;
+  margin-right: 20px;
 }
 
 /* Contact button styling */
-.buttonOne {
-    color: var(--w);
-    border: 2px solid var(--w);
-    border-radius: 24px;
-    background-color: transparent;
-    text-align: center;
-    position: relative;
+.button-one {
+  color: var(--w);
+  border: 2px solid var(--w);
+  border-radius: 24px;
+  background-color: transparent;
+  text-align: center;
+  position: relative;
 }
 
 /* Hover effect for the contact button */
-.buttonOne:hover {
-    background-color: var(--w);
-    color: var(--mg);
+
+.button-one:hover {
+  background-color: var(--w);
+  color: var(--mg);
 }
 
 /* Article 1 container */
 .article-one {
-    font-family: 'Livvic', sans-serif;
-    width: 100%;
-    height: calc(700px - 194px);
-    background-color: var(--mg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+  font-family: "Livvic", sans-serif;
+  width: 100%;
+  height: calc(700px - 194px);
+  background-color: var(--mg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Positioning background decoration images */
 .pic-one {
-    position: absolute;
-    bottom: 250px;
-    /* 250px from the bottom of .article-one */
-    left: -100px;
-    /* Extends 100px outside the left edge */
+  position: absolute;
+  bottom: 250px;
+  /* 250px from the bottom of .article-one */
+  left: -100px;
+  /* Extends 100px outside the left edge */
 }
 
 .pic-two {
-    position: absolute;
-    bottom: 0px;
-    right: 165px;
+  position: absolute;
+  bottom: 0px;
+  right: 165px;
 }
 
 /* Styling for 'Find the' text */
 .find-the {
-    margin: 0;
+  margin: 0;
 }
 
 /* Highlighting 'talent' in coral color */
 .talent {
-    color: var(--lc);
+  color: var(--lc);
 }
 
 /* Container for the main heading */
 .find-the-best-container {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    line-height: 100px;
-    display: inline-block;
-    width: 635px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  line-height: 100px;
+  display: inline-block;
+  width: 635px;
 }
 
 /* Styling for the descriptive text */
 .finding-the-right {
-    position: absolute;
-    width: 100%;
-    top: calc(50% - 14.5px);
-    left: 0%;
-    line-height: 28px;
-    font-weight: 600;
-    display: inline-block;
+  position: absolute;
+  width: 100%;
+  top: calc(50% - 14.5px);
+  left: 0%;
+  line-height: 28px;
+  font-weight: 600;
+  display: inline-block;
 }
 
 /* Small rectangle decoration */
 .rectangle {
-    position: absolute;
-    height: 2.05%;
-    width: 11.24%;
-    top: 0%;
-    left: 0%;
-    background-color: var(--rb);
+  position: absolute;
+  height: 2.05%;
+  width: 11.24%;
+  top: 0%;
+  left: 0%;
+  background-color: var(--rb);
+}
+.rectangle-two {
+  position: absolute;
+  height: 0.468%;
+  width: 3.473%;
+  top: 836px;
+  background-color: var(--lc);
 }
 
 /* Grouping for descriptive text and rectangle */
 .group {
-    position: absolute;
-    top: 0px;
-    left: 665px;
-    width: 445px;
-    height: 195px;
-    overflow: hidden;
-    font-size: 18px;
+  position: absolute;
+  top: 0px;
+  left: 665px;
+  width: 445px;
+  height: 195px;
+  overflow: hidden;
+  font-size: 18px;
 }
 
 /* Parent container for the main heading */
 .find-the-best-talent-parent {
-    width: 100%;
-    position: relative;
-    height: 200px;
-    text-align: left;
-    font-size: 100px;
-    color: var(--w);
-    font-family: 'Livvic', sans-serif;
-    bottom: 100px;
-    left: 190px;
+  width: 100%;
+  position: relative;
+  height: 200px;
+  text-align: left;
+  font-size: 100px;
+  color: var(--w);
+  font-family: "Livvic", sans-serif;
+  bottom: 100px;
+  left: 190px;
 }
-
 /* ----- ARTICLE THREE ----- */
 
 /* Article three bakcground color */
 
-.articleThree {
-    background-color: var(--djg);
-    color: var(--w);
-    position: relative;
+.article-three {
+  background-color: var(--djg);
+  color: var(--w);
+  position: relative;
 }
 
 /* Styles for article content */
 
-.articleThreeContent {
-    width: 100%;
-    height: 745px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 56px;
+.article-three-content {
+  width: 100%;
+  height: 745px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
 }
 
 /* Background decoration positioning */
 
 .bd2 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 /* Background decoration positioning */
 
 .bd3 {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
 /* Employee cards settings */
 
-.employeesCards {
-    height: 313px;
-    width: 1110px;
-    display: inline-flex;
-    text-align: center;
-    gap: 30px;
+.employees-cards {
+  height: 313px;
+  width: 1110px;
+  display: inline-flex;
+  text-align: center;
+  gap: 30px;
 }
 
 /* Text size and color configuration */
 
-.articleThreeContent h2 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 48px;
-    width: 932px;
-    text-align: center;
+.article-three-content h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  width: 932px;
+  text-align: center;
 }
 
 /* Changed color for words in span */
 
-.articleThreeContent h2 span {
-    color: var(--rb);
+.article-three-content h2 span {
+  color: var(--rb);
 }
 
 /* Set font size, weight and line height for employees names */
 
-.employeesCards h3 {
-    color: var(--rb);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 28px;
+.employees-cards h3 {
+  color: var(--rb);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 /* Position and text styles configurations for moto */
 
 .moto {
-    margin-top: -20px;
-    margin-bottom: 24px;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 25px;
+  margin-top: -20px;
+  margin-bottom: 24px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
 }
 
 /* Position and text styles configurations for positions */
 
 .position {
-    font-size: 13px;
-    font-style: italic;
-    font-weight: 500;
-    line-height: 18px;
-    margin-bottom: 32px;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 32px;
 }
 
 /* Set size for picture added borders and set correct borders */
 
 .avatar {
-    width: 62px;
-    height: 62px;
-    border: 2px solid var(--ab);
-    border-radius: 62px;
+  width: 62px;
+  height: 62px;
+  border: 2px solid var(--ab);
+  border-radius: 62px;
 }
+
