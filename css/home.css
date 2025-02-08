@@ -1,194 +1,176 @@
 /* Variables */
 
 :root {
-    --mg: #014E56;
-    /* Main green */
-    --lc: #F67E7E;
-    /* Coral */
-    --w: #FFFFFF;
-    /* White */
-    --rb: #79C8C7;
-    /* Blue */
-    --pb: #2C6269;
-    /* Pine */
-    --djg: #004047;
-    /* Jungle */
-    --ssg: #012F34;
-    /* Sea green */
-    --dg: #002529;
-    /* Deep green */
-    --ab: #C4FFFE;
-    /* Avatar border */
+  --mg: #014E56;
+  /* Main green */
+  --lc: #F67E7E;
+  /* Coral */
+  --w: #FFFFFF;
+  /* White */
+  --rb: #79C8C7;
+  /* Blue */
+  --pb: #2C6269;
+  /* Pine */
+  --djg: #004047;
+  /* Jungle */
+  --ssg: #012F34;
+  /* Sea green */
+  --dg: #002529;
+  /* Deep green */
+  --ab: #C4FFFE;
+  /* Avatar border */
 }
 
-/* ✅ Hide mobile menu and burger icon on large screens */
+/* Hide mobile menu and burger icon on large screens */
 .header-mobile {
-    display: none;
+  display: none;
 }
-
-
 
 /* 📱 Mobile and tablet styles (max-width: 768px) */
 @media (max-width: 768px) {
 
-    /* Hide default navigation links and Contact Us button on mobile */
-    .header-main {
-        display: none !important;
-    }
+  /* Hide default navigation links and Contact Us button on mobile */
+  .header-main {
+      display: none !important;
+  }
 
-    /* Display burger menu on mobile screens */
-    .burger-menu {
-        display: flex;
-        position: absolute;
-        right: 20px;
-        width: 30px;
-        height: 24px;
-        flex-direction: column;
-        justify-content: space-between;
-        cursor: pointer;
-        z-index: 1001;
-    }
+  /* Display burger menu on mobile screens */
+  .burger-menu {
+      display: flex;
+      position: absolute;
+      right: 20px;
+      width: 30px;
+      height: 24px;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      z-index: 1001;
+  }
 
-    /* Three lines (bars) for the burger menu */
-    .burger-menu div {
-        width: 30px;
-        height: 3px;
-        background-color: #fff;
-        /* Adjust color if needed */
-        transition: 0.3s;
-    }
+  /* Three lines (bars) for the burger menu */
+  .burger-menu div {
+      width: 30px;
+      height: 3px;
+      background-color: var(--w);
+      transition: 0.3s;
+  }
 
-    /* Mobile menu styling (hidden by default) */
-    .mobile-menu {
-        display: flex;
-        position: fixed;
-        top: 0;
-        right: -255px;
-        /* Initially hidden */
-        width: 255px;
-        height: 100vh;
-        background-color: var(--mg);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        transition: right 0.3s ease-in-out;
-        z-index: 1000;
-    }
+  /* Mobile menu styling (hidden by default) */
+  .mobile-menu {
+      display: flex;
+      position: fixed;
+      top: 0;
+      right: -255px;
+      width: 255px;
+      height: 100vh;
+      background-color: var(--mg);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      transition: right 0.3s ease-in-out;
+      z-index: 1000;
+  }
 
-    /* Show mobile menu when active */
-    .mobile-menu.active {
-        right: 0;
-    }
+  /* Show mobile menu when active */
+  .mobile-menu.active {
+      right: 0;
+  }
 
-    .mobile-menu a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: 600;
-    }
+  .mobile-menu a {
+      color: var(--w);
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+  }
 
-    .close-menu {
-        position: absolute;
+  .close-menu {
+      position: absolute;
+      cursor: pointer;
+      top: 56px;
+      right: 25px;
+      overflow: hidden;
+      height: 17px;
+      object-fit: cover;
+  }
 
-        cursor: pointer;
+  .home-mobile {
+      left: 48px;
+      top: 112px;
+      position: absolute;
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 600;
+      font-family: Livvic;
+      color: var(--w);
+  }
 
-        top: 56px;
-        right: 25px;
+  .about-mobile {
+      left: 48px;
+      top: 164px;
+      position: absolute;
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 600;
+      font-family: Livvic;
+      color: var(--w);
+  }
 
+  .button-mobile {
+      left: 48px;
+      top: 228px;
+      position: absolute;
+      width: 153px;
+      height: 48px;
+      border: 2px solid var(--ssg);
+      border-radius: 24px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+      box-sizing: border-box;
+      padding: 7px;
+      text-decoration: none;
+      color: var(--w);
+      background-color: var(--mg);
+  }
 
-        overflow: hidden;
-        height: 17px;
-        object-fit: cover;
-    }
+  .button-one-mobile {
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 600;
+      font-family: Livvic;
+      color: var(--w);
+      border: 2px solid var(--w);
+      border-radius: 24px;
+      background-color: transparent;
+      text-align: center;
+      display: inline-block;
+  }
 
+  .header-mobile {
+      font-family: 'Livvic', sans-serif;
+      height: 128px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      background-color: var(--mg);
+  }
 
+  .navbar-mobile {
+      width: 300px;
+      height: 48px;
+      display: flex;
+      padding-left: 24px;
+  }
 
-    .home-mobile {
-        left: 48px;
-        top: 112px;
-        position: absolute;
-        font-size: 18px;
-        line-height: 28px;
-        font-weight: 600;
-        font-family: Livvic;
-        color: #fff;
-
-    }
-
-    .about-mobile {
-        left: 48px;
-        top: 164px;
-        position: absolute;
-        font-size: 18px;
-        line-height: 28px;
-        font-weight: 600;
-        font-family: Livvic;
-        color: #fff;
-
-    }
-
-    .button-mobile {
-        left: 48px;
-        top: 228px;
-
-        position: absolute;
-        width: 153px;
-        height: 48px;
-        border: 2px solid var(--ssg);
-        border-radius: 24px;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 28px;
-        box-sizing: border-box;
-        padding: 7px;
-        text-decoration: none;
-
-    }
-
-    .button-one-mobile {
-
-
-        font-size: 18px;
-        line-height: 28px;
-        font-weight: 600;
-        font-family: Livvic;
-        color: var(--w);
-        border: 2px solid var(--w);
-        border-radius: 24px;
-        background-color: transparent;
-        text-align: center;
-        display: inline-block;
-    }
-
-    .header-mobile {
-
-        font-family: 'Livvic', sans-serif;
-        height: 128px;
-
-        margin: 0 auto;
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        background-color: var(--mg);
-    }
-
-    .navbar-mobile {
-        width: 300px;
-        height: 48px;
-        display: flex;
-        padding-left: 24px;
-
-    }
-
-    /* MyTeam logo */
-    .myteam-logo-mobile {
-        width: 128px;
-        height: 32px;
-        margin-right: 20px;
-    }
+  /* MyTeam logo */
+  .myteam-logo-mobile {
+      width: 128px;
+      height: 32px;
+      margin-right: 20px;
+  }
 }
-
 
 
 
