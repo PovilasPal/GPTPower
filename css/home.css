@@ -523,6 +523,7 @@ header {
 }
 
 /* Article 1 container */
+/* Article 1 container */
 .article-one {
   font-family: "Livvic", sans-serif;
   width: 100%;
@@ -535,13 +536,11 @@ header {
   overflow: hidden;
 }
 
-/* Positioning background decoration images */
+/* Background decoration images */
 .pic-one {
   position: absolute;
   bottom: 250px;
-  /* 250px from the bottom of .article-one */
   left: -100px;
-  /* Extends 100px outside the left edge */
 }
 
 .pic-two {
@@ -550,35 +549,75 @@ header {
   right: 165px;
 }
 
-/* Styling for 'Find the' text */
-.find-the {
-  margin: 0;
+/* Parent container */
+.find-the-best-talent-parent {
+  width: 100%;
+  position: relative;
+  height: auto;
+  text-align: left;
+  font-size: 100px;
+  color: var(--w);
+  font-family: "Livvic", sans-serif;
+  bottom: 100px;
+  left: 190px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+  justify-content: space-between;
+  padding-right: calc((100% - 1400px) / 2 + 140px); /* Right padding for alignment */
+gap:24px;
 }
 
-/* Highlighting 'talent' in coral color */
-.talent {
-  color: var(--lc);
-}
-
-/* Container for the main heading */
+/* Title container */
 .find-the-best-container {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  position: relative;
+  flex: 1;
+  min-width: 400px;
   line-height: 100px;
   display: inline-block;
   width: 635px;
 }
 
-/* Styling for the descriptive text */
+/* Styling for 'Find the' text */
+.find-the {
+  margin: 0;
+}
+
+/* Highlighting 'talent' */
+.talent {
+  color: var(--lc);
+}
+
+/* Text description */
 .finding-the-right {
-  position: absolute;
-  width: 100%;
+
+
   top: calc(50% - 14.5px);
-  left: 0%;
-  line-height: 28px;
-  font-weight: 600;
+  
+
+ 
   display: inline-block;
+ 
+  
+  width: 100%;
+  max-width: 445px;
+
+position: relative;
+font-size: 18px;
+line-height: 28px;
+font-weight: 600;
+font-family: Livvic;
+color: #fff;
+text-align: left;
+text-align: left;
+display: inline-block;
+
+word-break: break-word;
+overflow-wrap: break-word;
+white-space: normal;
+overflow: hidden;
 }
 
 /* Small rectangle decoration */
@@ -590,6 +629,23 @@ header {
   left: 0%;
   background-color: var(--rb);
 }
+
+/* Text content container */
+.group {
+  
+  max-width: calc(100% - 140px); 
+  flex: 1;
+  min-width: 400px;
+  position: relative;
+  width: 445px;
+  height: 195px;
+  overflow: hidden;
+  font-size: 18px;
+  text-align: left;
+  color: red;
+}
+
+
 .rectangle-two {
   position: absolute;
   height: 0.468%;
@@ -598,29 +654,6 @@ header {
   background-color: var(--lc);
 }
 
-/* Grouping for descriptive text and rectangle */
-.group {
-  position: absolute;
-  top: 0px;
-  left: 665px;
-  width: 445px;
-  height: 195px;
-  overflow: hidden;
-  font-size: 18px;
-}
-
-/* Parent container for the main heading */
-.find-the-best-talent-parent {
-  width: 100%;
-  position: relative;
-  height: 200px;
-  text-align: left;
-  font-size: 100px;
-  color: var(--w);
-  font-family: "Livvic", sans-serif;
-  bottom: 100px;
-  left: 190px;
-}
 /* ----- ARTICLE THREE ----- */
 
 /* Article three bakcground color */
@@ -721,4 +754,106 @@ header {
   height: 62px;
   border: 2px solid var(--ab);
   border-radius: 62px;
+}
+
+
+
+@media (max-width: 900px) {
+  .pic-one {
+    display: none !important;
+  }
+
+  .find-the-best-container {
+    width: 683px !important;
+    font-size: 64px !important;
+    line-height: 56px !important;
+    text-align: center !important;
+  }
+
+  .finding-the-right {
+    width: 100% !important;
+    max-width: 457px !important;
+    font-size: 15px !important;
+    line-height: 28px !important;
+    font-weight: 600 !important;
+    margin-bottom: 12px !important;
+    text-align: center !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    height: auto !important;
+    min-height: 100px !important;
+  }
+
+  .rectangle {
+    display: none !important;
+  }
+
+  .article-one {
+    font-family: "Livvic", sans-serif !important;
+    width: 100% !important;
+    
+    height: calc(700px - 194px) !important;
+
+    background-color: var(--mg) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    position: relative !important;
+    overflow: visible !important;
+    text-align: center !important;
+  }
+
+  .pic-two {
+    position: absolute !important;
+    bottom: 0px !important;
+    right: 206px !important;
+  }
+
+  .find-the-best-talent-parent {
+    width: 100% !important;
+    position: relative !important;
+    height: auto !important;
+    text-align: center !important;
+    font-size: 100px !important;
+    color: var(--w) !important;
+    font-family: "Livvic", sans-serif !important;
+    left: 0 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+
+  .find-the {
+    margin: 0 !important;
+    text-align: center !important;
+  }
+
+  .talent {
+    color: var(--lc) !important;
+    text-align: center !important;
+  }
+
+  .group {
+    max-width: 100% !important;
+    flex: 1 !important;
+    min-width: 400px !important;
+    position: relative !important;
+    width: auto !important;
+    overflow: visible !important;
+    font-size: 18px !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: auto !important;
+    min-height: 100px !important;
+  }
 }
