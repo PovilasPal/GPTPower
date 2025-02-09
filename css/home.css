@@ -771,7 +771,6 @@ overflow: hidden;
   }
 
   .finding-the-right {
-    width: 100% !important;
     max-width: 457px !important;
     font-size: 15px !important;
     line-height: 28px !important;
@@ -793,9 +792,7 @@ overflow: hidden;
   .article-one {
     font-family: "Livvic", sans-serif !important;
     width: 100% !important;
-    
-    height: calc(700px - 194px) !important;
-
+    height: 506px !important;
     background-color: var(--mg) !important;
     display: flex !important;
     justify-content: center !important;
@@ -809,7 +806,8 @@ overflow: hidden;
   .pic-two {
     position: absolute !important;
     bottom: 0px !important;
-    right: 206px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
   }
 
   .find-the-best-talent-parent {
@@ -817,33 +815,27 @@ overflow: hidden;
     position: relative !important;
     height: auto !important;
     text-align: center !important;
-    font-size: 100px !important;
+    font-size: 64px !important;
     color: var(--w) !important;
     font-family: "Livvic", sans-serif !important;
     left: 0 !important;
     display: flex !important;
-    flex-wrap: wrap !important;
     flex-direction: column !important;
     align-items: center !important;
     gap: 12px !important;
     justify-content: center !important;
-    padding: 0 !important;
   }
 
   .find-the {
     margin: 0 !important;
-    text-align: center !important;
   }
 
   .talent {
     color: var(--lc) !important;
-    text-align: center !important;
   }
 
   .group {
     max-width: 100% !important;
-    flex: 1 !important;
-    min-width: 400px !important;
     position: relative !important;
     width: auto !important;
     overflow: visible !important;
@@ -854,6 +846,97 @@ overflow: hidden;
     align-items: center !important;
     justify-content: center !important;
     height: auto !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .pic-one {
+    display: none !important;
+  }
+
+  .find-the-best-container {
+    width: 327px !important;
+    font-size: 40px !important;
+    line-height: 40px !important;
+    text-align: center !important;
+  }
+
+  .finding-the-right {
+    width: 327px !important;
+    position: relative !important;
+    font-size: 15px !important;
+    line-height: 28px !important;
+    font-weight: 600 !important;
+    margin-bottom: 12px !important;
+    text-align: center !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    height: auto !important;
     min-height: 100px !important;
+  }
+
+  .rectangle {
+    display: none !important;
+  }
+
+  .article-one {
+    font-family: "Livvic", sans-serif !important;
+    width: 100% !important;
+    height: 373px !important;
+    background-color: var(--mg) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    position: relative !important;
+    overflow: visible !important;
+    text-align: center !important;
+  }
+
+  .pic-two {
+    position: absolute !important;
+    bottom: 0px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .find-the-best-talent-parent {
+    width: 100% !important;
+    position: relative !important;
+    height: auto !important;
+    text-align: center !important;
+    font-size: 40px !important;
+    color: var(--w) !important;
+    font-family: "Livvic", sans-serif !important;
+    left: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 9px !important;
+    justify-content: center !important;
+  }
+
+  .find-the {
+    margin: 0 !important;
+  }
+
+  .talent {
+    color: var(--lc) !important;
+  }
+
+  .group {
+    max-width: 100% !important;
+    position: relative !important;
+    width: auto !important;
+    overflow: visible !important;
+    font-size: 15px !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: auto !important;
   }
 }
