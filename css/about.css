@@ -35,7 +35,6 @@
 .clients-article {
   background-color: var(--ssg);
   width: 100%;
-  height: 437px;
   position: relative;
   overflow: hidden;
 }
@@ -50,32 +49,187 @@
   height: 200px;
 }
 
+/* Article three content configurations */
+
+.clients-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
 /* Article heading */
 
 .clients-article-heading {
   color: var(--w);
-  text-align: center;
   font-size: 48px;
   font-weight: 700;
-  padding-top: 140px;
-  margin-bottom: 70px;
+  margin-top: 140px;
 }
 
 /* Article logos */
 
 .client-logos {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 80px;
-  flex-wrap: wrap;
-  max-width: 1110px;
-  margin: 0 auto;
-  max-width: 1240px;
+  margin-bottom: 140px;
 }
-.client-logo {
+
+/* Logo size */
+
+.verge {
+  width: 165px;
   height: 28px;
 }
+
+/* Logo size */
+
+.jakarta {
+  width: 184px;
+  height: 23px;
+}
+
+/* Logo size */
+
+.guardian {
+  width: 180px;
+  height: 28px;
+}
+
+/* Logo size */
+
+.techradar {
+  width: 165px;
+  height: 28px;
+}
+
+/* Logo size */
+
+.gadgetsnow {
+  width: 98px;
+  height: 45px;
+}
+
+/* Media queries configurations for tablet (768px) */
+
+@media (max-width: 768px) {
+
+  .corner-decoration {
+    top: -100px;
+  }
+
+  .clients-article-heading {
+    margin-top: 100px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  .clients-content {
+    gap: 48px;
+  }
+
+  .client-logos {
+    gap: 49px;
+    margin-bottom: 100px;
+  }
+
+  .verge {
+    width: 103px;
+    height: 17px;
+  }
+  
+  /* Logo size */
+  
+  .jakarta {
+    width: 114px;
+    height: 14px;
+  }
+  
+  /* Logo size */
+  
+  .guardian {
+    width: 112px;
+    height: 17px;
+  }
+  
+  /* Logo size */
+  
+  .techradar {
+    width: 103px;
+    height: 17px;
+  }
+  
+  /* Logo size */
+  
+  .gadgetsnow {
+    width: 61px;
+    height: 28px;
+  }
+
+}
+
+/* Media queries configurations for phone (375px) */
+
+@media (max-width: 375px) {
+
+  .corner-decoration {
+    left: -100px;
+  }
+
+  .clients-content {
+    gap: 64px;
+  }
+
+  .clients-article-heading {
+    margin-top: 88px;
+  }
+
+  .client-logos {
+    display: flex;
+    flex-direction: column;
+    gap: 56.92px;
+    margin-bottom: 88px;
+  }
+
+  .verge {
+    width: 146.56126px;
+    height: 24.18972px;
+  }
+  
+  /* Logo size */
+  
+  .jakarta {
+    width: 162.21344px;
+    height: 19.92095px;
+  }
+  
+  /* Logo size */
+  
+  .guardian {
+    width: 159.36758px;
+    height: 24.18972px;
+  }
+  
+  /* Logo size */
+  
+  .techradar {
+    width: 146.56126px;
+    height: 24.18972px;
+  }
+  
+  /* Logo size */
+  
+  .gadgetsnow {
+    width: 86.79842px;
+    height: 39.8419px;
+  }
+
+}
+
 
 /* ----- ABOUT ARTICLE TWO ----- */
 
