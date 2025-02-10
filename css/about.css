@@ -86,7 +86,7 @@
     color: var(--w);
     position: relative;
     width: 100%;
-    height: 1002px;
+    overflow: hidden;
 }
 
 /* Background decoration positioning */
@@ -107,11 +107,12 @@
 
 /* Employee cards settings */
 
-.employee-cards-about {
+.employees {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    flex-grow: 3;
     gap: 76px 30px;
 }
 
@@ -126,14 +127,53 @@
     line-height: 48px;
 }
 
+/* Adding effects */
+
+.card__inner {
+  width: 350px;
+  height: 253px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  margin-bottom: auto;
+}
+
+.card__inner.flipped {
+  transform: rotateY(180deg);
+}
+
 /* Cards size , position and background color */
 
-.card-about {
-    width: 350px;
-    height: 253px;
-    background-color: var(--ssg);
+.card__face {
+    width: 100%;
+    height: 100%;
     text-align: center;
-    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+/* Front card background color and flipping time */
+
+.card__face--front {
+  background-color: var(--ssg);
+  transition: all 0.3s ease;
+}
+
+/* Back card configurations */
+
+.card__face--back {
+  background-color: var(--dg);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  position: relative;
+}
+
+/* Setting margin for last card */
+
+.card-six {
+  margin-bottom: 168px;
 }
 
 /* Set size for picture added borders and set correct borders */
@@ -143,13 +183,13 @@
     height: 96px;
     border: 2px solid var(--ab);
     border-radius: 96px;
-    margin-top: 30px;
-    margin-bottom: 14px;
+    margin-top: 32px;
+    margin-bottom: 16px;
 }
 
 /* H3 text and color configuration */
 
-.employee-cards-about h3 {
+.employees h3 {
     color: var(--rb);
     font-size: 18px;
     font-weight: 700;
@@ -158,12 +198,191 @@
 
 /* Text and position configuration */
 
-.employee-cards-about p {
-    margin-bottom: 24px;
+.card__face--front p {
+    margin-bottom: 28px;
     font-size: 15px;
     font-style: italic;
     font-weight: 500;
     line-height: 25px;
+}
+
+/* Text, box size and position configuration */
+
+.card__face--back p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  width: 254px;
+  margin: 0px auto;
+}
+
+/* Text and position configuration */
+
+.card__face--back p {
+  margin-bottom: 24px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+/* Text and position configuration */
+
+.card__face--back h3 {
+  margin-bottom: 8px;
+  margin-top: 35px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+/* Plus button configuration */
+
+.bubble {
+  height: 56px;
+  width: 56px;
+  border-radius: 56px;
+  background-color: var(--lc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  position: absolute;
+  bottom: -28px;
+  left: 145px;
+}
+
+/* Plus button hover configuration */
+
+.bubble:hover {
+  background-color: var(--rb);
+  cursor: pointer;
+}
+
+/* X button configuration */
+
+.bubble-blue {
+  height: 56px;
+  width: 56px;
+  border-radius: 56px;
+  background-color: var(--rb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  position: absolute;
+  bottom: -28px;
+  left: 145px;
+}
+
+/* X button hover configuration */
+
+.bubble-blue:hover {
+  background-color: var(--lc);
+  cursor: pointer;
+}
+
+/* Transforming plus to X */
+
+.xsign {
+  transform: rotate(45deg);
+}
+
+/* Social medias logos configuration */
+
+.about-logos {
+  display: inline-flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Twitter logo hover */
+
+.logo-twitter:hover {
+  fill: var(--lc);
+}
+
+/* LinkedIn logo hover */
+
+.logo-linkedin:hover {
+  fill: var(--lc);
+}
+
+/* Media queries configurations for tablet (768px) */
+
+@media (max-width: 768px) {
+
+  .article-two h2 {
+    padding-top: 100px;
+    padding-bottom: 48px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px
+  }
+
+  .card__inner {
+    width: 281px;
+  }
+
+  .card-six {
+    margin-bottom: 128px;
+  }
+
+  .employees {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    flex-grow: 3;
+    gap: 76px 11px;
+  }
+
+  .bubble {
+    left: 112px;
+  }
+
+  .bubble-blue {
+    left: 112px;
+  }
+
+}
+
+/* Media queries configurations for phone (375px) */
+
+@media (max-width: 375px) {
+
+  .article-two h2 {
+    padding-top: 88px;
+  }
+
+  .employees {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    flex-grow: 3;
+    gap: 52px 0px;
+  }
+
+  .card-six {
+    margin-bottom: 116px;
+  }
+
+  .card__inner {
+    width: 327px;
+  }
+
+  .bubble {
+    left: 135px;
+  }
+
+  .bubble-blue {
+    left: 135px;
+  }
+
+  .bd2 {
+    top: -100px;
+}
+
 }
 
 /* ----- ARTICLE FOUR ----- */
@@ -173,24 +392,25 @@
 .article-four {
   background-color: var(--lc);
   position: relative;
+  overflow: hidden;
 }
 
 /* Styles for article content */
 
 .contact-us {
   width: 100%;
-  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 260px;
+  flex-wrap: wrap;
 }
 
 /* Background decoration positioning */
 
 .bd1 {
   position: absolute;
-  top: 56px;
+  bottom: 0px;
 }
 
 /* Text size and color configuration */
@@ -215,6 +435,8 @@
   box-sizing: border-box;
   padding: 7px;
   text-decoration: none;
+  margin-top: 76px;
+  margin-bottom: 76px;
 }
 
 /* Setting correct collors for button */
@@ -224,6 +446,56 @@
   color: var(--ssg);
   text-align: center;
   position: relative;
+}
+
+/* Hover for button */
+
+.button-two:hover {
+  background-color: var(--ssg);
+  color: var(--w);
+  cursor: pointer;
+}
+
+/* Media queries configurations for tablet (768px) */
+
+@media (max-width: 768px) {
+
+  .contact-us h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  .contact-us {
+    gap: 84px;
+  }
+
+  .bd1 {
+    bottom: -22px;
+  }
+
+}
+
+/* Media queries configurations for phone (375px) */
+
+@media (max-width: 375px) {
+
+  .contact-us {
+    gap: 24px;
+  }
+
+  .button {
+    margin-top: 0px;
+    margin-bottom: 83px;
+  }
+
+  .contact-us h2 {
+    margin-top: 83px;
+    height: 64px;
+    width: 327px;
+    text-align: center;
+  }
+
 }
 
 /* ----- FOOTER ----- */
@@ -238,77 +510,227 @@ footer {
 /* Styles for footer content */
 
 .footer-content {
-    width: 100%;
-    height: 196px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 125px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 125px;
 }
 
 /* Image and navigation buttuns configuration */
 
 .my-team {
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 25px;
+}
+
+.my-team-logo {
+  width: 160px;
+  height: 40px;
 }
 
 /* Navigation buttons styles and positioning */
 
 .nav-buttons {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 28px;
-    display: inline-flex;
-    gap: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  display: inline-flex;
+  gap: 40px;
 }
 
 /* Navigation buttuns color and decoration */
 
 .nav-buttons a {
-    text-decoration: none;
-    color: var(--w);
+  text-decoration: none;
+  color: var(--w);
+}
+
+/* Hovers for buttons home and about */
+
+.button-home:hover {
+  color: var(--lc);
+}
+
+.button-about:hover {
+  color: var(--lc);
 }
 
 /* Styles for address text */
 
 .address-main {
-    width: 445px;
-    height: 100px;
-    opacity: 0.6;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 25px;
+  width: 445px;
+  height: 100px;
+  opacity: 0.6;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 
 /* Logos configuration */
 
 .logos-copy {
-    display: flex;
-    flex-direction: column;
-    gap: 51px;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 51px;
+  justify-content: flex-end;
 }
 
 /* Logos configuration */
 
 .logos {
-  font-size: 24px;
   display: inline-flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 16px;
+}
+
+/* Hovers for social media logos */
+
+.footer-facebook:hover {
+  fill: var(--lc);
+}
+
+.footer-pintarest:hover {
+  fill: var(--lc);
+}
+
+.footer-twitter:hover {
+  fill: var(--lc);
 }
 
 /* Copyright text styles */
 
 .copyright {
+  opacity: 0.6;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+/* Media queries configurations for tablet */
+
+@media (max-width: 768px) {
+
+  .address-main {
+    width: 280px;
+    height: 100px;
     opacity: 0.6;
     font-size: 15px;
     font-weight: 600;
     line-height: 25px;
+    text-align: end;
+    margin-top: 56px;
+    margin-bottom: 0px;
+  }
+
+  .footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 34px 302px;
+  }
+
+  .my-team-logo {
+    width: 96px;
+    height: 24px;
+  }
+
+  .my-team {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 53px;
+    margin-top: 56px;
+    margin-bottom: 0px;
+  }
+
+  .nav-buttons {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    display: inline-flex;
+    gap: 24px;
+  }
+
+  .logos-copy {
+    display: flex;
+    flex-direction: row;
+    gap: 330px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .logos {
+    height: 24px;
+  }
+
+  .copyright {
+    margin-bottom: 56px;
+  }
+
+}
+
+@media (max-width: 375px) {
+
+  .address-main {
+    width: 327px;
+    height: 100px;
+    opacity: 0.6;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0px 0px;
+  }
+
+  .my-team {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 66px;
+  }
+
+  .nav-buttons {
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .logos-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .copyright {
+    margin-bottom: 64px;
+  }
+
 }
 
 /* Header container */
