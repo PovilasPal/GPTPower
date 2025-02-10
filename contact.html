@@ -149,4 +149,13 @@
         </div>
     </footer>
   </body>
+  <script>
+    function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        const burger = document.querySelector(".burger-menu");
+
+        menu.classList.toggle("active");
+        burger.style.display = menu.classList.contains("active") ? "none" : "flex";
+    }
+</script>
 </html>
