@@ -81,7 +81,7 @@ li:nth-child(2) {
 /*background pozicija*/
 .article-two-background {
   position: absolute;
-  top: 1090px;
+  top: 390px;
   right: -100px;
 }
 
@@ -592,9 +592,9 @@ header {
 }
 .rectangle-two {
   position: absolute;
-  height: 0.468%;
+  height: 0.631%;
   width: 3.473%;
-  top: 836px;
+  top: 137px;
   background-color: var(--lc);
 }
 
