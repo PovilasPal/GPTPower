@@ -267,6 +267,7 @@
   position: relative;
   padding-bottom: 120px;
   gap: 5px;
+  overflow: hidden;
 }
 .top-padding-first {
   padding-top: 11.5%;
@@ -377,6 +378,7 @@ textarea {
   position: absolute;
   right: -100px;
   bottom: 0px;
+
 }
 /* Button styles */
 
@@ -432,6 +434,7 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   gap: 25px;
+
 }
 
 .my-team-logo {
@@ -495,6 +498,7 @@ footer {
   justify-content: flex-end;
   align-items: center;
   gap: 16px;
+  
 }
 
 /* Hovers for social media logos */
