@@ -1207,6 +1207,7 @@ footer {
   align-items: center;
   position: relative;
   overflow: hidden;
+  height: 194px;
 }
 
 .about-content {
@@ -1223,7 +1224,7 @@ footer {
  color: var(--w);
  font-family: 'Livvic', sans-serif;
  bottom: 30px;
- left: 180px;
+ left: 26px;
 }
 
 .underline {
@@ -1231,8 +1232,8 @@ footer {
   height: 4px;
   background-color: var(--lc);
   position: relative;
-  top: -33px;
-  left: 520px;
+  top: -44px;
+  left: 400px;
 }
 
 .about-content p {
@@ -1243,10 +1244,11 @@ footer {
   line-height: 1.5;
   text-align: left;
   margin-top: 20px;
-  left: 520px;
-  bottom: 25px;
+  left: 400px;
+  bottom: 30px;
   font-weight: 630;
   line-height: 28px;
+  width: 730px;
 }
 
 .about-decor {
@@ -1261,78 +1263,94 @@ footer {
   .about-section {
     flex-direction: column;
     text-align: center;
-    padding: 40px 5%;
+    padding: 50px 8%;
+    height: 262px;
   }
 
   .about-content {
-    max-width: 80%;
+    max-width: 90%;
+    margin: 0 auto;
   }
 
   .about-content h2 {
-    font-size: 48px;
-    left: 0;
+    font-size: 60px;
+    position: relative;
     text-align: center;
-    width: auto;
-    height: auto;
-    bottom: 10px;
+    margin-bottom: 10px;
+    left: 50px;
+    top: -20px;
   }
-
   .underline {
     left: 50%;
     transform: translateX(-50%);
-    top: -5px;
+    top: -3px;
+    width: 50px;
+    height: 4px;
+    display: none;
   }
 
   .about-content p {
-    font-size: 16px;
-    left: 0;
+    font-size: 15px;
     text-align: center;
-    line-height: 26px;
+    line-height: 28px;
+    left: 0px;
+    max-width: 457px;
+    letter-spacing: 0;
+    width: 457px;
+    height: 140px;
+    bottom: -26px;
   }
 
   .about-decor {
-    right: -80px;
-    text-align: center;
-    width: 160px;
+    right: auto;
+    left: 100%;
+    transform: translateX(-50%);
+    width: 200px; 
+    margin-top: 20px;
   }
 }
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 375px) {
   .about-section {
     padding: 30px 5%;
     text-align: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 322px;
   }
 
   .about-content {
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .about-content h2 {
-    font-size: 36px;
-    width: auto;
-    left: 0;
+    font-size: 40px;
     text-align: center;
-  }
-
-  .underline {
-    width: 40px;
-    height: 3px;
-    top: -5px;
+    width: 327px;
+    line-height: 40px;
+    position: relative;
+    top: -80px;
+    left: -5px;
   }
 
   .about-content p {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 28px;
+    margin:  auto;
     text-align: center;
-    left: 0;
-    margin-top: 10px;
+    max-width: 327px; 
+    bottom: 60px;
   }
 
   .about-decor {
     right: -80px;
     text-align: center;
-    width: 160px;
+    width: 200px;
+    bottom: -100px;
   }
 }
