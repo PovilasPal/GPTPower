@@ -968,12 +968,13 @@ header {
 
 /* ----- ABOUT SECTION ONE  ----- */
 .about-section {
-  background-color: #014E56;
+  background-color: var(--mg);
   padding: 60px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .about-content {
@@ -987,7 +988,7 @@ header {
  height: 20px;
  text-align: left;
  font-size: 64px;
- color: white;
+ color: var(--w);
  font-family: 'Livvic', sans-serif;
  bottom: 30px;
  left: 180px;
@@ -996,9 +997,9 @@ header {
 .underline {
   width: 50px;
   height: 4px;
-  background-color: #F67E7E;
+  background-color: var(--lc);
   position: relative;
-  top: -28px;
+  top: -33px;
   left: 520px;
 }
 
@@ -1006,17 +1007,100 @@ header {
   position: relative;
   font-family: "Livvic", sans-serif;
   font-size: 18px;
-  color: #ffffff;
+  color: var(--w);
   line-height: 1.5;
   text-align: left;
   margin-top: 20px;
   left: 520px;
   bottom: 25px;
+  font-weight: 630;
+  line-height: 28px;
 }
 
 .about-decor {
-  position: relative;
-  text-align: left;
-  left: 205px;
-  bottom: -60px;
+  position: absolute;
+  text-align: right;
+  right: -100px;
+  bottom: 0px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .about-content {
+    max-width: 80%;
+  }
+
+  .about-content h2 {
+    font-size: 48px;
+    left: 0;
+    text-align: center;
+    width: auto;
+    height: auto;
+    bottom: 10px;
+  }
+
+  .underline {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+    left: 0;
+    text-align: center;
+    line-height: 26px;
+  }
+
+  .about-decor {
+    right: -80px;
+    text-align: center;
+    width: 160px;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .about-section {
+    padding: 30px 5%;
+    text-align: center;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-content h2 {
+    font-size: 36px;
+    width: auto;
+    left: 0;
+    text-align: center;
+  }
+
+  .underline {
+    width: 40px;
+    height: 3px;
+    top: -5px;
+  }
+
+  .about-content p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    left: 0;
+    margin-top: 10px;
+  }
+
+  .about-decor {
+    right: -80px;
+    text-align: center;
+    width: 160px;
+  }
 }
