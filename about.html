@@ -21,7 +21,7 @@
     <title>GPTPower</title>
   </head>
   <body>
-    <header>
+    <header class="header-main">
       <div class="navbar">
         <!-- Navigation links -->
         <div class="nav-links">
@@ -36,6 +36,34 @@
         <a href="contact.html" class="button button-one">contact us</a>
       </div>
     </header>
+<!-- Header section for mobile screens-->
+<header class="header-mobile">
+  <div class="navbar-mobile">
+      <!-- Logo -->
+      <img src="pictures/myteam 2.svg" alt="myteam" class="myteam-logo-mobile">
+
+ 
+
+      <!--  Burger menu icon (3 lines) -->
+      <div class="burger-menu" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+  </div>
+
+  <!-- Mobile menu (only visible on mobile screens) -->
+
+<div class="mobile-menu" id="mobileMenu">
+  <img class="close-menu" onclick="toggleMenu()"  alt="" src="pictures/Group 2.svg"></img>
+
+
+  <a href="index.html" class="nav-item home-mobile">Home</a>
+  <a href="about.html" class="nav-item about-mobile">About</a>
+  <a href="contact.html"class="button-mobile button-one-mobile ">contact us</a>
+</div>
+</header>
+
 
     <!--About section one-->
     <section class="about-section">
@@ -262,34 +290,35 @@
         alt="Corner decoration"
         class="corner-decoration"
       />
-      <!-- Article header -->
-      <h2 class="clients-article-heading">Some of our clients</h2>
-      <!-- Cient logos -->
-      <div class="client-logos">
-        <img
-          src="pictures/logo-the-verge.png"
-          alt="The Verge"
-          class="client-logo"
-        />
-        <img
-          src="pictures/logo-jakarta-post.png"
-          alt="The Jakarta Post"
-          class="client-logo"
-        />
-        <img
-          src="pictures/logo-the-guardian.png"
-          alt="The Guardian"
-          class="client-logo"
-        />
-        <img
-          src="pictures/logo-tech-radar.png"
-          alt="Techradar"
-          class="client-logo"
-        />
-        <img
-          src="pictures/logo-gadgets-now.png"
-          alt="Gadgets now"
-          class="client-logo"
+      <div class="clients-content">
+              <!-- Article header -->
+        <h2 class="clients-article-heading">Some of our clients</h2>
+        <!-- Cient logos -->
+        <div class="client-logos">
+          <img
+            src="pictures/logo-the-verge.png"
+            alt="The Verge"
+            class="verge"
+          />
+          <img
+            src="pictures/logo-jakarta-post.png"
+            alt="The Jakarta Post"
+            class="jakarta"
+          />
+          <img
+            src="pictures/logo-the-guardian.png"
+            alt="The Guardian"
+            class="guardian"
+          />
+          <img
+            src="pictures/logo-tech-radar.png"
+            alt="Techradar"
+            class="techradar"
+          />
+          <img
+            src="pictures/logo-gadgets-now.png"
+            alt="Gadgets now"
+            class="gadgetsnow"
         />
       </div>
     </article>
@@ -344,4 +373,13 @@
     </footer>
       <script src="js/about.js"></script>
   </body>
+  <script>
+    function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        const burger = document.querySelector(".burger-menu");
+
+        menu.classList.toggle("active");
+        burger.style.display = menu.classList.contains("active") ? "none" : "flex";
+    }
+</script>
 </html>
