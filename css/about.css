@@ -1278,7 +1278,7 @@ footer {
     text-align: center;
     margin-bottom: 10px;
     left: 50px;
-    top: -20px;
+    top: -25px;
   }
   .underline {
     left: 50%;
@@ -1298,7 +1298,8 @@ footer {
     letter-spacing: 0;
     width: 457px;
     height: 140px;
-    bottom: -26px;
+    bottom: -23px;
+    font-weight: 600;
   }
 
   .about-decor {
@@ -1344,7 +1345,8 @@ footer {
     margin:  auto;
     text-align: center;
     max-width: 327px; 
-    bottom: 60px;
+    bottom: 55px;
+    font-weight: 600;
   }
 
   .about-decor {
