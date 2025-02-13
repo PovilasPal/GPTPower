@@ -34,6 +34,27 @@
       display: none !important;
   }
 
+
+/* shadow , hidden on default*/
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* shadow*/
+  z-index: 999; /* below the menu but above the content*/
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Активный (показывается при открытом меню) */
+.overlay.active {
+  display: block;
+}
+
+
+
   /* Display burger menu on mobile screens */
   .burger-menu {
       display: flex;
@@ -170,6 +191,17 @@
       height: 32px;
       margin-right: 20px;
   }
+
+
+  .mobile-menu img[src="pictures/bg-pattern-about-1-mobile-nav-1.svg"] {
+    position: absolute;
+    bottom: 0;
+    right: -100px; /* Moves it 100px off the screen */
+    width: auto; /* Adjust size if necessary */
+    height: auto; /* Adjust size if necessary */
+    max-width: 200px; /* Optional: limit max width */
+    max-height: 200px; /* Optional: limit max height */
+    z-
 }
 
 /* Media queries configurations for tablet (768px) */
