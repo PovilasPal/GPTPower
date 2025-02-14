@@ -103,12 +103,13 @@
       </div>
       <div class="container-size top-padding-second">
         <form class="form-location form-poss-small-display form-size-small-display">
-          <input type="text" name="name" placeholder="Name" class="form-item-one"/>
+          <input type="text" name="name" placeholder="Name" class="form-item-one form-input"/>
           <input
-            type="email" name="email" placeholder="Email Address" required class="form-item-two"/>
-          <input type="text" name="company" placeholder="Company Name" class="form-item-three"/>
-          <input type="text" name="title" placeholder="Title" class="form-item-four"/>
-          <textarea name="message" placeholder="Message" class="form-item-five"></textarea>
+            type="email" name="email" placeholder="Email Address" required class="form-item-two form-input form-email"/>
+          <span class="error-message">This field is required</span>
+            <input type="text" name="company" placeholder="Company Name" class="form-item-three form-input"/>
+          <input type="text" name="title" placeholder="Title" class="form-item-four form-input"/>
+          <textarea name="message" placeholder="Message" class="form-item-five form-input"></textarea>
           <button type="submit" class="button button-submit">submit</button>
         </form>
       </div>
