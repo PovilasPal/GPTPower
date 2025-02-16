@@ -855,9 +855,8 @@ body {
   font-size: 100px;
   color: var(--w);
   font-family: "Livvic", sans-serif;
-  bottom: 100px;
-  left: 190px;
-
+  left: 165px;
+bottom: 93px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -921,7 +920,7 @@ overflow: hidden;
 .rectangle {
   position: absolute;
   height: 2.05%;
-  width: 11.24%;
+  width: 50px;
   top: 0%;
   left: 0%;
   background-color: var(--rb);
