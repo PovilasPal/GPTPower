@@ -57,6 +57,7 @@
   /* Display burger menu on mobile screens */
 
   .burger-menu {
+    top: 45px;
     display: flex;
     position: absolute;
     right: 24px;
@@ -107,7 +108,7 @@
   .close-menu {
       position: absolute;
       cursor: pointer;
-      top: 56px;
+      top: 46px;
       right: 25px;
       overflow: hidden;
       height: 17px;
