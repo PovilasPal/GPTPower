@@ -15,9 +15,8 @@
   /* Sea green */
   --dg: #002529;
   /* Deep green */
-  --ab: #C4FFFE; 
+  --ab: #c4fffe;
   /* Picture border color */
-
 }
 
  
@@ -305,15 +304,26 @@ html, body {
 
 /*pagrindinis konteineris*/
 .container {
- position: relative;
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 140px 165px;
-  overflow: hidden; 
+  padding: 9.723% 11.459%;
+  overflow: hidden;
 }
 /*listo dydis*/
-.container-article-two-second {
-  width: 540px;
+.container-articleTwo-size-left {
+  width: 37.5vw;
+  min-width: 300px;
+  max-width: 540px;
+}
+.container-articleTwo-size-right {
+  width: 37.5vw;
+  min-width: 300px;
+  max-width: 540px;
+}
+.test-size {
+  width: 100%;
 }
 /*listo itemai*/
 .container-list {
@@ -332,23 +342,39 @@ div > h4 {
   color: var(--lc);
   padding: 0px 0px 16px 0px;
   font-size: 18px;
+  line-height: 28px;
 }
-div > p {
+.color-text-articleTwo {
   color: var(--w);
 }
 /*papildomas tarpas*/
-.article-top-padding {
+.article-top-padding-left {
+  padding: 54px 0px 0px 0px;
+}
+.article-top-padding-right {
   padding: 54px 0px 0px 0px;
 }
 /*kairiojo teksto font*/
 .article-TwoFont {
   font-size: 48px;
-  width: 445px;
+  max-width: 450px;
   font-weight: 700;
+  line-height: 48px;
+}
+.articleTwo-font-right {
+  font-weight: 600;
+  opacity: 0.8;
+  line-height: 25px;
+  font-size: 15px;
 }
 /*tarpas nuo iconu*/
-li > img {
+.icons-articleTwo {
   padding: 0px 23px 0px 0px;
+  width: 72px;
+  height: 72px;
+}
+.icons-articleTwo-person-fix {
+  padding: 0px 23px 0px 6px;
 }
 /*tarpai tarp iconu ir aprasymu*/
 li:nth-child(2) {
@@ -357,7 +383,7 @@ li:nth-child(2) {
 /*background pozicija*/
 .article-two-background {
   position: absolute;
-  top: 390px;
+  bottom: 0px;
   right: -100px;
 }
 
@@ -435,7 +461,6 @@ li:nth-child(2) {
 /* Media queries configurations for tablet (768px) */
 
 @media (max-width: 768px) {
-
   .contact-us h2 {
     font-size: 32px;
     font-weight: 700;
@@ -449,13 +474,11 @@ li:nth-child(2) {
   .bd1 {
     bottom: -22px;
   }
-
 }
 
 /* Media queries configurations for phone (375px) */
 
 @media (max-width: 375px) {
-
   .contact-us {
     gap: 24px;
   }
@@ -471,7 +494,6 @@ li:nth-child(2) {
     width: 327px;
     text-align: center;
   }
-
 }
 
 /* ----- FOOTER ----- */
@@ -593,7 +615,6 @@ footer {
 /* Media queries configurations for tablet (768px) */
 
 @media (max-width: 768px) {
-
   .address-main {
     width: 280px;
     height: 100px;
@@ -653,13 +674,11 @@ footer {
   .copyright {
     margin-bottom: 56px;
   }
-
 }
 
 /* Media queries configurations for phone (375px) */
 
 @media (max-width: 375px) {
-
   .address-main {
     width: 327px;
     height: 100px;
@@ -708,7 +727,6 @@ footer {
   .copyright {
     margin-bottom: 64px;
   }
-
 }
 
 /* Body styling */
@@ -910,6 +928,14 @@ overflow: hidden;
   background-color: var(--rb);
 }
 
+.rectangle-two {
+  position: absolute;
+  height: 0.631%;
+  width: 3.473%;
+  top: 20%;
+  background-color: var(--lc);
+}
+
 /* Text content container */
 .group {
   
@@ -1037,7 +1063,6 @@ overflow: hidden;
 /* Media queries configurations for tablet (768px) */
 
 @media (max-width: 768px) {
-
   .article-three-content h2 {
     font-size: 32px;
     font-weight: 700;
@@ -1075,17 +1100,15 @@ overflow: hidden;
   .position {
     margin-bottom: 16px;
   }
-  
+
   .card-three {
     margin-bottom: 100px;
   }
-
 }
 
 /* Media queries configurations for phone (375px) */
 
 @media (max-width: 375px) {
-
   .article-three-content h2 {
     margin-top: 140px;
     width: 327px;
@@ -1098,7 +1121,107 @@ overflow: hidden;
   .card-three {
     margin-bottom: 156px;
   }
+}
+@media (max-width: 1034px) {
+  .rectangle-two {
+    position: absolute;
+    height: 0.631%;
+    width: 6.473%;
+    top: 14.4%;
+    background-color: var(--lc);
+  }
+  .article-two-background {
+    position: absolute;
+    top: 0px;
+    right: -100px;
+  }
+  .article-TwoFont {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    width: 80%;
+  }
+  .container-articleTwo-size {
+    width: 100%;
+    max-width: none;
+  }
+  .container-articleTwo-size-right {
+    width: 100%;
+    max-width: none;
+  }
+  .container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10.5% 12.659%;
+    overflow: hidden;
+    padding-bottom: 13%;
+  }
+  .article-top-padding-left {
+    padding: 54px 0px 0px 0px;
+}
+.article-top-padding-right{
+  padding: 64px 0px 0px 0px;
+}
+}
+@media (max-width: 399px){
+  .container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 12% 6.4%;
+    overflow: hidden;
+    padding-bottom: 17%;
+  }
+  .container-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+.rectangle-two {
+  position: absolute;
+  height: 0.431%;
+  width: 13.2%;
+  top: 6.4%;
+  background-color: var(--lc);
+}
+.article-TwoFont {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  width: 65%;
+  min-width: 100px;
+}
+.article-top-padding-right {
+  padding: 57px 0px 0px 0px;
+}
+li:nth-child(2) {
+  padding: 50px 0px;
+}
+.icons-articleTwo {
+  padding: 0px 0px 0px 0px;
+  width: 72px;
+  height: 72px;
+}
 
+
+.icons-articleTwo-person-fix {
+  padding: 0px 0px 0px 9px;
+  width: 68px;
+}
+.icons-articleTwo-mobile {
+  padding-bottom: 15px;
+}
+div > h4 {
+  color: var(--lc);
+  padding: 0px 0px 8px 0px;
+  font-size: 18px;
+  line-height: 28px;
+}
 }
 @media (max-width: 768px) {
   .pic-one {
