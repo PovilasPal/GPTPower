@@ -291,7 +291,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 64px;
+  gap: 70px;
 }
 
 /* Article heading */
@@ -309,7 +309,7 @@ html, body {
 .client-logos {
   display: inline-flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 80px;
   margin-bottom: 140px;
 }
@@ -347,6 +347,7 @@ html, body {
 .gadgetsnow {
   width: 98px;
   height: 45px;
+  margin-top: -6px;
 }
 
 /* Media queries configurations for tablet (768px) */
@@ -365,7 +366,7 @@ html, body {
   }
 
   .clients-content {
-    gap: 48px;
+    gap: 52px;
   }
 
   .client-logos {
@@ -404,6 +405,7 @@ html, body {
   .gadgetsnow {
     width: 61px;
     height: 28px;
+    margin-top: -4px;
   }
 
 }
@@ -462,6 +464,7 @@ html, body {
   .gadgetsnow {
     width: 86.79842px;
     height: 39.8419px;
+    margin-top: 0px;
   }
 
 }
@@ -1214,7 +1217,7 @@ footer {
   align-items: center;
   position: relative;
   overflow: hidden;
-  height: 194px;
+  height: 203px;
 }
 
 .about-content {

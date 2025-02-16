@@ -308,7 +308,7 @@ html, body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 9.723% 11.459%;
+  padding: 10% 11.459% 9.723% 11.459%;
   overflow: hidden;
 }
 /*listo dydis*/
@@ -932,7 +932,7 @@ overflow: hidden;
   position: absolute;
   height: 0.631%;
   width: 3.473%;
-  top: 20%;
+  top: 20.4%;
   background-color: var(--lc);
 }
 
@@ -1033,7 +1033,7 @@ overflow: hidden;
 /* Position and text styles configurations for moto */
 
 .moto {
-  margin-top: -20px;
+  margin-top: -24px;
   margin-bottom: 24px;
   font-size: 15px;
   font-weight: 600;
@@ -1083,7 +1083,7 @@ overflow: hidden;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 39px;
     margin-bottom: 0px;
   }
 
@@ -1119,9 +1119,14 @@ overflow: hidden;
   }
 
   .card-three {
-    margin-bottom: 156px;
+    margin-bottom: 158px;
+  }
+
+  .employees-cards {
+    gap: 42px;
   }
 }
+
 @media (max-width: 1034px) {
   .rectangle-two {
     position: absolute;
