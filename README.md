@@ -2,9 +2,9 @@
 
 ## Komanda "GPTPOWER"
 
-<Tikslas/> – suprogramuoti tinklapio vartotojo sąsają, mokytis dirbti komandoje.
+<Tikslas/> - suprogramuoti tinklapio vartotojo sąsają, mokytis dirbti komandoje.
 
-<Technologijos/> -  HTML, CSS. 
+<Technologijos/> -  HTML, CSS ir JS 
 
 ## Tinklapio nuoroda
 
