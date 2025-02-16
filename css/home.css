@@ -857,7 +857,7 @@ body {
   color: var(--w);
   font-family: "Livvic", sans-serif;
   left: 165px;
-bottom: 93px;
+bottom: 106px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -1364,7 +1364,7 @@ div > h4 {
   .article-one {
     font-family: "Livvic", sans-serif !important;
     width: 100% !important;
-    height: auto !important;
+    height: 377px !important;
     min-height: 373px !important; 
     background-color: var(--mg) !important;
     text-align: center !important;
