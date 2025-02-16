@@ -1199,21 +1199,21 @@ overflow: hidden;
     display: none !important;
   }
 
+  /* Контейнер заголовка */
   .find-the-best-container {
     width: 327px !important;
     font-size: 40px !important;
     line-height: 40px !important;
     text-align: center !important;
-
     padding: 0 !important;
     display: block !important;
-    margin-bottom: 27px;
-    margin-top: 32px;  
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 32px !important; /* Отступ сверху 32px */
+    margin-bottom: 18px !important; /* Отступ вниз 18px */
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 
-}
-
+  /* Контейнер с текстом */
   .finding-the-right {
     width: 327px !important;
     font-size: 15px !important;
@@ -1226,25 +1226,29 @@ overflow: hidden;
     overflow: visible !important;
     height: auto !important;
     min-height: 100px !important;
-    margin: 0 auto !important;
     padding: 0 !important;
     display: block !important;
+    margin-top: 0px !important; /* Убираем отступ сверху */
+    margin-bottom: 0px !important; /* Убираем отступ снизу */
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .rectangle {
     display: none !important;
   }
 
+  /* Основной контейнер */
   .article-one {
     font-family: "Livvic", sans-serif !important;
     width: 100% !important;
-    height: 373px !important;
+    height: auto !important;
+    min-height: 373px !important; /* Минимальная высота */
     background-color: var(--mg) !important;
     text-align: center !important;
     position: relative !important;
     overflow: visible !important;
-    padding: 32px 0 0 0 !important; 
-
+    padding: 32px 0 0 0 !important; /* Отступ сверху 32px */
   }
 
   .pic-two {
@@ -1254,6 +1258,7 @@ overflow: hidden;
     transform: translateX(-50%) !important;
   }
 
+  /* Главный контейнер */
   .find-the-best-talent-parent {
     width: 100% !important;
     position: relative !important;
@@ -1262,11 +1267,13 @@ overflow: hidden;
     font-size: 40px !important;
     color: var(--w) !important;
     font-family: "Livvic", sans-serif !important;
-    margin: 0 auto !important;
     padding: 0 !important;
     display: block !important;
-    transform: translateX(-10px) !important; 
-
+    transform: translateX(-10px) !important; /* Сдвиг влево на 10px */
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .find-the {
@@ -1277,14 +1284,18 @@ overflow: hidden;
     color: var(--lc) !important;
   }
 
+  /* Контейнер с текстом */
   .group {
     max-width: 327px !important;
     width: auto !important;
     font-size: 15px !important;
     text-align: center !important;
     height: auto !important;
-    margin: 0 auto !important;
     padding: 0 !important;
     display: block !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
