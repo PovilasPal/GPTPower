@@ -1374,7 +1374,7 @@ footer {
     line-height: 40px;
     position: relative;
     top: -80px;
-    left: -5px;
+    left: -10px;
   }
 
   .about-content p {
@@ -1385,6 +1385,7 @@ footer {
     max-width: 327px; 
     bottom: 55px;
     font-weight: 600;
+    left: -13px;
   }
 
   .about-decor {
