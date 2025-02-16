@@ -301,6 +301,7 @@ html, body {
   font-size: 48px;
   font-weight: 700;
   margin-top: 140px;
+  line-height: 48px;
 }
 
 /* Article logos */
@@ -572,8 +573,8 @@ html, body {
     height: 96px;
     border: 2px solid var(--ab);
     border-radius: 96px;
-    margin-top: 32px;
-    margin-bottom: 16px;
+    margin-top: 30px;
+    margin-bottom: 14px;
 }
 
 /* H3 text and color configuration */
@@ -593,6 +594,7 @@ html, body {
     font-style: italic;
     font-weight: 500;
     line-height: 25px;
+    margin-bottom: 56px;
 }
 
 /* Text, box size and position configuration */
@@ -681,7 +683,7 @@ html, body {
 .about-logos {
   display: inline-flex;
   justify-content: center;
-  gap: 20px;
+  gap: 16px;
 }
 
 /* Twitter logo hover */
