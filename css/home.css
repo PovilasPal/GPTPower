@@ -48,7 +48,6 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-/* Активный (показывается при открытом меню) */
 .overlay.active {
   display: block;
 }
