@@ -83,7 +83,7 @@
       position: fixed;
       top: 0;
       right: -255px;
-      width: 255px;
+      width: 268px;
       height: 100vh;
       background-color: var(--mg);
       flex-direction: column;
@@ -1125,6 +1125,7 @@ overflow: hidden;
     overflow: visible !important;
     height: auto !important;
     min-height: 100px !important;
+
   }
 
   .rectangle {
@@ -1193,7 +1194,7 @@ overflow: hidden;
   
 }
 @media (max-width: 375px) {
-
+  
   .pic-one {
     display: none !important;
   }
@@ -1203,20 +1204,31 @@ overflow: hidden;
     font-size: 40px !important;
     line-height: 40px !important;
     text-align: center !important;
-    height: 80px !important; /* Жесткое ограничение высоты */
-    margin-bottom: 18px !important; /* Точное расстояние между блоками */
-  }
+
+    padding: 0 !important;
+    display: block !important;
+    margin-bottom: 27px;
+    margin-top: 32px;  
+    margin-left: auto;
+    margin-right: auto;
+
+}
 
   .finding-the-right {
-    max-width: 327px !important;
-    height: 112px !important; /* Убираем фиксированную высоту */
+    width: 327px !important;
     font-size: 15px !important;
     line-height: 28px !important;
     font-weight: 600 !important;
     text-align: center !important;
     word-break: break-word !important;
-
+    overflow-wrap: break-word !important;
     white-space: normal !important;
+    overflow: visible !important;
+    height: auto !important;
+    min-height: 100px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: block !important;
   }
 
   .rectangle {
@@ -1226,16 +1238,18 @@ overflow: hidden;
   .article-one {
     font-family: "Livvic", sans-serif !important;
     width: 100% !important;
-    height: 439px !important;
+    height: 373px !important;
     background-color: var(--mg) !important;
-    justify-content: center !important;
-    align-items: center !important;
     text-align: center !important;
+    position: relative !important;
+    overflow: visible !important;
+    padding: 32px 0 0 0 !important; 
+
   }
 
   .pic-two {
     position: absolute !important;
-    bottom: 0px !important;
+    bottom: 0 !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
   }
@@ -1248,10 +1262,11 @@ overflow: hidden;
     font-size: 40px !important;
     color: var(--w) !important;
     font-family: "Livvic", sans-serif !important;
-    left: 0 !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: block !important;
+    transform: translateX(-10px) !important; 
 
-    align-items: center !important;
-    justify-content: center !important;
   }
 
   .find-the {
@@ -1263,13 +1278,13 @@ overflow: hidden;
   }
 
   .group {
-    max-width: 100% !important;
-    position: relative !important;
-    font-size: 40px !important;
+    max-width: 327px !important;
+    width: auto !important;
+    font-size: 15px !important;
     text-align: center !important;
-
-    align-items: center !important;
-    justify-content: center !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: block !important;
   }
-
 }
