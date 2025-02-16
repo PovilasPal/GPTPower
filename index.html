@@ -65,10 +65,10 @@
 
 <div class="mobile-menu" id="mobileMenu">
   <img class="close-menu" onclick="toggleMenu()"  alt="" src="pictures/Group 2.svg"></img>
+<img class="" src="pictures/bg-pattern-about-1-mobile-nav-1.svg"></img>
 
-
-  <a href="index.html" class="nav-item home-mobile">Home</a>
-  <a href="about.html" class="nav-item about-mobile">About</a>
+  <a href="index.html" class="nav-item home-mobile">home</a>
+  <a href="about.html" class="nav-item about-mobile">about</a>
   <a href="contact.html"class="button-mobile button-one-mobile ">contact us</a>
 </div>
 </header>
@@ -362,14 +362,28 @@
         </div>
       </div>
     </footer>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
 </body>
 <script>
   function toggleMenu() {
       const menu = document.getElementById("mobileMenu");
       const burger = document.querySelector(".burger-menu");
+      const overlay = document.getElementById("overlay");
 
+      // Toggle the active class for the menu and overlay
       menu.classList.toggle("active");
-      burger.style.display = menu.classList.contains("active") ? "none" : "flex";
+      overlay.classList.toggle("active");
+
+      // If the menu is open, hide the burger menu visually but keep its space
+      if (menu.classList.contains("active")) {
+          burger.style.opacity = "0"; // Make burger menu invisible
+          burger.style.pointerEvents = "none"; // Disable clicks on it
+      } else {
+          burger.style.opacity = "1"; // Make burger menu visible again
+          burger.style.pointerEvents = "auto"; // Enable clicks
+      }
   }
 </script>
+
 </html>

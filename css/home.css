@@ -19,6 +19,7 @@
   /* Picture border color */
 }
 
+ 
 
 /* Hide mobile menu and burger icon on large screens */
 .header-mobile {
@@ -33,13 +34,34 @@
       display: none !important;
   }
 
+
+/* shadow , hidden on default*/
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* shadow*/
+  z-index: 999; /* below the menu but above the content*/
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Активный (показывается при открытом меню) */
+.overlay.active {
+  display: block;
+}
+
+
+
   /* Display burger menu on mobile screens */
   .burger-menu {
       display: flex;
       position: absolute;
-      right: 20px;
-      width: 30px;
-      height: 24px;
+      right: 24px;
+      width: 20px;
+      height: 17px;
       flex-direction: column;
       justify-content: space-between;
       cursor: pointer;
@@ -48,7 +70,7 @@
 
   /* Three lines (bars) for the burger menu */
   .burger-menu div {
-      width: 30px;
+      width: 20px;
       height: 3px;
       background-color: var(--w);
       transition: 0.3s;
@@ -60,7 +82,7 @@
       position: fixed;
       top: 0;
       right: -255px;
-      width: 255px;
+      width: 268px;
       height: 100vh;
       background-color: var(--mg);
       flex-direction: column;
@@ -157,10 +179,11 @@
   }
 
   .navbar-mobile {
-      width: 300px;
+      width: 100%;
       height: 48px;
       display: flex;
       padding-left: 24px;
+      margin-right: 24px;
   }
 
   /* MyTeam logo */
@@ -169,6 +192,18 @@
       height: 32px;
       margin-right: 20px;
   }
+
+
+  .mobile-menu img[src="pictures/bg-pattern-about-1-mobile-nav-1.svg"] {
+    position: absolute;
+    bottom: 0;
+    right: -100px; /* Moves it 100px off the screen */
+    width: auto; /* Adjust size if necessary */
+    height: auto; /* Adjust size if necessary */
+    max-width: 200px; /* Optional: limit max width */
+    max-height: 200px; /* Optional: limit max height */
+    z-index: 1001;
+}
 }
 
 /* Media queries configurations for tablet (768px) */
@@ -196,6 +231,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 39px  !important;
+    padding-right: 39px  !important;
   }
 
   /* Navigation links container */
@@ -258,10 +295,12 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+/*
 html, body {
   overflow-x: hidden;
   width: 100%;
 }
+*/
 
 /*pagrindinis konteineris*/
 .container {
@@ -720,6 +759,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 165px;
+  padding-right: 165px;
 }
 
 /* Navigation links container */
@@ -907,7 +948,6 @@ overflow: hidden;
   overflow: hidden;
   font-size: 18px;
   text-align: left;
-  color: red;
 }
 
 
@@ -1208,6 +1248,7 @@ div > h4 {
     overflow: visible !important;
     height: auto !important;
     min-height: 100px !important;
+
   }
 
   .rectangle {
@@ -1250,6 +1291,7 @@ div > h4 {
     gap: 12px !important;
     justify-content: center !important;
   }
+    
 
   .find-the {
     margin: 0 !important;
@@ -1272,27 +1314,34 @@ div > h4 {
     justify-content: center !important;
     height: auto !important;
   }
+  
 }
-
 @media (max-width: 375px) {
+  
   .pic-one {
     display: none !important;
   }
 
+  /* Контейнер заголовка */
   .find-the-best-container {
     width: 327px !important;
     font-size: 40px !important;
     line-height: 40px !important;
     text-align: center !important;
+    padding: 0 !important;
+    display: block !important;
+    margin-top: 32px !important; /* Отступ сверху 32px */
+    margin-bottom: 18px !important; /* Отступ вниз 18px */
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
+  /* Контейнер с текстом */
   .finding-the-right {
     width: 327px !important;
-    position: relative !important;
     font-size: 15px !important;
     line-height: 28px !important;
     font-weight: 600 !important;
-    margin-bottom: 12px !important;
     text-align: center !important;
     word-break: break-word !important;
     overflow-wrap: break-word !important;
@@ -1300,33 +1349,39 @@ div > h4 {
     overflow: visible !important;
     height: auto !important;
     min-height: 100px !important;
+    padding: 0 !important;
+    display: block !important;
+    margin-top: 0px !important; /* Убираем отступ сверху */
+    margin-bottom: 0px !important; /* Убираем отступ снизу */
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .rectangle {
     display: none !important;
   }
 
+  /* Основной контейнер */
   .article-one {
     font-family: "Livvic", sans-serif !important;
     width: 100% !important;
-    height: 373px !important;
+    height: auto !important;
+    min-height: 373px !important; /* Минимальная высота */
     background-color: var(--mg) !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-direction: column !important;
+    text-align: center !important;
     position: relative !important;
     overflow: visible !important;
-    text-align: center !important;
+    padding: 32px 0 0 0 !important; /* Отступ сверху 32px */
   }
 
   .pic-two {
     position: absolute !important;
-    bottom: 0px !important;
+    bottom: 0 !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
   }
 
+  /* Главный контейнер */
   .find-the-best-talent-parent {
     width: 100% !important;
     position: relative !important;
@@ -1335,12 +1390,13 @@ div > h4 {
     font-size: 40px !important;
     color: var(--w) !important;
     font-family: "Livvic", sans-serif !important;
-    left: 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 9px !important;
-    justify-content: center !important;
+    padding: 0 !important;
+    display: block !important;
+    transform: translateX(-10px) !important; /* Сдвиг влево на 10px */
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .find-the {
@@ -1351,18 +1407,18 @@ div > h4 {
     color: var(--lc) !important;
   }
 
+  /* Контейнер с текстом */
   .group {
-    max-width: 100% !important;
-    position: relative !important;
+    max-width: 327px !important;
     width: auto !important;
-    overflow: visible !important;
     font-size: 15px !important;
     text-align: center !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
     height: auto !important;
+    padding: 0 !important;
+    display: block !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
-
