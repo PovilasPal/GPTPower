@@ -55,18 +55,18 @@
 
 
   /* Display burger menu on mobile screens */
-  .burger-menu {
-      display: flex;
-      position: absolute;
-      right: 24px;
-      width: 20px;
-      height: 17px;
-      flex-direction: column;
-      justify-content: space-between;
-      cursor: pointer;
-      z-index: 1001;
-  }
 
+  .burger-menu {
+    display: flex;
+    position: absolute;
+    right: 24px;
+    width: 20px;
+    height: 17px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1001;
+}
   /* Three lines (bars) for the burger menu */
   .burger-menu div {
       width: 20px;
@@ -191,7 +191,22 @@
       height: 32px;
       margin-right: 20px;
   }
+ /* shadow , hidden on default*/
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* shadow*/
+  z-index: 999; /* below the menu but above the content*/
+  transition: opacity 0.3s ease-in-out;
+}
 
+.overlay.active {
+  display: block;
+}
 
   .mobile-menu img[src="pictures/bg-pattern-about-1-mobile-nav-1.svg"] {
     position: absolute;
