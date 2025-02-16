@@ -1321,7 +1321,7 @@ div > h4 {
     display: none !important;
   }
 
-  /* Контейнер заголовка */
+  
   .find-the-best-container {
     width: 327px !important;
     font-size: 40px !important;
@@ -1329,13 +1329,13 @@ div > h4 {
     text-align: center !important;
     padding: 0 !important;
     display: block !important;
-    margin-top: 32px !important; /* Отступ сверху 32px */
-    margin-bottom: 18px !important; /* Отступ вниз 18px */
+    margin-top: 32px !important; 
+    margin-bottom: 18px !important; 
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
-  /* Контейнер с текстом */
+ 
   .finding-the-right {
     width: 327px !important;
     font-size: 15px !important;
@@ -1350,8 +1350,8 @@ div > h4 {
     min-height: 100px !important;
     padding: 0 !important;
     display: block !important;
-    margin-top: 0px !important; /* Убираем отступ сверху */
-    margin-bottom: 0px !important; /* Убираем отступ снизу */
+    margin-top: 0px !important; 
+    margin-bottom: 0px !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
@@ -1360,17 +1360,17 @@ div > h4 {
     display: none !important;
   }
 
-  /* Основной контейнер */
+ 
   .article-one {
     font-family: "Livvic", sans-serif !important;
     width: 100% !important;
     height: auto !important;
-    min-height: 373px !important; /* Минимальная высота */
+    min-height: 373px !important; 
     background-color: var(--mg) !important;
     text-align: center !important;
     position: relative !important;
     overflow: visible !important;
-    padding: 32px 0 0 0 !important; /* Отступ сверху 32px */
+    padding: 32px 0 0 0 !important; 
   }
 
   .pic-two {
@@ -1380,7 +1380,7 @@ div > h4 {
     transform: translateX(-50%) !important;
   }
 
-  /* Главный контейнер */
+ 
   .find-the-best-talent-parent {
     width: 100% !important;
     position: relative !important;
@@ -1391,7 +1391,7 @@ div > h4 {
     font-family: "Livvic", sans-serif !important;
     padding: 0 !important;
     display: block !important;
-    transform: translateX(-10px) !important; /* Сдвиг влево на 10px */
+    transform: translateX(-10px) !important; 
     margin-top: 0px !important;
     margin-bottom: 0px !important;
     margin-left: auto !important;
@@ -1406,7 +1406,7 @@ div > h4 {
     color: var(--lc) !important;
   }
 
-  /* Контейнер с текстом */
+  
   .group {
     max-width: 327px !important;
     width: auto !important;

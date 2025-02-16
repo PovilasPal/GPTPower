@@ -35,18 +35,18 @@
   }
 
   /* Display burger menu on mobile screens */
-  .burger-menu {
-      display: flex;
-      position: absolute;
-      right: 20px;
-      width: 30px;
-      height: 24px;
-      flex-direction: column;
-      justify-content: space-between;
-      cursor: pointer;
-      z-index: 1001;
-  }
 
+  .burger-menu {
+    display: flex;
+    position: absolute;
+    right: 24px;
+    width: 20px;
+    height: 17px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1001;
+}
   /* Three lines (bars) for the burger menu */
   .burger-menu div {
       width: 30px;
