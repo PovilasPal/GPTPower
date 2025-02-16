@@ -1237,7 +1237,7 @@ footer {
   height: 4px;
   background-color: var(--lc);
   position: relative;
-  top: -44px;
+  top: -53px;
   left: 400px;
 }
 
@@ -1250,7 +1250,7 @@ footer {
   text-align: left;
   margin-top: 20px;
   left: 400px;
-  bottom: 30px;
+  bottom: 35px;
   font-weight: 630;
   line-height: 28px;
   width: 730px;
