@@ -27,32 +27,28 @@
 
 /*  Mobile and tablet styles (max-width: 375px) */
 @media (max-width: 375px) {
-
   /* Hide default navigation links and Contact Us button on mobile */
   .header-main {
-      display: none !important;
+    display: none !important;
   }
 
+  /* shadow , hidden on default*/
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* shadow*/
+    z-index: 999; /* below the menu but above the content*/
+    transition: opacity 0.3s ease-in-out;
+  }
 
-/* shadow , hidden on default*/
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5); /* shadow*/
-  z-index: 999; /* below the menu but above the content*/
-  transition: opacity 0.3s ease-in-out;
-}
-
-/* Активный (показывается при открытом меню) */
-.overlay.active {
-  display: block;
-}
-
-
+  /* Активный (показывается при открытом меню) */
+  .overlay.active {
+    display: block;
+  }
 
   /* Display burger menu on mobile screens */
 
@@ -67,147 +63,147 @@
     justify-content: space-between;
     cursor: pointer;
     z-index: 1001;
-}
+  }
   /* Three lines (bars) for the burger menu */
   .burger-menu div {
-      width: 20px;
-      height: 3px;
-      background-color: var(--w);
-      transition: 0.3s;
+    width: 20px;
+    height: 3px;
+    background-color: var(--w);
+    transition: 0.3s;
   }
 
   /* Mobile menu styling (hidden by default) */
   .mobile-menu {
-      display: flex;
-      position: fixed;
-      top: 0;
-      right: -255px;
-      width: 252px;
-      height: 100vh;
-      background-color: var(--mg);
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      transition: right 0.3s ease-in-out;
-      z-index: 1000;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -255px;
+    width: 252px;
+    height: 100vh;
+    background-color: var(--mg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
   }
 
   /* Show mobile menu when active */
   .mobile-menu.active {
-      right: 0;
+    right: 0;
   }
 
   .mobile-menu a {
-      color: var(--w);
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 600;
+    color: var(--w);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
   }
 
   .close-menu {
-      position: absolute;
-      cursor: pointer;
-      top: 46px;
-      right: 25px;
-      overflow: hidden;
-      height: 17px;
-      object-fit: cover;
+    position: absolute;
+    cursor: pointer;
+    top: 46px;
+    right: 25px;
+    overflow: hidden;
+    height: 17px;
+    object-fit: cover;
   }
 
   .home-mobile {
-      left: 48px;
-      top: 112px;
-      position: absolute;
-      font-size: 18px;
-      line-height: 28px;
-      font-weight: 600;
-      font-family: Livvic;
-      color: var(--w);
+    left: 48px;
+    top: 112px;
+    position: absolute;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    font-family: Livvic;
+    color: var(--w);
   }
 
   .about-mobile {
-      left: 48px;
-      top: 164px;
-      position: absolute;
-      font-size: 18px;
-      line-height: 28px;
-      font-weight: 600;
-      font-family: Livvic;
-      color: var(--w);
+    left: 48px;
+    top: 164px;
+    position: absolute;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    font-family: Livvic;
+    color: var(--w);
   }
 
   .button-mobile {
-      left: 48px;
-      top: 228px;
-      position: absolute;
-      width: 153px;
-      height: 48px;
-      border: 2px solid var(--ssg);
-      border-radius: 24px;
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 28px;
-      box-sizing: border-box;
-      padding: 7px;
-      text-decoration: none;
-      color: var(--w);
-      background-color: var(--mg);
+    left: 48px;
+    top: 228px;
+    position: absolute;
+    width: 153px;
+    height: 48px;
+    border: 2px solid var(--ssg);
+    border-radius: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    box-sizing: border-box;
+    padding: 7px;
+    text-decoration: none;
+    color: var(--w);
+    background-color: var(--mg);
   }
 
   .button-one-mobile {
-      font-size: 18px;
-      line-height: 28px;
-      font-weight: 600;
-      font-family: Livvic;
-      color: var(--w);
-      border: 2px solid var(--w);
-      border-radius: 24px;
-      background-color: transparent;
-      text-align: center;
-      display: inline-block;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    font-family: Livvic;
+    color: var(--w);
+    border: 2px solid var(--w);
+    border-radius: 24px;
+    background-color: transparent;
+    text-align: center;
+    display: inline-block;
   }
 
   .header-mobile {
-      font-family: 'Livvic', sans-serif;
-      height: 128px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: left;
-      align-items: center;
-      background-color: var(--mg);
+    font-family: "Livvic", sans-serif;
+    height: 128px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: var(--mg);
   }
 
   .navbar-mobile {
-      width: 100%;
-      height: 48px;
-      display: flex;
-      padding-left: 24px;
-      margin-right: 24px;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    padding-left: 24px;
+    margin-right: 24px;
   }
 
   /* MyTeam logo */
   .myteam-logo-mobile {
-      width: 128px;
-      height: 32px;
-      margin-right: 20px;
+    width: 128px;
+    height: 32px;
+    margin-right: 20px;
   }
- /* shadow , hidden on default*/
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5); /* shadow*/
-  z-index: 999; /* below the menu but above the content*/
-  transition: opacity 0.3s ease-in-out;
-}
+  /* shadow , hidden on default*/
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* shadow*/
+    z-index: 999; /* below the menu but above the content*/
+    transition: opacity 0.3s ease-in-out;
+  }
 
-.overlay.active {
-  display: block;
-}
+  .overlay.active {
+    display: block;
+  }
 
   .mobile-menu img[src="pictures/bg-pattern-about-1-mobile-nav-1.svg"] {
     position: absolute;
@@ -218,15 +214,12 @@
     max-width: 200px; /* Optional: limit max width */
     max-height: 200px; /* Optional: limit max height */
     z-index: 1001;
+  }
 }
-}
-
 
 /* Media queries configurations for tablet (768px) */
 
 @media (max-width: 768px) {
-
-
   /* Header styles for tablets*/
   .header-main {
     font-family: "Livvic", sans-serif;
@@ -235,7 +228,9 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    background-color: var(--mg) !important; /* Ensuring background color applies */
+    background-color: var(
+      --mg
+    ) !important; /* Ensuring background color applies */
   }
 
   /* Navigation bar */
@@ -300,7 +295,6 @@
   }
 }
 
-
 * {
   margin: 0px;
   padding: 0px;
@@ -308,7 +302,8 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-html, body {
+html,
+body {
   overflow-x: hidden;
   width: 100%;
 }
@@ -363,7 +358,7 @@ div > h4 {
   font-size: 32px;
   padding: 0px 0px 32px 0px;
 }
-.list-tarpai{
+.list-tarpai {
   padding: 8px 0px;
 }
 li > img {
@@ -420,8 +415,7 @@ textarea {
   padding: 27px 0px 29px 15px;
 }
 
-
-.form-input{
+.form-input {
   color: var(--w);
   font-size: 15px;
   font-weight: 600;
@@ -429,7 +423,7 @@ textarea {
   letter-spacing: -0.115px;
   opacity: 1;
 }
-.form-input:focus{
+.form-input:focus {
   outline: none;
   border-bottom: 1px solid var(--rb);
 }
@@ -438,16 +432,16 @@ textarea {
 }
 
 .form-input:user-invalid + .error-message {
-  display: block; 
+  display: block;
 }
-.display-none{
+.display-none {
   display: none;
 }
 .form-input:user-invalid::placeholder {
-  color: var(--lc); 
+  color: var(--lc);
 }
 .error-message {
-  display: none; 
+  display: none;
   color: var(--lc);
   padding-left: 2.5%;
   font-size: 10px;
@@ -466,7 +460,6 @@ textarea {
   position: absolute;
   right: -100px;
   bottom: 0px;
-
 }
 /* Button styles */
 
@@ -522,7 +515,6 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   gap: 25px;
-
 }
 
 .my-team-logo {
@@ -586,7 +578,6 @@ footer {
   justify-content: flex-end;
   align-items: center;
   gap: 16px;
-  
 }
 
 /* Hovers for social media logos */
@@ -615,7 +606,6 @@ footer {
 /* Media queries configurations for tablet */
 
 @media (max-width: 768px) {
-
   .address-main {
     width: 280px;
     height: 100px;
@@ -675,11 +665,9 @@ footer {
   .copyright {
     margin-bottom: 56px;
   }
-
 }
 
 @media (max-width: 375px) {
-
   .address-main {
     width: 327px;
     height: 100px;
@@ -728,10 +716,8 @@ footer {
   .copyright {
     margin-bottom: 64px;
   }
-
 }
-ation links container */
-.nav-links {
+ation links container */ .nav-links {
   display: flex;
   align-items: center;
 }
@@ -744,7 +730,7 @@ ation links container */
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  
+
   background-color: var(--mg);
 }
 
@@ -940,7 +926,7 @@ ation links container */
   div > h4 {
     padding: 4.2% 3.49% 0% 0%;
   }
-  div>p{
+  div > p {
     max-width: 240px;
   }
   .list-poss-phone-display {
@@ -963,14 +949,13 @@ ation links container */
   .form-size-small-display {
     width: 93%;
   }
-  .list-item-one{
+  .list-item-one {
     padding: 0% 0% 0% 0%;
   }
-  .list-item-two{
+  .list-item-two {
     padding: 5.6% 0% 0% 0%;
   }
-  .list-item-three{
+  .list-item-three {
     padding: 5.7% 0% 0% 0%;
   }
-  
 }
