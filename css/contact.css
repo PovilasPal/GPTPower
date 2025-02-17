@@ -299,7 +299,6 @@
   margin: 0px;
   padding: 0px;
   font-family: "Livvic", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
 }
 html,
@@ -717,7 +716,7 @@ footer {
     margin-bottom: 64px;
   }
 }
-ation links container */ .nav-links {
+.nav-links {
   display: flex;
   align-items: center;
 }
