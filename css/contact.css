@@ -717,7 +717,7 @@ footer {
     margin-bottom: 64px;
   }
 }
-ation links container */ .nav-links {
+.nav-links {
   display: flex;
   align-items: center;
 }
