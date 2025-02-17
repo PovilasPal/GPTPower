@@ -454,6 +454,10 @@ html, body {
   }
 
   .client-logos {
+    align-items: center;
+  }
+
+  .client-logos {
     display: flex;
     flex-direction: column;
     gap: 56.92px;
