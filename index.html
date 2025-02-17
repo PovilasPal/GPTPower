@@ -33,7 +33,7 @@
             <!-- Navigation links -->
             <div class="nav-links">
                 <!-- Logo as an image -->
-                <img src="pictures/myteam 2.svg" alt="myteam" class="myteam-logo">
+                <img src="pictures/myteam__2.svg" alt="myteam" class="myteam-logo">
                 <!-- Home link -->
                 <a href="index.html" class="nav-item home">home</a>
                 <!-- About link -->
@@ -42,14 +42,13 @@
             <!-- Contact button -->
             <a href="contact.html" class="button button-one">contact us</a>
         </div>
-      </div>
     </header>
 
     <!-- Header section for mobile screens-->
 <header class="header-mobile">
   <div class="navbar-mobile">
       <!-- Logo -->
-      <img src="pictures/myteam 2.svg" alt="myteam" class="myteam-logo-mobile">
+      <img src="pictures/myteam__2.svg" alt="myteam" class="myteam-logo-mobile">
 
  
 
@@ -64,12 +63,11 @@
   <!-- Mobile menu (only visible on mobile screens) -->
 
 <div class="mobile-menu" id="mobileMenu">
-  <img class="close-menu" onclick="toggleMenu()"  alt="" src="pictures/Group 2.svg"></img>
-<img class="" src="pictures/bg-pattern-about-1-mobile-nav-1.svg"></img>
-
+  <img class="close-menu" onclick="toggleMenu()"  alt="X sign" src="pictures/Group__2.svg">
+  <img class="" alt="Background decoration" src="pictures/bg-pattern-about-1-mobile-nav-1.svg">
   <a href="index.html" class="nav-item home-mobile">home</a>
   <a href="about.html" class="nav-item about-mobile">about</a>
-  <a href="contact.html"class="button-mobile button-one-mobile ">contact us</a>
+  <a href="contact.html" class="button-mobile button-one-mobile ">contact us</a>
 </div>
 </header>
 
@@ -88,13 +86,13 @@
         alt="background decoration"
       />
       <div class="find-the-best-talent-parent">
-        <b class="find-the-best-container">
+        <div class="find-the-best-container">
           <p class="find-the">Find the</p>
           <p class="find-the">
             <span>best </span>
             <span class="talent">talent</span>
           </p>
-        </b>
+        </div>
         <div class="group">
           <div class="finding-the-right">
             Finding the right people and building high performing teams can be
@@ -290,7 +288,7 @@
           <!-- Left conternt in footer -->
           <div class="my-team">
               <!-- MyTeam logo -->
-              <img src="pictures/myteam 2.svg" alt="myteam logo" class="my-team-logo">
+              <img src="pictures/myteam__2.svg" alt="myteam logo" class="my-team-logo">
               <!-- Navigation buttons -->
               <div class="nav-buttons">
                   <a href="index.html" class="button-home">home</a>
@@ -299,7 +297,7 @@
           </div>
           <!-- Middle content in footer (address) -->
           <div class="address-main">
-              <p>987 &nbspHillcrest Lane<br>Irvine, CA<br>California 92714<br>Call Us : 949-833-7432</p>
+              <p>987 &nbsp;Hillcrest Lane<br>Irvine, CA<br>California 92714<br>Call Us : 949-833-7432</p>
           </div>
           <!-- Right content in footer -->
           <div class="logos-copy">
@@ -318,27 +316,25 @@
       </div>
     </footer>
     <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
-
-</body>
-<script>
-  function toggleMenu() {
-      const menu = document.getElementById("mobileMenu");
-      const burger = document.querySelector(".burger-menu");
-      const overlay = document.getElementById("overlay");
-
-      // Toggle the active class for the menu and overlay
-      menu.classList.toggle("active");
-      overlay.classList.toggle("active");
-
-      // If the menu is open, hide the burger menu visually but keep its space
-      if (menu.classList.contains("active")) {
-          burger.style.opacity = "0"; // Make burger menu invisible
-          burger.style.pointerEvents = "none"; // Disable clicks on it
-      } else {
-          burger.style.opacity = "1"; // Make burger menu visible again
-          burger.style.pointerEvents = "auto"; // Enable clicks
+    <script>
+      function toggleMenu() {
+          const menu = document.getElementById("mobileMenu");
+          const burger = document.querySelector(".burger-menu");
+          const overlay = document.getElementById("overlay");
+    
+          // Toggle the active class for the menu and overlay
+          menu.classList.toggle("active");
+          overlay.classList.toggle("active");
+    
+          // If the menu is open, hide the burger menu visually but keep its space
+          if (menu.classList.contains("active")) {
+              burger.style.opacity = "0"; // Make burger menu invisible
+              burger.style.pointerEvents = "none"; // Disable clicks on it
+          } else {
+              burger.style.opacity = "1"; // Make burger menu visible again
+              burger.style.pointerEvents = "auto"; // Enable clicks
+          }
       }
-  }
-</script>
-
+    </script>
+</body>
 </html>
