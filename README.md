@@ -6,7 +6,7 @@
 
 <Technologijos/> -  HTML, CSS ir JS 
 
-## Tinklapio nuoroda
+## Tinklapio nuoroda:
 
 https://povilaspal.github.io/GPTPower/
 
@@ -14,7 +14,7 @@ https://povilaspal.github.io/GPTPower/
 
 Klonuoti ir paleisti aplikaciją jums reikia įsidiegti [Git](https://git-scm.com/) ir [Node.js](https://nodejs.org/en).
 
-Atidarykite Bash konsolę pasirinktame aplanke, kuriame norite parsisiusti šį projektą.
+Atidarykite Bash konsolę pasirinktame aplanke, kuriame norite parsisiųsti šį projektą.
 
 Įveskite komandas:
 ```
