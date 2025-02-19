@@ -1,32 +1,32 @@
-# Žiemos projektinis darbas
+# Winter project
 
-## Komanda "GPTPOWER"
+## Team "GPTPower"
 
-<Tikslas/> - suprogramuoti tinklapio vartotojo sąsają, mokytis dirbti komandoje.
+<Goal/> - to program a website user interface and learn to work in a team.
 
-<Technologijos/> -  HTML, CSS ir JS 
+<Technologies/> -  HTML, CSS and JS 
 
-## Tinklapio nuoroda:
+## Website link:
 
 https://povilaspal.github.io/GPTPower/
 
-## Kaip naudotis
+## How to use
 
-Klonuoti ir paleisti aplikaciją jums reikia įsidiegti [Git](https://git-scm.com/) ir [Node.js](https://nodejs.org/en).
+To clone and run the application, you need to install [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en).
 
-Atidarykite Bash konsolę pasirinktame aplanke, kuriame norite parsisiųsti šį projektą.
+Open the Bash console in your chosen folder where you want to download this project.
 
-Įveskite komandas:
+Enter the commands:
 ```
 git clone https://github.com/PovilasPal/GPTPower.git
 cd GPTPower
 ```
 
-## Komandos nariai:
+## Team members:
 
-* Agnė Balčiūnaitė
-* Pavel Morozov
-* Tadas Labulis
-* Gintaras Petrauskas
-* Arminas Šenauskas
-* Povilas Palionis
+* Agnė Balčiūnaitė - QA
+* Pavel Morozov - Developer
+* Tadas Labulis - Developer
+* Gintaras Petrauskas - QA
+* Arminas Šenauskas - Developer
+* Povilas Palionis - Developer
